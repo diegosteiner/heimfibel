@@ -1,0 +1,79 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--color-bg: #3b5a59;
+	--color-fg: #fff2cc;
+	--handdrawn-border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+html {
+	font-family: system-ui, sans-serif;
+	background-color: var(--color-bg);
+	color: var(--color-fg);
+	font-size: 1.25em;
+}
+
+body {
+	padding: 1rem;
+	display: grid;
+	min-height: 100vh;
+	grid-template-columns: 1fr 30vw;
+	gap: 1rem;
+
+	&>main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 2rem;
+	}
+}
+
+.main-nav {
+	max-width: 20rem;
+	width: 100%;
+	font-size: 1.5rem;
+
+
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	li {
+		padding: 0;
+	}
+
+	a {
+		margin: 1rem 0;
+		text-decoration: none;
+		color: var(--color-fg);
+		padding: 0.25em;
+		width: 100%;
+		font-weight: bold;
+		display: block;
+
+		border: 3px solid transparent;
+
+		&:hover {
+			border: 3px solid var(--color-fg);
+			border-radius: var(--handdrawn-border-radius);
+		}
+	}
+
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 0.5em;
+}
+
+p {
+	line-height: 2em;
+}
