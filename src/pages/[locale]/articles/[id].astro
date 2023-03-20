@@ -1,0 +1,83 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+
+// import { getDirectusClient } from "../../utils/get-directus-client";
+// import { getAssetURL } from "../../utils/get-asset-url";
+// import { formatRelativeTime } from "../../utils/format-relative-time";
+
+import { Directus } from "@directus/sdk";
+
+export async function getStaticPaths() {
+  const directus = new Directus(import.meta.env.PUBLIC_DIRECTUS_URL);
+  const response = await directus.graphql.items(`query {
+  articles {
+    id
+    status
+    date_created
+    topic {
+      id
+      sort
+      translations {
+        languages_code {
+          code
+        }       
+        title
+      }
+      translations_func {
+        count
+      }
+    }
+    translations {
+      languages_code {
+          code
+        }  
+      title
+      content
+    }
+    tags {
+      tags_id {
+        id
+        sort
+        color
+        translations {
+          languages_code {
+            code
+          }  
+          name
+        }
+      }
+    }
+  } 
+}`);
+
+  let articles = response.data.articles;
+  let paths = [];
+
+  Array.from(articles).forEach((article) => {
+    console.log(article);
+    Array.from(article.translations).forEach((articleTranslation) => {
+      const locale = articleTranslation.languages_code.code;
+      paths.push({
+        params: { id: article.id.toString(), locale },
+        props: {
+          article,
+          title: articleTranslation.title,
+          content: articleTranslation.content,
+          tags: article.tags,
+        },
+      });
+    });
+  });
+
+  return paths;
+}
+
+const { article, title, content } = Astro.props;
+---
+
+<Layout title={article.id}>
+  <article>
+    <h1>{title}</h1>
+    <div set:html={content} />
+  </article>
+</Layout>

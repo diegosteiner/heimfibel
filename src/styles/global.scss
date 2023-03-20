@@ -3,7 +3,6 @@
 *::before {
 	box-sizing: border-box;
 	margin: 0;
-	padding: 0;
 }
 
 :root {
@@ -32,6 +31,10 @@ body {
 		justify-content: center;
 		padding: 2rem;
 	}
+}
+
+article {
+	line-height: 1.66em;
 }
 
 .main-nav {
@@ -75,5 +78,7 @@ h1 {
 }
 
 p {
+
 	line-height: 2em;
+
 }
