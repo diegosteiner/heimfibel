@@ -1,69 +1,62 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
 
-// import { getDirectusClient } from "../../utils/get-directus-client";
-// import { getAssetURL } from "../../utils/get-asset-url";
-// import { formatRelativeTime } from "../../utils/format-relative-time";
-
-import { Directus } from "@directus/sdk";
+import { getTranslatedArticles } from "../../../services/articles";
 
 export async function getStaticPaths() {
-  const directus = new Directus(import.meta.env.PUBLIC_DIRECTUS_URL);
-  const response = await directus.graphql.items(`query {
-  articles {
-    id
-    status
-    date_created
-    topic {
-      id
-      sort
-      translations {
-        languages_code {
-          code
-        }       
-        title
-      }
-      translations_func {
-        count
-      }
-    }
-    translations {
-      languages_code {
-          code
-        }  
-      title
-      content
-    }
-    tags {
-      tags_id {
-        id
-        sort
-        color
-        translations {
-          languages_code {
-            code
-          }  
-          name
-        }
-      }
-    }
-  } 
-}`);
-
-  let articles = response.data.articles;
-  let paths = [];
-
-  
-
-  return paths;
+  return (await getTranslatedArticles()).map((article) => ({
+    params: { id: article.id, locale: article.locale },
+    props: article,
+  }));
 }
 
-const { article, title, content } = Astro.props;
+const { id, title, content, tags } = Astro.props;
 ---
 
-<Layout title={article.id}>
+<Layout title={id}>
   <article>
     <h1>{title}</h1>
     <div set:html={content} />
+    <ul class="tags">
+      {
+        tags.map((tag) => (
+          <li>
+            <a href="#">{tag.label}</a>
+          </li>
+        ))
+      }
+    </ul>
   </article>
 </Layout>
+
+<style lang="scss">
+  article {
+    background-color: var(--color-fg);
+    color: var(--color-black);
+    padding: 2.5em;
+    border-radius: 2em;
+    font-size: 1.2rem;
+    line-height: 1.66em;
+  }
+
+  .tags {
+    list-style: none;
+    padding: 0;
+    margin-top: 2em;
+
+    & > li {
+      display: inline-block;
+      margin: 0.2em;
+
+      & > a {
+        font-size: 1rem;
+        background-color: peachpuff;
+        padding: 0.33em;
+        text-decoration: none;
+        color: var(--color-black);
+        border: 2px solid palevioletred;
+        border-radius: var(--handdrawn-border-radius);
+      }
+    }
+  }
+</style>

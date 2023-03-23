@@ -1,0 +1,38 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+
+import { getTranslatedArticles, TranslatedArticle } from "../../../services/articles";
+
+export async function getStaticPaths() {
+  const localeArticles = Array.from(await getTranslatedArticles()).reduce(
+    (map, e) => map.set(e.locale, [...(map.get(e.locale) || []), e]),
+    new Map<string, TranslatedArticle>()
+  );
+
+  return Array.from(localeArticles.entries()).map(([locale, articles]) => ({
+    params: { locale },
+    props: { locale, articles },
+  }));
+}
+
+const { articles, locale } = Astro.props;
+---
+
+<Layout title="Übersicht">
+  <main>
+    <h1>Übersicht</h1>
+    <p>
+      Zu den unterschiedlichsten Themen, welche bei einem Bauprojekt, in der Planung, Umsetzung oder im laufenden
+      Betrieb wichtig sind gibt es Artikel.
+    </p>
+    <ul class="articles">
+      {
+        Array.from(articles).map((article) => (
+          <li>
+            <a href={`/${locale}/articles/${article.id}`}>{article.title}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </main>
+</Layout>

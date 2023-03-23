@@ -43,12 +43,12 @@ export async function getArticleData() {
   } 
 }`);
 
- return response.data
+ return response.data.articles
 }
 
-type TranslatedArticle = {
-  id: number;
-	sort: number;
+export type TranslatedArticle = {
+  id: string;
+	sort: number | null;
   locale: string;
   title: string;
   content: string;
@@ -56,19 +56,19 @@ type TranslatedArticle = {
   tags: TranslatedTag[];
 }
 
-type TranslatedTopic = {
-  id: number;
-	sort: number;
+export type TranslatedTopic = {
+  id: string;
+	sort: number | null;
   name: string;
   locale: string;
 }
 
-type TranslatedTag = {
-  id: number;
-  sort: number;
+export type TranslatedTag = {
+  id: string;
+  sort: number | null;
   label: string;
 	locale: string;
-  color: string;
+  color: string | null;
 }
 
 export async function getTranslatedArticles() {
@@ -76,23 +76,30 @@ export async function getTranslatedArticles() {
   const translatedTopics: TranslatedTopic[] = []
   const articleData = await getArticleData()
 
-  articleData.forEach(article => {
-    console.log(article);
+  Array.from(articleData).forEach(article => {
     Array.from(article.translations).forEach((articleTranslation) => {
       const locale = articleTranslation.languages_code.code;
+      const topicTranslation = Array.from(article.topic?.translations || []).find(tt => tt.languages_code.code == locale)
+      const tagTranslations = Array.from(article.tags).map(tag => translatedTag(tag, locale))
       const translatedArticle = {
         id: article.id, 
         sort: article.sort,
         locale,
         title: articleTranslation.title,
         content: articleTranslation.content,
-        topic: { id: article.topic.id, name: article.topic.topics_translations[locale]&.name },
-        tags: []
-      }
-      translatedArticles.push(translatedArticle)
+        topic: { id: article.topic?.id, name: topicTranslation?.name },
+        tags: tagTranslations
+      };
+      translatedArticles.push(translatedArticle as unknown as TranslatedArticle)
     });
   });
 
+      // console.log(translatedArticles)
   return translatedArticles
 }
 
+function translatedTag(tag: object, locale: string): TranslatedTag {
+  const translation = Array.from(tag.tags_id.translations || []).find(tt => tt.languages_code.code == locale) || tag.translations?.[0];
+  console.log(tag.tags_id.translations)
+  return { id: tag.id, sort: tag.sort, color: tag.color, locale, label: translation?.name }
+}

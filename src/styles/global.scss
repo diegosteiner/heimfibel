@@ -8,6 +8,7 @@
 :root {
 	--color-bg: #3b5a59;
 	--color-fg: #fff2cc;
+	--color-black: #222;
 	--handdrawn-border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
 
@@ -15,14 +16,13 @@ html {
 	font-family: system-ui, sans-serif;
 	background-color: var(--color-bg);
 	color: var(--color-fg);
-	font-size: 1.25em;
 }
 
 body {
 	padding: 1rem;
 	display: grid;
 	min-height: 100vh;
-	grid-template-columns: 1fr 30vw;
+	grid-template-columns: 1fr minmax(20em, 30vw);
 	gap: 1rem;
 
 	&>main {
@@ -30,17 +30,14 @@ body {
 		flex-direction: column;
 		justify-content: center;
 		padding: 2rem;
+		line-height: 2.22rem;
+		font-size: 1.33rem;
 	}
 }
 
-article {
-	line-height: 1.66em;
-}
-
 .main-nav {
-	max-width: 20rem;
 	width: 100%;
-	font-size: 1.5rem;
+	font-size: 2rem;
 
 
 	ul {
@@ -64,7 +61,8 @@ article {
 
 		border: 3px solid transparent;
 
-		&:hover {
+		&:hover,
+		&:active {
 			border: 3px solid var(--color-fg);
 			border-radius: var(--handdrawn-border-radius);
 		}
@@ -74,11 +72,18 @@ article {
 
 h1 {
 	font-size: 3rem;
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
 }
 
 p {
+	margin-bottom: 1em;
+}
 
-	line-height: 2em;
+a {
+	color: inherit;
 
+	&:visited,
+	&:active {
+		color: inherit;
+	}
 }
