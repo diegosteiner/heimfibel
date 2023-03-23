@@ -1,7 +1,8 @@
 import { Directus } from "@directus/sdk";
 
 export async function getArticleData() {
-  const directus = new Directus(import.meta.env.PUBLIC_DIRECTUS_URL);
+  const url = "https://x1q9gf1k.directus.app" // import.meta.env.PUBLIC_DIRECTUS_URL 
+  const directus = new Directus(url);
   const response = await directus.graphql.items(`query {
   articles {
     id
