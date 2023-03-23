@@ -1,0 +1,40 @@
+query GetAllArticleData {
+  articles {
+    id
+    status
+    date_created
+    topic {
+      id
+      sort
+      translations {
+        languages_code {
+          code
+        }       
+        title
+      }
+      translations_func {
+        count
+      }
+    }
+    translations {
+      languages_code {
+          code
+        }  
+      title
+      content
+    }
+    tags {
+      tags_id {
+        id
+        sort
+        color
+        translations {
+          languages_code {
+            code
+          }  
+          name
+        }
+      }
+    }
+  } 
+}

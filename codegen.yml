@@ -1,0 +1,13 @@
+schema:
+  - ${PUBLIC_DIRECTUS_URL}/graphql
+
+generates:
+  types.ts:
+    plugins:
+      - typescript
+  src/graphql/:
+    preset: client
+    plugins: []
+
+documents: 
+  - 'src/**/*.graphql'

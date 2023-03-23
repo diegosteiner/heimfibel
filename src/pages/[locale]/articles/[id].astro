@@ -53,21 +53,7 @@ export async function getStaticPaths() {
   let articles = response.data.articles;
   let paths = [];
 
-  Array.from(articles).forEach((article) => {
-    console.log(article);
-    Array.from(article.translations).forEach((articleTranslation) => {
-      const locale = articleTranslation.languages_code.code;
-      paths.push({
-        params: { id: article.id.toString(), locale },
-        props: {
-          article,
-          title: articleTranslation.title,
-          content: articleTranslation.content,
-          tags: article.tags,
-        },
-      });
-    });
-  });
+  
 
   return paths;
 }
