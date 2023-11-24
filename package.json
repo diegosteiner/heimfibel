@@ -1,5 +1,5 @@
 {
-  "name": "density-dwarf",
+  "name": "heimfibel",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -7,18 +7,11 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "codegen": "graphql-codegen -r dotenv/config"
+    "astro": "astro"
   },
   "dependencies": {
-    "@directus/sdk": "^10.3.1",
-    "astro": "^2.0.18"
-  },
-  "devDependencies": {
-    "@graphql-codegen/cli": "^3.2.2",
-    "@graphql-codegen/client-preset": "^2.1.1",
-    "graphql": "^16.6.0",
-    "sass": "^1.59.3",
+    "astro": "^3.6.0",
+    "sass": "^1.69.5",
     "typescript": "^5.0.2"
   }
 }
