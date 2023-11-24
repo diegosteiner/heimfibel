@@ -1,11 +1,12 @@
 ---
+import { languages } from "../../../i18n";
 import Layout from "../../../layouts/Layout.astro";
 import { type CollectionEntry, getCollection } from "astro:content";
 
 const articles = (await getCollection("articles")).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
 
 export async function getStaticPaths() {
-  return ["de", "fr"].map((locale) => ({
+  return Object.keys(languages).map((locale) => ({
     params: { locale },
     props: { locale },
   }));

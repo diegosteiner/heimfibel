@@ -4,7 +4,9 @@ phase: Konzeptionsphase
 step: Art und Weise des Projekts
 pubDate: 2023-11-24T15:50:06.730Z
 locale: de
-tags: []
+tags:
+  - test
+  - zwei
 links: []
 type: article
 ---
