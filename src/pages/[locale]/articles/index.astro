@@ -1,21 +1,16 @@
 ---
+import { languages } from "../../../i18n";
 import Layout from "../../../layouts/Layout.astro";
+import { type CollectionEntry, getCollection } from "astro:content";
 
-import { getTranslatedArticles, TranslatedArticle } from "../../../services/articles";
+const articles = (await getCollection("articles")).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
 
 export async function getStaticPaths() {
-  const localeArticles = Array.from(await getTranslatedArticles()).reduce(
-    (map, e) => map.set(e.locale, [...(map.get(e.locale) || []), e]),
-    new Map<string, TranslatedArticle>()
-  );
-
-  return Array.from(localeArticles.entries()).map(([locale, articles]) => ({
+  return Object.keys(languages).map((locale) => ({
     params: { locale },
-    props: { locale, articles },
+    props: { locale },
   }));
 }
-
-const { articles, locale } = Astro.props;
 ---
 
 <Layout title="Übersicht">
@@ -29,7 +24,7 @@ const { articles, locale } = Astro.props;
       {
         Array.from(articles).map((article) => (
           <li>
-            <a href={`/heimfibel/${locale}/articles/${article.id}`}>{article.title}</a>
+            <a href={`/${article.data.locale}/articles/${article.slug}`}>{article.data.title}</a>
           </li>
         ))
       }

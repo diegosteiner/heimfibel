@@ -1,27 +1,21 @@
 ---
-import Layout from "../../../layouts/Layout.astro";
+import type { CollectionEntry } from "astro:content";
+import Layout from "./Layout.astro";
 
-import { getTranslatedArticles } from "../../../services/articles";
+type Props = CollectionEntry<"articles">["data"];
 
-export async function getStaticPaths() {
-  return (await getTranslatedArticles()).map((article) => ({
-    params: { id: article.id, locale: article.locale },
-    props: article,
-  }));
-}
-
-const { id, title, content, tags } = Astro.props;
+const { title, locale, content, tags } = Astro.props;
 ---
 
-<Layout title={id}>
+<Layout title={title}>
   <article>
     <h1>{title}</h1>
-    <div set:html={content} />
+    <slot />
     <ul class="tags">
       {
         tags.map((tag) => (
           <li>
-            <a href="#">{tag.label}</a>
+            <a href="#">{tag}</a>
           </li>
         ))
       }

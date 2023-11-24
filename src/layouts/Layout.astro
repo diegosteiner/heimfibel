@@ -1,13 +1,16 @@
 ---
+import { getLangFromUrl, useTranslations } from "../i18n";
 import "../styles/global.scss";
 export interface Props {
   title: string;
 }
 
+const locale = getLangFromUrl(Astro.url);
+const t = useTranslations(locale);
 const { title } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -23,16 +26,16 @@ const { title } = Astro.props;
     <nav class="main-nav">
       <ul>
         <li>
-          <a class="outlined" href="/heimfibel/goals">Ziele</a>
+          <a class="outlined" href={`/${locale}/goals`}>{t("nav.goals")}</a>
         </li>
         <li>
-          <a class="outlined" href="/heimfibel/de-CH/articles/">Übersicht</a>
+          <a class="outlined" href={`/${locale}/articles/`}>{t("nav.articles")}</a>
         </li>
         <li>
-          <a class="outlined" href="/heimfibel/questions">Fragen</a>
+          <a class="outlined" href={`/${locale}/questions`}>{t("nav.questions")}</a>
         </li>
         <li>
-          <a class="outlined" href="/heimfibel/about">Wir über uns</a>
+          <a class="outlined" href={`/${locale}/about`}>{t("nav.about")}</a>
         </li>
       </ul>
     </nav>
