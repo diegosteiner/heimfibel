@@ -1,11 +1,12 @@
 ---
-title: 'Generelle Überlegungen'
-phase: 'Konzeptionsphase' 
-step: 'Art und Weise des Projekts'
-pubDate: '2023-11-01'
+title: Generelle Überlegungen
+phase: Konzeptionsphase
+step: Art und Weise des Projekts
+pubDate: 2023-11-24T15:50:06.730Z
 locale: de
 tags: []
 links: []
+type: article
 ---
 
 Mit der Idee oder dem Plan, ein Pfadiheim zu bauen oder um zu bauen startet die Bedürfnisabfrage. 

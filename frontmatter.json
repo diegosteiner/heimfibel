@@ -1,0 +1,61 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.framework.id": "astro",
+  "frontMatter.preview.host": "http://localhost:4321",
+  "frontMatter.content.publicFolder": "public",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "articles",
+      "path": "[[workspace]]/src/content/articles"
+    }
+  ],
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "article",
+      "pageBundle": false,
+      "fields": [
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "phase",
+          "name": "phase",
+          "type": "string"
+        },
+        {
+          "title": "step",
+          "name": "step",
+          "type": "string"
+        },
+        {
+          "title": "pubDate",
+          "name": "pubDate",
+          "type": "datetime"
+        },
+        {
+          "title": "locale",
+          "name": "locale",
+          "type": "string"
+        },
+        {
+          "title": "tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "links",
+          "name": "links",
+          "type": "fields",
+          "fields": []
+        },
+        {
+          "title": "type",
+          "name": "type",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}
