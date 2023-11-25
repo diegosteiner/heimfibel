@@ -1,0 +1,35 @@
+---
+import { Locale, locales } from "../../../i18n";
+import { tags } from "../../../tags";
+import Layout from "../../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  return (Object.keys(locales) as Locale[]).flatMap((locale) =>
+    tags.map((tag) => ({
+      params: { locale },
+      props: { locale, tag },
+    })),
+  );
+}
+
+const { locale } = Astro.props;
+---
+
+<Layout title="Übersicht">
+  <main>
+    <h1>Übersicht</h1>
+    <p>
+      Zu den unterschiedlichsten Themen, welche bei einem Bauprojekt, in der Planung, Umsetzung oder im laufenden
+      Betrieb wichtig sind gibt es Artikel.
+    </p>
+    <ul class="tags">
+      {
+        Array.from(tags).map((tag) => (
+          <li>
+            <a href={`/${locale}/tags/${tag.slug}`}>{tag.label_i18n[locale]}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </main>
+</Layout>

@@ -1,0 +1,45 @@
+---
+import { Locale, locales } from "../../../i18n";
+import Layout from "../../../layouts/Layout.astro";
+import { Tag, tags } from "../../../tags";
+import { getArticles } from "../../../articles";
+import { type CollectionEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const allArticles = await getArticles({});
+  return (Object.keys(locales) as Locale[]).flatMap((locale) =>
+    tags.map((tag) => {
+      const articles = allArticles.filter(
+        (article) => article.data.locale == locale && article.data.tags.includes(tag.slug),
+      );
+      return {
+        params: { locale, slug: tag.slug },
+        props: { locale, tag, articles },
+      };
+    }),
+  );
+}
+
+type Props = {
+  articles: CollectionEntry<"articles">[];
+  locale: Locale;
+  tag: Tag;
+};
+
+const { tag, locale, articles } = Astro.props;
+---
+
+<Layout title="Tags">
+  <main>
+    <h1>{tag.label_i18n[locale]}</h1>
+    <ul class="articles">
+      {
+        Array.from(articles).map((article) => (
+          <li>
+            <a href={`/${article.data.locale}/articles/${article.slug}`}>{article.data.title}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </main>
+</Layout>
