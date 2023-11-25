@@ -9,6 +9,47 @@
       "path": "[[workspace]]/src/content/articles"
     }
   ],
+
+"frontMatter.data.files": [
+  {
+    "id": "tags",
+    "title": "Tags",
+    "file": "[[workspace]]/src/data/tags.json",
+    "fileType": "json",
+    "labelField": "slug",
+    "singleEntry": false,
+    "schema": {
+      "title": "Tags",
+      "type": "object",
+      "required": [
+        "slug",
+        "color"
+      ],
+      "properties": {
+        "slug": {
+          "type": "string",
+          "title": "Slug"
+        },
+        "color": {
+          "type": "string",
+          "title": "Color"
+        },
+        "label_i18n": {
+          "type": "object",
+          "properties": {
+            "de": {
+              "type": "string"
+            },
+            "fr": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }],
+
+
   "frontMatter.taxonomy.contentTypes": [
     {
       "name": "article",
