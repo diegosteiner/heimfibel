@@ -1,12 +1,12 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
+import { type CollectionEntry } from "astro:content";
 import Article from "../../../layouts/Article.astro";
 import { locales, type Locale } from "../../../i18n";
 import { getArticles } from "../../../articles";
 
 export async function getStaticPaths() {
   const allArticles = await getArticles({});
-  return (Object.keys(locales) as [keyof typeof locales]).flatMap((locale) =>
+  return (Object.keys(locales) as Locale[]).flatMap((locale) =>
     allArticles
       .filter((article) => article.data.locale == locale)
       .map((article) => {
