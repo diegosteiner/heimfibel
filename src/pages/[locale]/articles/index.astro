@@ -1,12 +1,12 @@
 ---
-import { locales } from "../../../i18n";
+import { locales, type Locale } from "../../../i18n";
 import Layout from "../../../layouts/Layout.astro";
-import { type CollectionEntry, getCollection } from "astro:content";
+import { getCollection } from "astro:content";
 
 const articles = (await getCollection("articles")).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
 
 export async function getStaticPaths() {
-  return (Object.keys(locales) as [keyof typeof locales]).flatMap((locale) => ({
+  return (Object.keys(locales) as Locale[]).flatMap((locale) => ({
     params: { locale },
     props: { locale },
   }));
