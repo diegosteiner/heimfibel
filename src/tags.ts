@@ -1,4 +1,4 @@
-import { type Locale } from "./i18n"
+import { type Locale, defaultLocale } from "./i18n"
 
 export const tags: Tag[] = [
   {
@@ -19,4 +19,8 @@ export type Tag = {
 
 export function getTag(id: string) {
   return tags.find(tag => tag.slug == id)
+}
+
+export function getTagLabel(tag: Tag, locale: Locale) {
+  tag.label_i18n[locale] ?? tag.label_i18n[defaultLocale] ?? tag.slug
 }

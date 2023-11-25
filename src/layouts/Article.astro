@@ -1,7 +1,7 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import Layout from "./Layout.astro";
-import { getTag } from "../tags";
+import { getTag, getTagLabel } from "../tags";
 
 type Props = CollectionEntry<"articles">["data"];
 
@@ -16,9 +16,10 @@ const { title, locale, tags } = Astro.props;
       {
         tags
           ?.map((tagId) => getTag(tagId))
-          .map((tag) => (
+          ?.filter((tag) => tag)
+          ?.map((tag) => (
             <li>
-              <a href={`/${locale}/tags/${tag?.slug}`}>{tag?.label_i18n[locale]}</a>
+              <a href={`/${locale}/tags/${tag?.slug}`}>{getTagLabel(tag, locale)}</a>
             </li>
           ))
       }
