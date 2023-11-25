@@ -6,7 +6,7 @@ export const locales = {
 
 export type Locale = keyof typeof locales
 
-export const defaultLang = 'de';
+export const defaultLocale = 'de';
 
 export const translations = {
   de: {
@@ -28,11 +28,11 @@ export const translations = {
 export function getLangFromUrl(url: URL) {
   const [, lang] = url.pathname.split('/');
   if (lang in translations) return lang as keyof typeof translations;
-  return defaultLang;
+  return defaultLocale;
 }
 
 export function useTranslations(lang: keyof typeof translations) {
-  return function t(key: keyof typeof translations[typeof defaultLang]) {
-    return translations[lang][key] || translations[defaultLang][key];
+  return function t(key: keyof typeof translations[typeof defaultLocale]) {
+    return translations[lang][key] || translations[defaultLocale][key];
   }
 }

@@ -14,14 +14,11 @@ const { title, locale, tags } = Astro.props;
     <slot />
     <ul class="tags">
       {
-        tags
-          ?.map((tagId) => getTag(tagId))
-          ?.filter((tag) => tag)
-          ?.map((tag) => (
-            <li>
-              <a href={`/${locale}/tags/${tag?.slug}`}>{getTagLabel(tag, locale)}</a>
-            </li>
-          ))
+        tags?.map((tag) => (
+          <li>
+            <a href={`/${locale}/tags/${tag?.toLowerCase()}`}>{tag}</a>
+          </li>
+        ))
       }
     </ul>
   </article>
