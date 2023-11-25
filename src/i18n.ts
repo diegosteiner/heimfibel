@@ -1,7 +1,10 @@
-export const languages = {
+export const locales = {
   de: 'Deutsch',
   fr: 'Français',
-};
+} as const;
+
+
+export type Locale = keyof typeof locales
 
 export const defaultLang = 'de';
 

@@ -1,10 +1,11 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import Layout from "./Layout.astro";
+import { getTag } from "../tags";
 
 type Props = CollectionEntry<"articles">["data"];
 
-const { title, locale, content, tags } = Astro.props;
+const { title, locale, tags } = Astro.props;
 ---
 
 <Layout title={title}>
@@ -13,11 +14,13 @@ const { title, locale, content, tags } = Astro.props;
     <slot />
     <ul class="tags">
       {
-        tags.map((tag) => (
-          <li>
-            <a href="#">{tag}</a>
-          </li>
-        ))
+        tags
+          ?.map((tagId) => getTag(tagId))
+          .map((tag) => (
+            <li>
+              <a href={`/${locale}/tags/${tag?.slug}`}>{tag?.label_i18n[locale]}</a>
+            </li>
+          ))
       }
     </ul>
   </article>

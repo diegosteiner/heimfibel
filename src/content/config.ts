@@ -1,4 +1,5 @@
 import { defineCollection, z } from 'astro:content';
+import { locales } from '../i18n';
 
 const articles = defineCollection({
 	// Type-check frontmatter using a schema
@@ -10,7 +11,7 @@ const articles = defineCollection({
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
 		heroImage: z.string().optional(),
-		locale: z.string(), 
+		locale: z.enum(Object.keys(locales) as [keyof typeof locales]), 
 		tags: z.array(z.string()).optional(),
 		links: z.array(z.string()).optional()
 	}),
