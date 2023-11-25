@@ -1,0 +1,10 @@
+[
+  {
+    "slug": "test",
+    "color": "#3377FF",
+    "label_i18n": {
+      "de": "Test",
+      "fr": "TEste"
+    }
+  }
+]
