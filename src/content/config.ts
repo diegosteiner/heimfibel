@@ -4,7 +4,7 @@ import { locales } from '../i18n';
 const articles = defineCollection({
 	// Type-check frontmatter using a schema
 	schema: z.object({
-		id: z.number(),
+		id: z.string(),
 		title: z.string(),
 		phase: z.string(),
 		step: z.string(),
