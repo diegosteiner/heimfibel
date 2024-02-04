@@ -1,11 +1,12 @@
 ---
+id: "33"
 title: "Elektronische Anlagen"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
-tags: []
-links: []
+tags: [""]
+links: [""]
 type: article
 ---
 

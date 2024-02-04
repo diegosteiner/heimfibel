@@ -1,11 +1,12 @@
 ---
+id: "47"
 title: "Nutzungen koordinieren"
 phase: "Betriebsphase"
 step: "Struktur und Organisation"
 pubDate: 2023-11-24
 locale: de
-tags: [Vermietung]
-links: []
+tags: ["Vermietung"]
+links: [""]
 type: article
 ---
 

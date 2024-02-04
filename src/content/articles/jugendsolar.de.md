@@ -1,11 +1,12 @@
 ---
+id: "29"
 title: "Jugendsolar"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
-tags: [Umbauten, Neubau, Ökologie]
-links: []
+tags: ["Umbauten","Neubau","Ökologie"]
+links: [""]
 type: article
 ---
 

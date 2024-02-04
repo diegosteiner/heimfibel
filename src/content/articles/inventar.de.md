@@ -1,11 +1,12 @@
 ---
+id: "53"
 title: "Inventar"
 phase: "Betriebsphase"
 step: "Vorinbetriebnahme"
 pubDate: 2023-11-24
 locale: de
-tags: []
-links: []
+tags: [""]
+links: ["Signaletik & Beschriftungen"]
 type: article
 ---
 

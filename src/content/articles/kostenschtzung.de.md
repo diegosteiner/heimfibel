@@ -1,11 +1,12 @@
 ---
+id: "18"
 title: "Kostenschätzung"
 phase: "Konzeptionsphase"
 step: "Finanzierung"
 pubDate: 2023-11-24
 locale: de
-tags: [Tragbarkeit]
-links: []
+tags: ["Tragbarkeit"]
+links: [""]
 type: article
 ---
 

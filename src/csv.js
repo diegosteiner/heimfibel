@@ -2,7 +2,7 @@ import { parse } from 'csv-parse/sync';
 import { promises as fs } from 'fs';
 
 const content = await fs.readFile('src/content/data.csv');
-console.log(content)
+// console.log(content)
 
 const records = parse(content, {
   delimiter: ',',
@@ -12,15 +12,17 @@ const records = parse(content, {
 });
 
 records.forEach(record => {
+  console.log(Object.keys(record))
   const title = record['Unterschritt = Titel']
   const fileContent = `---
+id: "${record.id}"
 title: "${title}"
 phase: "${record['Phase']}"
 step: "${record['Schritt']}"
 pubDate: 2023-11-24
 locale: de
-tags: [${record['Tags ']}]
-links: []
+tags: ${JSON.stringify(record['Tags '].split(',').map(tag => tag.trim()))}
+links: ${JSON.stringify(record['Verlinkung zu anderen Texten (Listen Titel)'].split(',').map(links => links.trim()))}
 type: article
 ---
 

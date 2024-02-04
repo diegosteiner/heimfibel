@@ -1,11 +1,12 @@
 ---
+id: "45"
 title: "Finanzkonzept laufender Betrieb"
 phase: "Planungsphase"
 step: "Finanzierung"
 pubDate: 2023-11-24
 locale: de
-tags: [Vermietung, Kurtaxen]
-links: []
+tags: ["Vermietung","Kurtaxen"]
+links: [""]
 type: article
 ---
 

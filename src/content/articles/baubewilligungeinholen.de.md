@@ -1,11 +1,12 @@
 ---
+id: "38"
 title: "Baubewilligung einholen"
 phase: "Planungsphase"
 step: ""
 pubDate: 2023-11-24
 locale: de
-tags: [Neubauten, teils Umbauten, Standort, Bauzonen]
-links: []
+tags: ["Neubauten","teils Umbauten","Standort","Bauzonen"]
+links: [""]
 type: article
 ---
 

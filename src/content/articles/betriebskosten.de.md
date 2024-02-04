@@ -1,11 +1,12 @@
 ---
+id: "20"
 title: "Betriebskosten"
 phase: "Konzeptionsphase"
 step: "Finanzierung"
 pubDate: 2023-11-24
 locale: de
-tags: [Betriebskosten, Ausgaben, Planungsbudget, Auslastungsplanung]
-links: []
+tags: ["Betriebskosten","Ausgaben","Planungsbudget","Auslastungsplanung"]
+links: [""]
 type: article
 ---
 

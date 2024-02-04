@@ -1,11 +1,12 @@
 ---
+id: "4"
 title: "Standort / Abklärungen"
 phase: "Konzeptionsphase"
 step: "Bauliche, ortbedingte Rahmenbedingungen"
 pubDate: 2023-11-24
 locale: de
-tags: [Umbau, Neubau, Möglichkeiten, Abklärungen, Ort, Parzelle, Bestand, Zonenreglement, Ausserhalb der Bauzone]
-links: []
+tags: ["Umbau","Neubau","Möglichkeiten","Abklärungen","Ort","Parzelle","Bestand","Zonenreglement","Ausserhalb der Bauzone"]
+links: ["6","14","43"]
 type: article
 ---
 
@@ -15,3 +16,5 @@ Sucht in jedem Fall folgende Unterlagen zusammen, bevor ihr weitere Abklärungen
 - Erschliessung (Wasser, Abwasser, Strom, Zufahrt)
 - Grenzabstände Wald, Gewässer, (Natur)Schutzgebiete
 - Erstellungs- oder Umbaubewilligung des bisherigen Heims, allenfalls aktuelle Baubewilligungen 
+
+Download: Dokument Ri über das Vorgehen

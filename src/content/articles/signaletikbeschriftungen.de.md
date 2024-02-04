@@ -1,11 +1,12 @@
 ---
+id: "54"
 title: "Signaletik & Beschriftungen"
 phase: "Betriebsphase"
 step: "Vorinbetriebnahme"
 pubDate: 2023-11-24
 locale: de
-tags: [Sprachen, ]
-links: []
+tags: ["Sprachen",""]
+links: ["Inventar","Sicherheit"]
 type: article
 ---
 

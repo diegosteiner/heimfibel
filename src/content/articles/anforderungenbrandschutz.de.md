@@ -1,11 +1,12 @@
 ---
+id: "32"
 title: "Anforderungen Brandschutz"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
-tags: [Budget, Grundriss, Planung Zielgrupppe, Umbauten]
-links: []
+tags: ["Budget","Grundriss","Planung Zielgrupppe","Umbauten"]
+links: [""]
 type: article
 ---
 

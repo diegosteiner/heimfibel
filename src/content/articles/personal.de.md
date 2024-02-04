@@ -1,11 +1,12 @@
 ---
+id: "36"
 title: "Personal"
 phase: "Betriebsphase"
 step: "Struktur und Organisation"
 pubDate: 2023-11-24
 locale: de
-tags: []
-links: []
+tags: [""]
+links: [""]
 type: article
 ---
 

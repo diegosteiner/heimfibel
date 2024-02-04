@@ -1,11 +1,12 @@
 ---
+id: "48"
 title: "Zuständigkeiten während des Betriebs"
 phase: "Betriebsphase"
 step: "Struktur und Organisation"
 pubDate: 2023-11-24
 locale: de
-tags: []
-links: []
+tags: [""]
+links: ["11","26"]
 type: article
 ---
 

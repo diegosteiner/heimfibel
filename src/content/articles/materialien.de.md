@@ -1,11 +1,12 @@
 ---
+id: "37"
 title: "Materialien"
 phase: "Planungsphase"
 step: "Bauliche, ortbedingte Rahmenbedingungen"
 pubDate: 2023-11-24
 locale: de
-tags: []
-links: []
+tags: [""]
+links: [""]
 type: article
 ---
 

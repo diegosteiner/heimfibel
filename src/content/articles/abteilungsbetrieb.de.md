@@ -1,11 +1,12 @@
 ---
+id: "34"
 title: "Abteilungsbetrieb"
 phase: "Planungsphase"
 step: "Struktur und Organisation"
 pubDate: 2023-11-24
 locale: de
-tags: [Netzwerk]
-links: []
+tags: ["Netzwerk"]
+links: [""]
 type: article
 ---
 

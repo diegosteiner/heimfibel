@@ -1,11 +1,12 @@
 ---
+id: "7"
 title: "Meilensteine"
 phase: "Konzeptionsphase"
 step: "Struktur und Organisation"
 pubDate: 2023-11-24
 locale: de
-tags: [Zeitplan, Meilenstein]
-links: []
+tags: ["Zeitplan","Meilenstein"]
+links: ["Organisation Projektteam"]
 type: article
 ---
 

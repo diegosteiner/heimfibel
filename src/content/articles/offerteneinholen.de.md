@@ -1,11 +1,12 @@
 ---
+id: "39"
 title: "Offerten einholen"
 phase: "Planungsphase"
 step: ""
 pubDate: 2023-11-24
 locale: de
-tags: [Ehrenamtliche Leistungen, Pfadi-Rabatt, Rabatt]
-links: []
+tags: ["Ehrenamtliche Leistungen","Pfadi-Rabatt","Rabatt"]
+links: ["Unternehmen"]
 type: article
 ---
 
