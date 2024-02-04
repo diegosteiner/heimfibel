@@ -10,6 +10,9 @@ links: ["Betriebskosten","Unterhalt","HeimV"]
 type: article
 ---
 
+Hier sollte noch ein Text stehen über die verschiedenen Aspekte der Administration.
+Link auf HeimV nicht vergessen!
+
 Reservationen, Kalenderführung
 Mietverträge
 Besichtigungen
