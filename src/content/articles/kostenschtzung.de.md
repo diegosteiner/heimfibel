@@ -6,7 +6,7 @@ step: "Finanzierung"
 pubDate: 2023-11-24
 locale: de
 tags: ["Tragbarkeit"]
-links: [""]
+links: ["18"]
 type: article
 ---
 

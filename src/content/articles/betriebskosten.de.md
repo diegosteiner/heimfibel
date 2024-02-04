@@ -6,7 +6,7 @@ step: "Finanzierung"
 pubDate: 2023-11-24
 locale: de
 tags: ["Betriebskosten","Ausgaben","Planungsbudget","Auslastungsplanung"]
-links: [""]
+links: ["50"]
 type: article
 ---
 

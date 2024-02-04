@@ -1,6 +1,6 @@
 ---
 id: "4"
-title: "Standort / Abklärungen"
+title: "Standort und Abklärungen"
 phase: "Konzeptionsphase"
 step: "Bauliche, ortbedingte Rahmenbedingungen"
 pubDate: 2023-11-24

@@ -1,23 +1,30 @@
 ---
-import { Locale, locales } from "../../../i18n";
+import type { Locale } from "../../../i18n";
+import { locales } from "../../../i18n";
 import Layout from "../../../layouts/Layout.astro";
-import { Tag, tags } from "../../../tags";
+import type { Tag } from "../../../tags";
+import { getTags } from "../../../tags";
 import { getArticles } from "../../../articles";
 import { type CollectionEntry } from "astro:content";
 
 export async function getStaticPaths() {
   const allArticles = await getArticles({});
-  return (Object.keys(locales) as Locale[]).flatMap((locale) =>
-    tags.map((tag) => {
-      const articles = allArticles.filter(
-        (article) => article.data.locale == locale && article.data.tags.includes(tag.slug),
-      );
-      return {
-        params: { locale, slug: tag.slug },
-        props: { locale, tag, articles },
-      };
+  const paths = await Promise.all(
+    (Object.keys(locales) as Locale[]).flatMap(async (locale) => {
+      const tags = await getTags(locale);
+      console.log(tags);
+      return tags.map((tag) => {
+        const articles = allArticles.filter(
+          (article) => article.data.locale == locale && article.data.tags?.includes(tag.slug),
+        );
+        return {
+          params: { locale, slug: tag.slug },
+          props: { locale, tag, articles },
+        };
+      });
     }),
   );
+  return paths.flat();
 }
 
 type Props = {

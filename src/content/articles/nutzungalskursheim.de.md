@@ -6,7 +6,7 @@ step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
 tags: ["Haustyp","Kursheim","Pfadiheim","Mieteinnahmen","Raumbedarf"]
-links: ["7","11"]
+links: ["7","11","50"]
 type: article
 ---
 
