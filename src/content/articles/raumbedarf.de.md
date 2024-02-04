@@ -11,12 +11,14 @@ type: article
 ---
 
 Je nach Nutzung stellen sich verschiedene Fragen. 
+
 - Welche Räume benötigt die Abteilung als Gruppenräume?
 - Welcher Bedarf besteht für Materiallagerung?
 - Wenn die Abteilung bei Schlechtwetter im Heim ist: wie sollen die Garderoben eingerichtet sein, damit sie praktisch sind (z.B. Brünneli und Putzsachen nahe beim Ausgang, Haken auf Wölfli-Höhe, Materialraum mit Dreckschuhen betretbar, etc.)
-- Wie viele Betten werden für den normalen Abteilungsbetrieb benötigt? -- Welche Grösse müssen Küche, Waschräume, Duschen, Aufenthaltsraum u.s.w. haben? (x Betten = y Sanitäranlagen (Link Sanitäranlagen im Bereich Gastro)
+- Wie viele Betten werden für den normalen Abteilungsbetrieb benötigt? -- Welche Grösse müssen Küche, Waschräume, Duschen, Aufenthaltsraum u.s.w. haben? (x Betten = y Sanitäranlagen (Link Sanitäranlagen im Bereich Gastro))
 
 Sollte das Heim für Kurse genutzt werden können, werden ungefähr diese Räume benötigt:
+
 - Schlafräume Teilnehmende 24 bis ca. 36 Plätze
 - Schlafraum Leitungsteam 8 - 10 Plätze
 - Schlafraum Küchenteam 4 - 6 Plätze
