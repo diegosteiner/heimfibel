@@ -1,16 +1,16 @@
 ---
-id: "6"
+id: "undefined"
 title: "Barrierefreiheit"
 phase: "Konzeptionsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
 tags: ["Umbauten","Neubau","Integration","Raumaufteilung"]
-links: ["7","24","26","27","28","29","8","10","11","15"]
+links: ["1","2","3","9","10","13","20","22","24","32","33","40"]
 type: article
 ---
 
-Barrierefreiheit / PTA-Tauglichkeit klären: soll es minimal nutzbar sein für Gruppen mit bewegungseingeschränkten TN oder solchen im Rollstuhl (Z.B. nur Eingang, Essraum/Toiletten)? Oder ist eine komplette Barrierefreiheit gewünscht: Zugänglich sind dann auch Schlafräume, Leitendenzimmer, Küche, Duschen, mind. Teile der Aussenräume etc.). Wichtig ist z.B. die Frage: Sind barrierefreie Schlafräume und sanitäre Anlagen so angelegt, dass die Nutzer*innen integriert sind in das restliche Abteilungsgeschehen oder eher abgesondert (z.B. nur im unteren Stock, separate Zimmer,…), können/sollen Personen im Rollstuhl auch in der Küche mitwirken oder sogar selber kochen und die Aussenräume mitnutzen? Wie ist da die Zugänglichkeit z.B. zum Matraum, zur Feuerstelle? Gibt es Wiesen oder auch befestigte Flächen, welche mit Rollstühlen genutzt werden können?
+Barrierefreiheit / PTA-Tauglichkeit klären: soll es minimal nutzbar sein für Gruppen mit bewegungseingeschränkten Personen oder solchen im Rollstuhl (Z.B. nur Eingang, Essraum/Toiletten)? Oder ist eine komplette Barrierefreiheit gewünscht: Zugänglich sind dann auch Schlafräume, Leitendenzimmer, Küche, Duschen, mind. Teile der Aussenräume etc.). Wichtig ist z.B. die Frage: Sind barrierefreie Schlafräume und sanitäre Anlagen so angelegt, dass die Nutzer*innen integriert sind in das restliche Abteilungsgeschehen oder eher abgesondert (z.B. nur im unteren Stock, separate Zimmer,…), können/sollen Personen im Rollstuhl auch in der Küche mitwirken oder sogar selber kochen und die Aussenräume mitnutzen? Wie ist da die Zugänglichkeit z.B. zum Matraum, zur Feuerstelle? Gibt es Wiesen oder auch befestigte Flächen, welche mit Rollstühlen genutzt werden können?
 Generell gelten die Normen SIA 500 „Hindernisfreie Bauten“ und die VSS 640 075 „Fussgängerverkehr – Hindernisfreier Verkehrsraum“, welche von Behinderten- und Baufachorganisationen definierten Regeln der Baukunde sind. Bei frühzeitiger Berücksichtigung sind die Mehrkosten unerheblich und können durch geschicktes Planen optimiert werden. Sinnvoll sind auch Abklärung bei lokalen Baubehörden bezüglich zwingenden Vorschriften oder auch Erfahrungen und Wünschen der Gemeinde.
 
 Hilfreiche Links für die Gestaltung:

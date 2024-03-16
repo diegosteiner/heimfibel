@@ -1,12 +1,12 @@
 ---
-id: "5"
+id: "undefined"
 title: "Nutzung als Kursheim"
 phase: "Konzeptionsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
 tags: ["Haustyp","Kursheim","Pfadiheim","Mieteinnahmen","Raumbedarf"]
-links: ["7","11","50"]
+links: ["1","2","3","7","9","22","23","24","40"]
 type: article
 ---
 
@@ -14,7 +14,7 @@ Eine zeitgemässe Zielgruppe sind Kurse. Das Raumangebot soll dabei folgende Ele
 Checkliste Elemente für Kursdurchführung
 - Schlafräume Teilnehmende
 - Schlafräume fürs Leitungsteam und das Küchenteam
-- Aufenthaltsräume und Gruppenräume
-Hinweis: überdachte Vorplätze sind für Kurssequenzen auch nutzbar, Tische und Bänke sind dann auch hilfreich. Überlegt euch auch, ob allenfalls Gruppenräume der Stufen für Kurse vermietbar sind und so "doppelt" genutzt werden könnten. 
-
-Wichtig: Gedanken dazu, ob diese idealen Räume für Gruppen auch für euch als Abteilung sinnvoll sind!
+- Aufenthaltsräume und Gruppenräume (ggf. flexibel unterteilbar, freie Wand für Präsentationen)
+- Sanitäre Anlagen
+- Materialraum / Garderobe
+Überdachte Vorplätze sind für Kurssequenzen auch nutzbar, Tische und Bänke sind dann auch hilfreich. Überlegt euch auch, ob allenfalls Gruppenräume der Stufen für Kurse vermietbar sind und so "doppelt" genutzt werden könnten. Die Raumaufteilung und Raumerschliessung soll für die möglichen Nutzungsgruppen passen, für euch als Abteilung und für die externe Nutzung.

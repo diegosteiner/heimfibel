@@ -1,12 +1,12 @@
 ---
-id: "2"
+id: "undefined"
 title: "Übernachtungen"
 phase: "Konzeptionsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
 tags: ["Zielgruppe","Zweck","Vermietungseinnahmen","Übernachtungen"]
-links: ["7","8","10","11","27","29"]
+links: ["1","6","7","9","22","23","25","32","33","43","46"]
 type: article
 ---
 

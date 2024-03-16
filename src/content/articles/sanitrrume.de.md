@@ -1,12 +1,12 @@
 ---
-id: "24"
+id: "undefined"
 title: "Sanitärräume"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
-tags: ["Raumeinteilung","Raumbedarf",""]
-links: [""]
+tags: ["Raumeinteilung","Raumbedarf","Sanitäre Anlage"]
+links: ["2","6","23","32","33","42"]
 type: article
 ---
 
@@ -18,4 +18,4 @@ Einige Tipps:
 - Auch ein Wasserhahn in der Nähe des Spielflächen ist immer praktisch. 
 - Es empfiehlt sich, keine Fenster in Duschennähe zu haben wegen der Einsicht (auch Umkleide).
 - Duschen sind geschlechtergetrennt zu planen. Wo dies platzmässig schwierig ist, sind Einzelkabinen eine gute Lösung.
-- Viele Konflikte und unangenehme Situationen können bei Einzeltoiletten ohne Geschlechtertrennung umgangen werden. Die Toiletten sollten nicht an die Waschräume oder Duschen gekoppelt sein.
+- Viele Konflikte und unangenehme Situationen können bei Einzeltoiletten ohne Geschlechtertrennung umgangen werden. Die Toiletten sollten so zugänglich sein, dass sie nicht via  Waschräume oder Duschen erreichbar sind. Eine technische Bündelung hinsichtlich Leitungsführung ist sinnvoll.

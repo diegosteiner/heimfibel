@@ -1,5 +1,5 @@
 ---
-id: "29"
+id: "undefined"
 title: "Jugendsolar"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"
@@ -10,4 +10,4 @@ links: [""]
 type: article
 ---
 
-Da können Pfadi unter **Anleitung** selber Solaranlagen bauen. --> https://solafrica.ch/projekte/jugendsolar/ https://www.youthontheroof.nl/projekte/
+Da können Pfadi unter Anleitung selber Solaranlagen bauen. --> https://solafrica.ch/projekte/jugendsolar/ https://www.youthontheroof.nl/projekte/

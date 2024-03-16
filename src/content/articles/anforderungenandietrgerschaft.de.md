@@ -1,12 +1,12 @@
 ---
-id: "12"
+id: "undefined"
 title: "Anforderungen an die Trägerschaft"
 phase: "Konzeptionsphase"
 step: "Struktur und Organisation"
 pubDate: 2023-11-24
 locale: de
 tags: ["Verein","Stiftung","Organisation","Rechtliches"]
-links: ["16"]
+links: ["1","9","11","15","16"]
 type: article
 ---
 
