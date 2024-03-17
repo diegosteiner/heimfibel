@@ -5,7 +5,7 @@ phase: "Planungsphase"
 step: ""
 pubDate: 2023-11-24
 locale: de
-tags: [""]
+tags: []
 links: [9,19,20,21,36]
 type: article
 ---

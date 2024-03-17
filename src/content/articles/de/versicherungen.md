@@ -5,7 +5,7 @@ phase: "Planungsphase"
 step: "Finanzierung"
 pubDate: 2023-11-24
 locale: de
-tags: [""]
+tags: []
 links: [12,21,33,35,39,41]
 type: article
 ---
