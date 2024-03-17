@@ -90,3 +90,15 @@ a {
 		color: inherit;
 	}
 }
+
+
+.links {
+	margin: 1em 0;
+
+	button.showAll {
+		background-color: transparent;
+		border: none;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+}

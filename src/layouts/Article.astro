@@ -1,14 +1,16 @@
 ---
 import { getCollection, type CollectionEntry } from "astro:content";
 import Layout from "./Layout.astro";
+import { ArticleList } from "../components/ArticleLinks";
 
 type Props = CollectionEntry<"articles">["data"];
 
 const { title, locale, tags, links } = Astro.props;
 const articles = await getCollection("articles");
-const linkedArticles = links?.map((link) => {
-  return articles.find((article) => article.data.id == link);
-});
+const linkedArticles =
+  links?.map((link) => {
+    return articles.find((article) => article.data.id == link);
+  }) || [];
 ---
 
 <Layout title={title}>
@@ -25,15 +27,7 @@ const linkedArticles = links?.map((link) => {
       }
     </ul>
     <h2>Weiterführende Artikel</h2>
-    <ul class="links">
-      {
-        linkedArticles?.map((link) => (
-          <li>
-            <a href={`/${locale}/articles/${link?.slug?.toLowerCase()}`}>{link?.data?.title}</a>
-          </li>
-        ))
-      }
-    </ul>
+    <ArticleList client:visible articles={linkedArticles} locale={locale} />
   </article>
 </Layout>
 
@@ -45,10 +39,6 @@ const linkedArticles = links?.map((link) => {
     border-radius: 2em;
     font-size: 1.2rem;
     line-height: 1.66em;
-  }
-
-  .links {
-    margin: 1em 0;
   }
 
   .tags {
