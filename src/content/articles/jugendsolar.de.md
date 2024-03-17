@@ -6,7 +6,7 @@ step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
 tags: ["Umbauten","Neubau","Ökologie"]
-links: [null]
+links: []
 type: article
 ---
 

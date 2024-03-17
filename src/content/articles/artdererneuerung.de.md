@@ -6,7 +6,7 @@ step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
 tags: ["Bedürfnisse","Umbau","Alternativen",""]
-links: [2,4,6,7,9,10,22,24,32,33,35,null]
+links: [2,4,6,7,9,10,22,24,32,33,35]
 type: article
 ---
 

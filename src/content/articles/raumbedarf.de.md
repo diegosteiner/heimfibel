@@ -11,6 +11,7 @@ type: article
 ---
 
 Je nach Nutzung stellen sich verschiedene Fragen, dazu gehören:
+
 - Welche Räume benötigt die Abteilung als Gruppenräume?
 - Welcher Bedarf besteht für Materiallagerung?
 - Wie viele Betten werden für den normalen Abteilungsbetrieb benötigt? 
@@ -19,7 +20,9 @@ Je nach Nutzung stellen sich verschiedene Fragen, dazu gehören:
 - Gibt es Räume, die (ausschliesslich) von aussen zugänglich sein sollen?
 - Welche Räume sind beheizt, welche haben zum Beispiel ein Zwischenklima?
 
+
 Sollte das Heim für Kurse genutzt werden können, werden ungefähr diese Räume benötigt:
+
 - Schlafräume Teilnehmende 24 bis ca. 36 Plätze
 - Schlafraum Leitungsteam 8 - 10 Plätze
 - Schlafraum Küchenteam 4 - 6 Plätze
