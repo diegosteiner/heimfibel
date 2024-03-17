@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 25
 title: "Sanitärräume"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
 tags: ["Raumeinteilung","Raumbedarf","Sanitäre Anlage"]
-links: ["2","6","23","32","33","42"]
+links: [2,6,23,32,33,42]
 type: article
 ---
 

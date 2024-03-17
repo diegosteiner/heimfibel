@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 34
 title: "HeimV"
 phase: "Betriebsphase"
 step: "Struktur und Organisation"
 pubDate: 2023-11-24
 locale: de
 tags: ["Heimverwaltung","Reservationen","Vermietungen"]
-links: ["21","37","41"]
+links: [21,37,41]
 type: article
 ---
 

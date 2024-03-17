@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 48
 title: "Umgebungsplanung"
 phase: "Planungsphase"
 step: ""
 pubDate: 2023-11-24
 locale: de
 tags: [""]
-links: [""]
+links: [null]
 type: article
 ---
 

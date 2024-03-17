@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 7
 title: "Barrierefreiheit"
 phase: "Konzeptionsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
 tags: ["Umbauten","Neubau","Integration","Raumaufteilung"]
-links: ["1","2","3","9","10","13","20","22","24","32","33","40"]
+links: [1,2,3,9,10,13,20,22,24,32,33,40]
 type: article
 ---
 

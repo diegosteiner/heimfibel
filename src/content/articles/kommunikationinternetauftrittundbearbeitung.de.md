@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 37
 title: "Kommunikation: Internetauftritt und Bearbeitung"
 phase: "Betriebsphase"
 step: "Vorinbetriebnahme"
 pubDate: 2023-11-24
 locale: de
 tags: ["Fotos","Website","Heimverzeichnis","Übersetzungen"]
-links: ["15","34","43"]
+links: [15,34,43]
 type: article
 ---
 

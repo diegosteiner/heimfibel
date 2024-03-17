@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 23
 title: "Raumbedarf"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
 tags: ["Raumeinteilung","Generelle Überlegungen"]
-links: ["1","2","3","6","7","22","25","32"]
+links: [1,2,3,6,7,22,25,32]
 type: article
 ---
 

@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 10
 title: "Ökologie am Bau"
 phase: "über alle Phasen"
 step: "Bauliche, ortbedingte Rahmenbedingungen"
 pubDate: 2023-11-24
 locale: de
 tags: ["Materialwahl","Mobiliar"]
-links: ["3","9","17","29","44","46"]
+links: [3,9,17,29,44,46]
 type: article
 ---
 

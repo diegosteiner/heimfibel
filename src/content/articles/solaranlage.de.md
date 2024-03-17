@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 29
 title: "Solaranlage"
 phase: "Planungsphase"
 step: "Bauliche, ortbedingte Rahmenbedingungen"
 pubDate: 2023-11-24
 locale: de
 tags: [""]
-links: ["3","10","19","26","27","32","36"]
+links: [3,10,19,26,27,32,36]
 type: article
 ---
 

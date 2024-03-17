@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 5
 title: "Baubewilligung einholen"
 phase: "Planungsphase"
 step: ""
 pubDate: 2023-11-24
 locale: de
 tags: ["Neubauten","teils Umbauten","Standort","Bauzonen","Baubewilligung","Meldeverfahren","Verfahren"]
-links: ["1","3","4","11","13","17","18","19","28","40","46"]
+links: [1,3,4,11,13,17,18,19,28,40,46]
 type: article
 ---
 

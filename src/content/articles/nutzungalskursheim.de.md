@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 6
 title: "Nutzung als Kursheim"
 phase: "Konzeptionsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
 tags: ["Haustyp","Kursheim","Pfadiheim","Mieteinnahmen","Raumbedarf"]
-links: ["1","2","3","7","9","22","23","24","40"]
+links: [1,2,3,7,9,22,23,24,40]
 type: article
 ---
 

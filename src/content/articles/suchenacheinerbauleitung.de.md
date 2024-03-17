@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 18
 title: "Suche nach einer Bauleitung"
 phase: "Konzeptionsphase"
 step: "Struktur und Organisation"
 pubDate: 2023-11-24
 locale: de
 tags: ["Ehrenamt","Bauleitung","Entschädigung"]
-links: ["5","14","15","16","17","28","43"]
+links: [5,14,15,16,17,28,43]
 type: article
 ---
 

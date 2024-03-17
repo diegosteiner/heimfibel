@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 4
 title: "Standort und Abklärungen"
 phase: "Konzeptionsphase"
 step: "Bauliche, ortbedingte Rahmenbedingungen"
 pubDate: 2023-11-24
 locale: de
 tags: ["Umbau","Neubau","Möglichkeiten","Abklärungen","Ort","Parzelle","Bestand","Zonenreglement","Ausserhalb der Bauzone"]
-links: ["1","5","17","28","32","40"]
+links: [1,5,17,28,32,40]
 type: article
 ---
 

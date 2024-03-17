@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 40
 title: "Erschliessung"
 phase: "Konzeptionsphase"
 step: ""
 pubDate: 2023-11-24
 locale: de
 tags: ["Ökologisches Bauen"]
-links: ["1","3","4","7","10","32"]
+links: [1,3,4,7,10,32]
 type: article
 ---
 

@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 42
 title: "Nutzungen koordinieren"
 phase: "Betriebsphase"
 step: "Struktur und Organisation"
 pubDate: 2023-11-24
 locale: de
 tags: ["Vermietung"]
-links: ["1","15","37","38","41"]
+links: [1,15,37,38,41]
 type: article
 ---
 

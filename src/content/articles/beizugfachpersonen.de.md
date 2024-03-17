@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 17
 title: "Beizug Fachpersonen"
 phase: "Konzeptionsphase"
 step: "Struktur und Organisation"
 pubDate: 2023-11-24
 locale: de
 tags: ["Ehrenamt","Planer*in","Archtiekt*in","professionell","Entschädigung"]
-links: ["9","10","13","14","15","18","28","29","32"]
+links: [9,10,13,14,15,18,28,29,32]
 type: article
 ---
 

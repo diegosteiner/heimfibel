@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 38
 title: "Einschränkungen während dem Bau"
 phase: "Planungsphase"
 step: "Struktur und Organisation"
 pubDate: 2023-11-24
 locale: de
 tags: ["Netzwerk","Abteilungsbetrieb"]
-links: ["8","13","15","43"]
+links: [8,13,15,43]
 type: article
 ---
 

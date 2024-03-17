@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 20
 title: "Kostenplanung"
 phase: "Konzeptionsphase"
 step: "Finanzierung"
 pubDate: 2023-11-24
 locale: de
 tags: ["Hypothek","Liquiditätsplanung","Pfadistiftung"]
-links: ["13","16","19","21","30"]
+links: [13,16,19,21,30]
 type: article
 ---
 

@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 26
 title: "Warmwassererzeugung"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
 tags: ["Sanitäre Anlagen","Warmwasser","Warmwassererzeugung","Heizsysteme"]
-links: ["9","17","19","20","21","27"]
+links: [9,17,19,20,21,27]
 type: article
 ---
 

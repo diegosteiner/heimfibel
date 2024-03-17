@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 15
 title: "Rolle Abteilung"
 phase: "über alle Phasen"
 step: "Struktur und Organisation"
 pubDate: 2023-11-24
 locale: de
 tags: ["Ehrenamtliche Leistung"]
-links: ["13","14","16","18","19","38","42"]
+links: [13,14,16,18,19,38,42]
 type: article
 ---
 

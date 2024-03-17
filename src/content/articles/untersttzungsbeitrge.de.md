@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 36
 title: "Unterstützungsbeiträge"
 phase: "Planungsphase"
 step: "Finanzierung"
 pubDate: 2023-11-24
 locale: de
 tags: [""]
-links: ["7","9","16","19","20","30","36"]
+links: [7,9,16,19,20,30,36]
 type: article
 ---
 

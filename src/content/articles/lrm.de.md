@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 43
 title: "Lärm"
 phase: "konzeptionsphase"
 step: ""
 pubDate: 2023-11-24
 locale: de
 tags: ["Raumbedarf","Typologie","Nachbarschaft"]
-links: ["32","37","38","41"]
+links: [32,37,38,41]
 type: article
 ---
 

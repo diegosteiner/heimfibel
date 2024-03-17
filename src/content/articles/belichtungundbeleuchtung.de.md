@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 46
 title: "Belichtung und Beleuchtung"
 phase: "Planungsphase, Betriebsphase"
 step: ""
 pubDate: 2023-11-24
 locale: de
 tags: ["Mobiliar","Licht","Luft"]
-links: ["10","17","33","39"]
+links: [10,17,33,39]
 type: article
 ---
 

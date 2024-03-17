@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 30
 title: "Finanzen und Solaranlage"
 phase: "Planungsphase"
 step: ""
 pubDate: 2023-11-24
 locale: de
 tags: [""]
-links: ["9","19","20","21","36"]
+links: [9,19,20,21,36]
 type: article
 ---
 

@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 3
 title: "Art der Erneuerung"
 phase: "Konzeptionsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
 tags: ["Bedürfnisse","Umbau","Alternativen",""]
-links: ["2","4","6","7","9","10","22","24","32","33","35",""]
+links: [2,4,6,7,9,10,22,24,32,33,35,null]
 type: article
 ---
 

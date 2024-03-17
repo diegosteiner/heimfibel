@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 21
 title: "Betriebskosten"
 phase: "Konzeptionsphase"
 step: "Finanzierung"
 pubDate: 2023-11-24
 locale: de
 tags: ["Betriebskosten","Ausgaben","Planungsbudget","Auslastungsplanung"]
-links: ["11","20","26","27","33","34","37","41","45","46"]
+links: [11,20,26,27,33,34,37,41,45,46]
 type: article
 ---
 

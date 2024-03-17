@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 8
 title: "Meilensteine"
 phase: "Konzeptionsphase"
 step: "Struktur und Organisation"
 pubDate: 2023-11-24
 locale: de
 tags: ["Zeitplan","Meilenstein","Termin"]
-links: ["3","13","16","21","36","37","38"]
+links: [3,13,16,21,36,37,38]
 type: article
 ---
 

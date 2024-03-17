@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 32
 title: "Reflektion bestehendes Heim"
 phase: "Betriebsphase"
 step: "Umbauten"
 pubDate: 2023-11-24
 locale: de
 tags: [""]
-links: ["1","2","3","4","6","7","10","21","23","26","27","40","45","46","47"]
+links: [1,2,3,4,6,7,10,21,23,26,27,40,45,46,47]
 type: article
 ---
 

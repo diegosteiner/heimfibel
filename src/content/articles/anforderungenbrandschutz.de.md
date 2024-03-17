@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 35
 title: "Anforderungen Brandschutz"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
 tags: ["Budget","Grundriss","Planung Zielgrupppe","Umbauten","Raumbedarf"]
-links: ["2","7","17","19","28","32","46"]
+links: [2,7,17,19,28,32,46]
 type: article
 ---
 

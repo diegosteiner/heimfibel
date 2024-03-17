@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 41
 title: "Informationen während des Betriebs"
 phase: "Betriebsphase"
 step: "Struktur und Organisation"
 pubDate: 2023-11-24
 locale: de
 tags: [""]
-links: ["11","12","15","37","38","39","42","45"]
+links: [11,12,15,37,38,39,42,45]
 type: article
 ---
 

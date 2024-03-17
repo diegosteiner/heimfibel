@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 24
 title: "Gastronomie"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
 tags: ["Gastronomie","Küchen","Kochen","Geräte"]
-links: ["1","2","3","19","32","33"]
+links: [1,2,3,19,32,33]
 type: article
 ---
 

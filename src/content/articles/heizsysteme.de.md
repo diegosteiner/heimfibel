@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 27
 title: "Heizsysteme"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
 tags: ["Raumprogramm","Raumbedarf"]
-links: ["3","9","17","19","21","26","29","32"]
+links: [3,9,17,19,21,26,29,32]
 type: article
 ---
 

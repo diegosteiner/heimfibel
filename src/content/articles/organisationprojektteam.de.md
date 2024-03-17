@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 13
 title: "Organisation Projektteam"
 phase: "Konzeptionsphase"
 step: "Struktur und Organisation"
 pubDate: 2023-11-24
 locale: de
 tags: ["Projektteam","Projektleitung","Experten","Expert*innen","Ehrenamt"]
-links: ["8","9","14","15","17","18","19","20","28","37","38"]
+links: [8,9,14,15,17,18,19,20,28,37,38]
 type: article
 ---
 

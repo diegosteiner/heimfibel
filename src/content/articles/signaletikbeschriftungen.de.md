@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 39
 title: "Signaletik & Beschriftungen"
 phase: "Betriebsphase"
 step: "Vorinbetriebnahme"
 pubDate: 2023-11-24
 locale: de
 tags: ["Sprachen","Bilder","Beschriftungen"]
-links: ["24","25","29","33","41"]
+links: [24,25,29,33,41]
 type: article
 ---
 

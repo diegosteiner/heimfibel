@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 33
 title: "Mobiliar + Einrichtung"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
 tags: ["Möbel","Ausstattung","Beschriftungen","Inventar","Netzwerk"]
-links: ["15","17","19","24","32","39","44","45"]
+links: [15,17,19,24,32,39,44,45]
 type: article
 ---
 

@@ -15,14 +15,14 @@ records.forEach(record => {
   console.log(Object.keys(record))
   const title = record['Unterschritt = Titel']
   const fileContent = `---
-id: "${record.id}"
+id: ${parseInt(record['ID'])}
 title: "${title}"
 phase: "${record['Phase']}"
 step: "${record['Schritt']}"
 pubDate: 2023-11-24
 locale: de
 tags: ${JSON.stringify(record['Tags '].split(',').map(tag => tag.trim()))}
-links: ${JSON.stringify(record['Verlinkung zu anderen Texten (Listen Titel)'].split(',').map(links => links.trim()))}
+links: ${JSON.stringify(record['Verlinkung zu anderen Texten (Listen Titel)'].split(',').map(links => parseInt(links.trim())))}
 type: article
 ---
 

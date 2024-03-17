@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 28
 title: "Baupläne"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
 tags: ["Ehrenamtliche Leistung","Pläne"]
-links: ["5","14","18","22","23","40"]
+links: [5,14,18,22,23,40]
 type: article
 ---
 

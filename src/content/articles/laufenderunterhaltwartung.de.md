@@ -1,12 +1,12 @@
 ---
-id: "undefined"
+id: 45
 title: "Laufender Unterhalt + Wartung"
 phase: "Betriebsphase"
 step: "Struktur und Organisation"
 pubDate: 2023-11-24
 locale: de
 tags: ["Unterhalt","Reparaturen","Reflektion","Materialien"]
-links: ["6","21","23","32","33","36","42"]
+links: [6,21,23,32,33,36,42]
 type: article
 ---
 
