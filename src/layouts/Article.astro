@@ -3,14 +3,19 @@ import { getCollection, type CollectionEntry } from "astro:content";
 import Layout from "./Layout.astro";
 import { ArticleList } from "../components/ArticleLinks";
 
-type Props = CollectionEntry<"articles">["data"];
+type Article = CollectionEntry<"articles">;
+type Props = Article;
 
-const { title, locale, tags, links } = Astro.props;
+const article = Astro.props;
+console.log(article);
+const { title, locale, tags, links } = article.data;
 const articles = await getCollection("articles");
 const linkedArticles =
-  links?.map((link) => {
-    return articles.find((article) => article.data.id == link);
-  }) || [];
+  links
+    ?.map((link) => articles.find((article) => article.data.id == link))
+    .filter((article): article is Article => !!article) || [];
+
+typeof linkedArticles;
 ---
 
 <Layout title={title}>

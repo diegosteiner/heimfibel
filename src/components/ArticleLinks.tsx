@@ -1,5 +1,5 @@
 import type { CollectionEntry } from "astro:content";
-import React, { useState, useEffect, useMemo } from "react";
+import { useState, useEffect } from "react";
 import type { Locale } from "../i18n";
 
 type Article = CollectionEntry<"articles">;
