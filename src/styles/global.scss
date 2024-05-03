@@ -101,4 +101,13 @@ a {
 		text-decoration: underline;
 		cursor: pointer;
 	}
+
+}
+
+span.placeholder {
+	display: inline-block;
+	width: 15em;
+	height: 1.5em;
+	background-color: rgba(100, 100, 100, 0.5);
+	border-radius: 0.5rem;
 }

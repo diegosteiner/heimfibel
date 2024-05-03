@@ -26,8 +26,8 @@ const linkedArticles =
         ))
       }
     </ul>
-    <h2>Weiterführende Artikel</h2>
-    <ArticleList client:visible articles={linkedArticles} locale={locale} />
+    <h2>Weiterstöbern</h2>
+    <ArticleList client:load articles={linkedArticles} locale={locale} />
   </article>
 </Layout>
 
