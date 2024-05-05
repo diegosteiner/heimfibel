@@ -5,7 +5,7 @@ phase: "Planungsphase"
 step: ""
 pubDate: 2023-11-24
 locale: de
-tags: ["Neubauten","teils Umbauten","Standort","Bauzonen","Baubewilligung","Meldeverfahren","Verfahren"]
+tags: ["Neubauten","teils-umbauten","Standort","Bauzonen","Baubewilligung","Meldeverfahren","Verfahren"]
 links: [1,3,4,11,13,17,18,19,28,40,46]
 type: article
 ---

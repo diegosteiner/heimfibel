@@ -5,7 +5,7 @@ phase: "Konzeptionsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
-tags: ["Zielgruppe","Zweck","Vermietungseinnahmen","Übernachtungen"]
+tags: ["Zielgruppe","Zweck","Vermietungseinnahmen","ubernachtungen"]
 links: [1,6,7,9,22,23,25,32,33,43,46]
 type: article
 ---

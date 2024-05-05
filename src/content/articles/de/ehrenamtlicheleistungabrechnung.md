@@ -1,11 +1,11 @@
 ---
 id: 16
-title: "Ehrenamtliche Leistung: Abrechnung"
+title: "ehrenamtliche-leistung: Abrechnung"
 phase: "über alle Phasen"
 step: "Struktur und Organisation"
 pubDate: 2023-11-24
 locale: de
-tags: ["Gesuche","Finanzen","Unterstützung"]
+tags: ["Gesuche","Finanzen","unterstutzung"]
 links: [12,13,14,15,19,41,42]
 type: article
 ---

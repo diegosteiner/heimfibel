@@ -5,7 +5,7 @@ phase: "Planungsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
-tags: ["Raumeinteilung","Generelle Überlegungen"]
+tags: ["Raumeinteilung","generelle-uberlegungen"]
 links: [1,2,3,6,7,22,25,32]
 type: article
 ---

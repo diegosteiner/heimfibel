@@ -5,7 +5,7 @@ phase: "Planungsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
-tags: ["Möbel","Ausstattung","Beschriftungen","Inventar","Netzwerk"]
+tags: ["mobel","Ausstattung","Beschriftungen","Inventar","Netzwerk"]
 links: [15,17,19,24,32,39,44,45]
 type: article
 ---

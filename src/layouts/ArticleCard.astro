@@ -2,20 +2,23 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 import Layout from "./Layout.astro";
 import { ArticleList } from "../components/ArticleLinks";
+import allTags from "../content/tags/index.json";
+import type { Tag } from "../content/tags";
 
 type Article = CollectionEntry<"articles">;
 type Props = Article;
 
 const article = Astro.props;
-console.log(article);
-const { title, locale, tags, links } = article.data;
+const { title, locale } = article.data;
 const articles = await getCollection("articles");
-const linkedArticles =
-  links
+const links =
+  article.data.links
     ?.map((link) => articles.find((article) => article.data.id == link))
     .filter((article): article is Article => !!article) || [];
 
-typeof linkedArticles;
+const tags = article.data.tags
+  ?.map((tag) => allTags.find((t) => tag.toLowerCase() === t.id))
+  ?.filter((tag): tag is Tag => !!tag);
 ---
 
 <Layout title={title}>
@@ -26,13 +29,13 @@ typeof linkedArticles;
       {
         tags?.map((tag) => (
           <li>
-            <a href={`/${locale}/tags/${tag?.toLowerCase()}`}>{tag}</a>
+            <a href={`/${locale}/tags/${tag?.id}`}>{tag.label}</a>
           </li>
         ))
       }
     </ul>
-    <h2>Weiterstöbern</h2>
-    <ArticleList client:load articles={linkedArticles} locale={locale} />
+    <h4>Weiterstöbern</h4>
+    <ArticleList client:load articles={links} locale={locale} />
   </article>
 </Layout>
 

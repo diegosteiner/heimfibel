@@ -5,7 +5,7 @@ phase: "Planungsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
-tags: ["Raumeinteilung","Raumbedarf","Sanitäre Anlage"]
+tags: ["Raumeinteilung","Raumbedarf","sanitare-anlagen"]
 links: [2,6,23,32,33,42]
 type: article
 ---

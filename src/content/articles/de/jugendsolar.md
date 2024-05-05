@@ -5,7 +5,7 @@ phase: "Planungsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
-tags: ["Umbauten","Neubau","Ökologie"]
+tags: ["Umbauten","Neubau","oekologie"]
 links: []
 type: article
 ---

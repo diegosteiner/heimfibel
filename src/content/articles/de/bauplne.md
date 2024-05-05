@@ -5,7 +5,7 @@ phase: "Planungsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
-tags: ["Ehrenamtliche Leistung","Pläne"]
+tags: ["ehrenamtliche-leistung","Pläne"]
 links: [5,14,18,22,23,40]
 type: article
 ---

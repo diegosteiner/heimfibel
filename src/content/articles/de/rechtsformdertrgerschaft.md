@@ -5,7 +5,7 @@ phase: "Konzeptionsphase"
 step: "Struktur und Organisation"
 pubDate: 2023-11-24
 locale: de
-tags: ["Trägerschaft","Rechtsform","Risiken"]
+tags: ["tragerschaft","Rechtsform","Risiken"]
 links: [1,9,12,13,16]
 type: article
 ---

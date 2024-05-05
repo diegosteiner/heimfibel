@@ -5,7 +5,7 @@ phase: "Betriebsphase"
 step: "Vorinbetriebnahme"
 pubDate: 2023-11-24
 locale: de
-tags: ["Fotos","Website","Heimverzeichnis","Übersetzungen"]
+tags: ["Fotos","Website","Heimverzeichnis","ubersetzungen"]
 links: [15,34,43]
 type: article
 ---

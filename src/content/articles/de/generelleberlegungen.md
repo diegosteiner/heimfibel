@@ -1,11 +1,11 @@
 ---
 id: 1
-title: "Generelle Überlegungen"
+title: "generelle-uberlegungen"
 phase: "Konzeptionsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
-tags: ["Zielgruppe","Zweck","Bedürfnisse Abteilung/Stufen"]
+tags: ["Zielgruppe","Zweck","bedurfnisse-abteilung-stufen"]
 links: [2,3,4,6,7,10,11,22,23,24,32,40,44]
 type: article
 ---

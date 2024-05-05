@@ -5,7 +5,7 @@ phase: "Konzeptionsphase"
 step: ""
 pubDate: 2023-11-24
 locale: de
-tags: ["Ökologisches Bauen"]
+tags: ["oekologisches-bauen"]
 links: [1,3,4,7,10,32]
 type: article
 ---

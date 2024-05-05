@@ -5,7 +5,7 @@ phase: "Konzeptionsphase"
 step: "Finanzierung"
 pubDate: 2023-11-24
 locale: de
-tags: ["Hypothek","Liquiditätsplanung","Pfadistiftung"]
+tags: ["Hypothek","liquiditatsplanung","Pfadistiftung"]
 links: [13,16,19,21,30]
 type: article
 ---

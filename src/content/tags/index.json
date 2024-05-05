@@ -1,800 +1,562 @@
 [
 	{
 		"id": "verein",
-		"color": "#3377FF",
 		"label": "Verein",
-		"locale": "de",
-		"slug": "verein"
+		"locale": "de"
 	},
 	{
 		"id": "stiftung",
-		"color": "#3377FF",
 		"label": "Stiftung",
-		"locale": "de",
-		"slug": "stiftung"
+		"locale": "de"
 	},
 	{
 		"id": "organisation",
-		"color": "#3377FF",
 		"label": "Organisation",
-		"locale": "de",
-		"slug": "organisation"
+		"locale": "de"
 	},
 	{
 		"id": "rechtliches",
-		"color": "#3377FF",
 		"label": "Rechtliches",
-		"locale": "de",
-		"slug": "rechtliches"
+		"locale": "de"
 	},
 	{
 		"id": "budget",
-		"color": "#3377FF",
 		"label": "Budget",
-		"locale": "de",
-		"slug": "budget"
+		"locale": "de"
 	},
 	{
 		"id": "grundriss",
-		"color": "#3377FF",
 		"label": "Grundriss",
-		"locale": "de",
-		"slug": "grundriss"
+		"locale": "de"
 	},
 	{
 		"id": "planung-zielgrupppe",
-		"color": "#3377FF",
 		"label": "Planung Zielgrupppe",
-		"locale": "de",
-		"slug": "planung-zielgrupppe"
+		"locale": "de"
 	},
 	{
 		"id": "umbauten",
-		"color": "#3377FF",
 		"label": "Umbauten",
-		"locale": "de",
-		"slug": "umbauten"
+		"locale": "de"
 	},
 	{
 		"id": "raumbedarf",
-		"color": "#3377FF",
 		"label": "Raumbedarf",
-		"locale": "de",
-		"slug": "raumbedarf"
+		"locale": "de"
 	},
 	{
 		"id": "bedurfnisse",
-		"color": "#3377FF",
 		"label": "Bedürfnisse",
-		"locale": "de",
-		"slug": "bedurfnisse"
+		"locale": "de"
 	},
 	{
 		"id": "umbau",
-		"color": "#3377FF",
 		"label": "Umbau",
-		"locale": "de",
-		"slug": "umbau"
+		"locale": "de"
 	},
 	{
 		"id": "alternativen",
-		"color": "#3377FF",
 		"label": "Alternativen",
-		"locale": "de",
-		"slug": "alternativen"
+		"locale": "de"
 	},
 	{
 		"id": "neubau",
-		"color": "#3377FF",
 		"label": "Neubau",
-		"locale": "de",
-		"slug": "neubau"
+		"locale": "de"
 	},
 	{
 		"id": "integration",
-		"color": "#3377FF",
 		"label": "Integration",
-		"locale": "de",
-		"slug": "integration"
+		"locale": "de"
 	},
 	{
 		"id": "raumaufteilung",
-		"color": "#3377FF",
 		"label": "Raumaufteilung",
-		"locale": "de",
-		"slug": "raumaufteilung"
+		"locale": "de"
 	},
 	{
 		"id": "neubauten",
-		"color": "#3377FF",
 		"label": "Neubauten",
-		"locale": "de",
-		"slug": "neubauten"
+		"locale": "de"
 	},
 	{
 		"id": "teils-umbauten",
-		"color": "#3377FF",
 		"label": "teils Umbauten",
-		"locale": "de",
-		"slug": "teils-umbauten"
+		"locale": "de"
 	},
 	{
 		"id": "standort",
-		"color": "#3377FF",
 		"label": "Standort",
-		"locale": "de",
-		"slug": "standort"
+		"locale": "de"
 	},
 	{
 		"id": "bauzonen",
-		"color": "#3377FF",
 		"label": "Bauzonen",
-		"locale": "de",
-		"slug": "bauzonen"
+		"locale": "de"
 	},
 	{
 		"id": "baubewilligung",
-		"color": "#3377FF",
 		"label": "Baubewilligung",
-		"locale": "de",
-		"slug": "baubewilligung"
+		"locale": "de"
 	},
 	{
 		"id": "meldeverfahren",
-		"color": "#3377FF",
 		"label": "Meldeverfahren",
-		"locale": "de",
-		"slug": "meldeverfahren"
+		"locale": "de"
 	},
 	{
 		"id": "verfahren",
-		"color": "#3377FF",
 		"label": "Verfahren",
-		"locale": "de",
-		"slug": "verfahren"
+		"locale": "de"
 	},
 	{
 		"id": "baumaterial",
-		"color": "#3377FF",
 		"label": "Baumaterial",
-		"locale": "de",
-		"slug": "baumaterial"
+		"locale": "de"
 	},
 	{
 		"id": "mobiliar",
-		"color": "#3377FF",
 		"label": "Mobiliar",
-		"locale": "de",
-		"slug": "mobiliar"
+		"locale": "de"
 	},
 	{
 		"id": "inventar",
-		"color": "#3377FF",
 		"label": "Inventar",
-		"locale": "de",
-		"slug": "inventar"
+		"locale": "de"
 	},
 	{
 		"id": "wartung",
-		"color": "#3377FF",
 		"label": "Wartung",
-		"locale": "de",
-		"slug": "wartung"
+		"locale": "de"
 	},
 	{
 		"id": "ehrenamtliche-leistung",
-		"color": "#3377FF",
 		"label": "Ehrenamtliche Leistung",
-		"locale": "de",
-		"slug": "ehrenamtliche-leistung"
+		"locale": "de"
 	},
 	{
 		"id": "plane",
-		"color": "#3377FF",
 		"label": "Pläne",
-		"locale": "de",
-		"slug": "plane"
+		"locale": "de"
 	},
 	{
 		"id": "ehrenamt",
-		"color": "#3377FF",
 		"label": "Ehrenamt",
-		"locale": "de",
-		"slug": "ehrenamt"
+		"locale": "de"
 	},
 	{
 		"id": "planer-in",
-		"color": "#3377FF",
 		"label": "Planer*in",
-		"locale": "de",
-		"slug": "planer-in"
+		"locale": "de"
 	},
 	{
 		"id": "archtiekt-in",
-		"color": "#3377FF",
-		"label": "Archtiekt*in",
-		"locale": "de",
-		"slug": "archtiekt-in"
+		"label": "Architekt*in",
+		"locale": "de"
 	},
 	{
 		"id": "professionell",
-		"color": "#3377FF",
 		"label": "professionell",
-		"locale": "de",
-		"slug": "professionell"
+		"locale": "de"
 	},
 	{
 		"id": "entschadigung",
-		"color": "#3377FF",
 		"label": "Entschädigung",
-		"locale": "de",
-		"slug": "entschadigung"
+		"locale": "de"
 	},
 	{
 		"id": "licht",
-		"color": "#3377FF",
 		"label": "Licht",
-		"locale": "de",
-		"slug": "licht"
+		"locale": "de"
 	},
 	{
 		"id": "luft",
-		"color": "#3377FF",
 		"label": "Luft",
-		"locale": "de",
-		"slug": "luft"
+		"locale": "de"
 	},
 	{
 		"id": "zielgruppe",
-		"color": "#3377FF",
 		"label": "Zielgruppe",
-		"locale": "de",
-		"slug": "zielgruppe"
+		"locale": "de"
 	},
 	{
 		"id": "zweck",
-		"color": "#3377FF",
 		"label": "Zweck",
-		"locale": "de",
-		"slug": "zweck"
+		"locale": "de"
 	},
 	{
 		"id": "vermietungseinnahmen",
-		"color": "#3377FF",
 		"label": "Vermietungseinnahmen",
-		"locale": "de",
-		"slug": "vermietungseinnahmen"
+		"locale": "de"
 	},
 	{
 		"id": "ubernachtungen",
-		"color": "#3377FF",
 		"label": "Übernachtungen",
-		"locale": "de",
-		"slug": "ubernachtungen"
+		"locale": "de"
 	},
 	{
 		"id": "betriebskosten",
-		"color": "#3377FF",
 		"label": "Betriebskosten",
-		"locale": "de",
-		"slug": "betriebskosten"
+		"locale": "de"
 	},
 	{
 		"id": "ausgaben",
-		"color": "#3377FF",
 		"label": "Ausgaben",
-		"locale": "de",
-		"slug": "ausgaben"
+		"locale": "de"
 	},
 	{
 		"id": "planungsbudget",
-		"color": "#3377FF",
 		"label": "Planungsbudget",
-		"locale": "de",
-		"slug": "planungsbudget"
+		"locale": "de"
 	},
 	{
 		"id": "auslastungsplanung",
-		"color": "#3377FF",
 		"label": "Auslastungsplanung",
-		"locale": "de",
-		"slug": "auslastungsplanung"
+		"locale": "de"
 	},
 	{
 		"id": "dank-und-anerkennung",
-		"color": "#3377FF",
 		"label": "Dank und Anerkennung",
-		"locale": "de",
-		"slug": "dank-und-anerkennung"
+		"locale": "de"
 	},
 	{
 		"id": "gesuche",
-		"color": "#3377FF",
 		"label": "Gesuche",
-		"locale": "de",
-		"slug": "gesuche"
+		"locale": "de"
 	},
 	{
 		"id": "finanzen",
-		"color": "#3377FF",
 		"label": "Finanzen",
-		"locale": "de",
-		"slug": "finanzen"
+		"locale": "de"
 	},
 	{
 		"id": "unterstutzung",
-		"color": "#3377FF",
 		"label": "Unterstützung",
-		"locale": "de",
-		"slug": "unterstutzung"
+		"locale": "de"
 	},
 	{
 		"id": "netzwerk",
-		"color": "#3377FF",
 		"label": "Netzwerk",
-		"locale": "de",
-		"slug": "netzwerk"
+		"locale": "de"
 	},
 	{
 		"id": "abteilungsbetrieb",
-		"color": "#3377FF",
 		"label": "Abteilungsbetrieb",
-		"locale": "de",
-		"slug": "abteilungsbetrieb"
+		"locale": "de"
 	},
 	{
-		"id": "okologisches-bauen",
-		"color": "#3377FF",
+		"id": "oekologisches-bauen",
 		"label": "Ökologisches Bauen",
-		"locale": "de",
-		"slug": "okologisches-bauen"
+		"locale": "de"
 	},
 	{
 		"id": "gastronomie",
-		"color": "#3377FF",
 		"label": "Gastronomie",
-		"locale": "de",
-		"slug": "gastronomie"
-	},
-	{
-		"id": "kuchen",
-		"color": "#3377FF",
-		"label": "Küchen",
-		"locale": "de",
-		"slug": "kuchen"
+		"locale": "de"
 	},
 	{
 		"id": "kochen",
-		"color": "#3377FF",
 		"label": "Kochen",
-		"locale": "de",
-		"slug": "kochen"
+		"locale": "de"
 	},
 	{
 		"id": "gerate",
-		"color": "#3377FF",
 		"label": "Geräte",
-		"locale": "de",
-		"slug": "gerate"
+		"locale": "de"
 	},
 	{
 		"id": "bedurfnisse-abteilung-stufen",
-		"color": "#3377FF",
 		"label": "Bedürfnisse Abteilung/Stufen",
-		"locale": "de",
-		"slug": "bedurfnisse-abteilung-stufen"
+		"locale": "de"
 	},
 	{
 		"id": "heimverwaltung",
-		"color": "#3377FF",
 		"label": "Heimverwaltung",
-		"locale": "de",
-		"slug": "heimverwaltung"
+		"locale": "de"
 	},
 	{
 		"id": "reservationen",
-		"color": "#3377FF",
 		"label": "Reservationen",
-		"locale": "de",
-		"slug": "reservationen"
+		"locale": "de"
 	},
 	{
 		"id": "vermietungen",
-		"color": "#3377FF",
 		"label": "Vermietungen",
-		"locale": "de",
-		"slug": "vermietungen"
+		"locale": "de"
 	},
 	{
 		"id": "raumprogramm",
-		"color": "#3377FF",
 		"label": "Raumprogramm",
-		"locale": "de",
-		"slug": "raumprogramm"
+		"locale": "de"
 	},
 	{
 		"id": "okologie",
-		"color": "#3377FF",
 		"label": "Ökologie",
-		"locale": "de",
-		"slug": "okologie"
+		"locale": "de"
 	},
 	{
 		"id": "materialwahl",
-		"color": "#3377FF",
 		"label": "Materialwahl",
-		"locale": "de",
-		"slug": "materialwahl"
+		"locale": "de"
 	},
 	{
 		"id": "fotos",
-		"color": "#3377FF",
 		"label": "Fotos",
-		"locale": "de",
-		"slug": "fotos"
+		"locale": "de"
 	},
 	{
 		"id": "website",
-		"color": "#3377FF",
 		"label": "Website",
-		"locale": "de",
-		"slug": "website"
+		"locale": "de"
 	},
 	{
 		"id": "heimverzeichnis",
-		"color": "#3377FF",
 		"label": "Heimverzeichnis",
-		"locale": "de",
-		"slug": "heimverzeichnis"
+		"locale": "de"
 	},
 	{
 		"id": "ubersetzungen",
-		"color": "#3377FF",
 		"label": "Übersetzungen",
-		"locale": "de",
-		"slug": "ubersetzungen"
+		"locale": "de"
 	},
 	{
 		"id": "hypothek",
-		"color": "#3377FF",
 		"label": "Hypothek",
-		"locale": "de",
-		"slug": "hypothek"
+		"locale": "de"
 	},
 	{
 		"id": "liquiditatsplanung",
-		"color": "#3377FF",
 		"label": "Liquiditätsplanung",
-		"locale": "de",
-		"slug": "liquiditatsplanung"
+		"locale": "de"
 	},
 	{
 		"id": "pfadistiftung",
-		"color": "#3377FF",
 		"label": "Pfadistiftung",
-		"locale": "de",
-		"slug": "pfadistiftung"
+		"locale": "de"
 	},
 	{
 		"id": "tragbarkeit",
-		"color": "#3377FF",
 		"label": "Tragbarkeit",
-		"locale": "de",
-		"slug": "tragbarkeit"
+		"locale": "de"
 	},
 	{
 		"id": "unterhalt",
-		"color": "#3377FF",
 		"label": "Unterhalt",
-		"locale": "de",
-		"slug": "unterhalt"
+		"locale": "de"
 	},
 	{
 		"id": "reparaturen",
-		"color": "#3377FF",
 		"label": "Reparaturen",
-		"locale": "de",
-		"slug": "reparaturen"
+		"locale": "de"
 	},
 	{
 		"id": "reflektion",
-		"color": "#3377FF",
 		"label": "Reflektion",
-		"locale": "de",
-		"slug": "reflektion"
+		"locale": "de"
 	},
 	{
 		"id": "materialien",
-		"color": "#3377FF",
 		"label": "Materialien",
-		"locale": "de",
-		"slug": "materialien"
+		"locale": "de"
 	},
 	{
 		"id": "typologie",
-		"color": "#3377FF",
 		"label": "Typologie",
-		"locale": "de",
-		"slug": "typologie"
+		"locale": "de"
 	},
 	{
 		"id": "nachbarschaft",
-		"color": "#3377FF",
 		"label": "Nachbarschaft",
-		"locale": "de",
-		"slug": "nachbarschaft"
+		"locale": "de"
 	},
 	{
 		"id": "zeitplan",
-		"color": "#3377FF",
 		"label": "Zeitplan",
-		"locale": "de",
-		"slug": "zeitplan"
+		"locale": "de"
 	},
 	{
 		"id": "meilenstein",
-		"color": "#3377FF",
 		"label": "Meilenstein",
-		"locale": "de",
-		"slug": "meilenstein"
+		"locale": "de"
 	},
 	{
 		"id": "termin",
-		"color": "#3377FF",
 		"label": "Termin",
-		"locale": "de",
-		"slug": "termin"
+		"locale": "de"
 	},
 	{
 		"id": "mobel",
-		"color": "#3377FF",
 		"label": "Möbel",
-		"locale": "de",
-		"slug": "mobel"
+		"locale": "de"
 	},
 	{
 		"id": "ausstattung",
-		"color": "#3377FF",
 		"label": "Ausstattung",
-		"locale": "de",
-		"slug": "ausstattung"
+		"locale": "de"
 	},
 	{
 		"id": "beschriftungen",
-		"color": "#3377FF",
 		"label": "Beschriftungen",
-		"locale": "de",
-		"slug": "beschriftungen"
+		"locale": "de"
 	},
 	{
 		"id": "haustyp",
-		"color": "#3377FF",
 		"label": "Haustyp",
-		"locale": "de",
-		"slug": "haustyp"
+		"locale": "de"
 	},
 	{
 		"id": "kursheim",
-		"color": "#3377FF",
 		"label": "Kursheim",
-		"locale": "de",
-		"slug": "kursheim"
+		"locale": "de"
 	},
 	{
 		"id": "pfadiheim",
-		"color": "#3377FF",
 		"label": "Pfadiheim",
-		"locale": "de",
-		"slug": "pfadiheim"
+		"locale": "de"
 	},
 	{
 		"id": "mieteinnahmen",
-		"color": "#3377FF",
 		"label": "Mieteinnahmen",
-		"locale": "de",
-		"slug": "mieteinnahmen"
+		"locale": "de"
 	},
 	{
 		"id": "vermietung",
-		"color": "#3377FF",
 		"label": "Vermietung",
-		"locale": "de",
-		"slug": "vermietung"
+		"locale": "de"
 	},
 	{
 		"id": "projektteam",
-		"color": "#3377FF",
 		"label": "Projektteam",
-		"locale": "de",
-		"slug": "projektteam"
+		"locale": "de"
 	},
 	{
 		"id": "projektleitung",
-		"color": "#3377FF",
 		"label": "Projektleitung",
-		"locale": "de",
-		"slug": "projektleitung"
+		"locale": "de"
 	},
 	{
 		"id": "experten",
-		"color": "#3377FF",
 		"label": "Experten",
-		"locale": "de",
-		"slug": "experten"
+		"locale": "de"
 	},
 	{
 		"id": "expert-innen",
-		"color": "#3377FF",
 		"label": "Expert*innen",
-		"locale": "de",
-		"slug": "expert-innen"
+		"locale": "de"
 	},
 	{
 		"id": "raumeinteilung",
-		"color": "#3377FF",
 		"label": "Raumeinteilung",
-		"locale": "de",
-		"slug": "raumeinteilung"
+		"locale": "de"
 	},
 	{
 		"id": "generelle-uberlegungen",
-		"color": "#3377FF",
 		"label": "Generelle Überlegungen",
-		"locale": "de",
-		"slug": "generelle-uberlegungen"
+		"locale": "de"
 	},
 	{
 		"id": "tragerschaft",
-		"color": "#3377FF",
 		"label": "Trägerschaft",
-		"locale": "de",
-		"slug": "tragerschaft"
+		"locale": "de"
 	},
 	{
 		"id": "rechtsform",
-		"color": "#3377FF",
 		"label": "Rechtsform",
-		"locale": "de",
-		"slug": "rechtsform"
+		"locale": "de"
 	},
 	{
 		"id": "risiken",
-		"color": "#3377FF",
 		"label": "Risiken",
-		"locale": "de",
-		"slug": "risiken"
+		"locale": "de"
 	},
 	{
 		"id": "referenzen",
-		"color": "#3377FF",
 		"label": "Referenzen",
-		"locale": "de",
-		"slug": "referenzen"
+		"locale": "de"
 	},
 	{
 		"id": "projekte",
-		"color": "#3377FF",
 		"label": "Projekte",
-		"locale": "de",
-		"slug": "projekte"
+		"locale": "de"
 	},
 	{
 		"id": "inspiration",
-		"color": "#3377FF",
 		"label": "Inspiration",
-		"locale": "de",
-		"slug": "inspiration"
+		"locale": "de"
 	},
 	{
 		"id": "informationen-sammeln",
-		"color": "#3377FF",
 		"label": "Informationen sammeln",
-		"locale": "de",
-		"slug": "informationen-sammeln"
-	},
-	{
-		"id": "sanitare-anlage",
-		"color": "#3377FF",
-		"label": "Sanitäre Anlage",
-		"locale": "de",
-		"slug": "sanitare-anlage"
+		"locale": "de"
 	},
 	{
 		"id": "sprachen",
-		"color": "#3377FF",
 		"label": "Sprachen",
-		"locale": "de",
-		"slug": "sprachen"
+		"locale": "de"
 	},
 	{
 		"id": "bilder",
-		"color": "#3377FF",
 		"label": "Bilder",
-		"locale": "de",
-		"slug": "bilder"
+		"locale": "de"
 	},
 	{
 		"id": "moglichkeiten",
-		"color": "#3377FF",
 		"label": "Möglichkeiten",
-		"locale": "de",
-		"slug": "moglichkeiten"
+		"locale": "de"
 	},
 	{
 		"id": "abklarungen",
-		"color": "#3377FF",
 		"label": "Abklärungen",
-		"locale": "de",
-		"slug": "abklarungen"
+		"locale": "de"
 	},
 	{
 		"id": "ort",
-		"color": "#3377FF",
 		"label": "Ort",
-		"locale": "de",
-		"slug": "ort"
+		"locale": "de"
 	},
 	{
 		"id": "parzelle",
-		"color": "#3377FF",
 		"label": "Parzelle",
-		"locale": "de",
-		"slug": "parzelle"
+		"locale": "de"
 	},
 	{
 		"id": "bestand",
-		"color": "#3377FF",
 		"label": "Bestand",
-		"locale": "de",
-		"slug": "bestand"
+		"locale": "de"
 	},
 	{
 		"id": "zonenreglement",
-		"color": "#3377FF",
 		"label": "Zonenreglement",
-		"locale": "de",
-		"slug": "zonenreglement"
+		"locale": "de"
 	},
 	{
 		"id": "ausserhalb-der-bauzone",
-		"color": "#3377FF",
 		"label": "Ausserhalb der Bauzone",
-		"locale": "de",
-		"slug": "ausserhalb-der-bauzone"
+		"locale": "de"
 	},
 	{
 		"id": "bauleitung",
-		"color": "#3377FF",
 		"label": "Bauleitung",
-		"locale": "de",
-		"slug": "bauleitung"
+		"locale": "de"
 	},
 	{
 		"id": "sanitare-anlagen",
-		"color": "#3377FF",
 		"label": "Sanitäre Anlagen",
-		"locale": "de",
-		"slug": "sanitare-anlagen"
+		"locale": "de"
 	},
 	{
 		"id": "warmwasser",
-		"color": "#3377FF",
 		"label": "Warmwasser",
-		"locale": "de",
-		"slug": "warmwasser"
+		"locale": "de"
 	},
 	{
 		"id": "warmwassererzeugung",
-		"color": "#3377FF",
 		"label": "Warmwassererzeugung",
-		"locale": "de",
-		"slug": "warmwassererzeugung"
+		"locale": "de"
 	},
 	{
 		"id": "heizsysteme",
-		"color": "#3377FF",
 		"label": "Heizsysteme",
-		"locale": "de",
-		"slug": "heizsysteme"
+		"locale": "de"
 	}
 ]

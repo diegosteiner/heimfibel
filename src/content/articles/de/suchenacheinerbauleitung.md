@@ -5,7 +5,7 @@ phase: "Konzeptionsphase"
 step: "Struktur und Organisation"
 pubDate: 2023-11-24
 locale: de
-tags: ["Ehrenamt","Bauleitung","Entschädigung"]
+tags: ["Ehrenamt","Bauleitung","entschadigung"]
 links: [5,14,15,16,17,28,43]
 type: article
 ---
