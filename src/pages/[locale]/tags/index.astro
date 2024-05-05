@@ -1,33 +1,31 @@
 ---
-import type { Locale } from "../../../i18n";
+import allTags from "../../../content/tags/index.json";
 import { locales } from "../../../i18n";
-import { tags } from "../../../tags";
 import Layout from "../../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
-  return (Object.keys(locales) as Locale[]).flatMap((locale) =>
-    tags.map((tag) => ({
+  // console.log(Object.fromEntries(allTags.map((t) => [t.id, t.label])));
+  // writeFileSync("tags.json", JSON.stringify(allTags));
+  return Object.keys(locales).flatMap((locale) => {
+    const tags = allTags.filter((tag) => tag.locale == locale);
+    return {
       params: { locale },
-      props: { locale, tag },
-    })),
-  );
+      props: { locale, tags },
+    };
+  });
 }
 
-const { locale } = Astro.props;
+const { locale, tags } = Astro.props;
 ---
 
-<Layout title="Übersicht">
+<Layout title="Tags">
   <main>
-    <h1>Übersicht</h1>
-    <p>
-      Zu den unterschiedlichsten Themen, welche bei einem Bauprojekt, in der Planung, Umsetzung oder im laufenden
-      Betrieb wichtig sind gibt es Artikel.
-    </p>
+    <h1>Tags</h1>
     <ul class="tags">
       {
         Array.from(tags).map((tag) => (
           <li>
-            <a href={`/${locale}/tags/${tag}`}>{tag}</a>
+            <a href={`/${locale}/tags/${tag.slug}`}>{tag.label}</a>
           </li>
         ))
       }

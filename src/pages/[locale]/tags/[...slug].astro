@@ -1,34 +1,28 @@
 ---
 import type { Locale } from "../../../i18n";
-import { locales } from "../../../i18n";
 import Layout from "../../../layouts/Layout.astro";
-import type { Tag } from "../../../tags";
-import { getTags } from "../../../tags";
-import { getArticles } from "../../../articles";
-import { type CollectionEntry } from "astro:content";
+import type { Tag } from "../../../content/tags";
+import allTags from "../../../content/tags/index.json";
+import { getArticles, type Article } from "../../../content/articles";
+import kebabCase from "lodash/kebabCase";
 
 export async function getStaticPaths() {
-  const allArticles = await getArticles({});
-  const paths = await Promise.all(
-    (Object.keys(locales) as Locale[]).flatMap(async (locale) => {
-      const tags = await getTags(locale);
-      console.log(tags);
-      return tags.map((tag) => {
-        const articles = allArticles.filter(
-          (article) => article.data.locale == locale && article.data.tags?.includes(tag.slug),
-        );
-        return {
-          params: { locale, slug: tag.slug },
-          props: { locale, tag, articles },
-        };
-      });
-    }),
-  );
-  return paths.flat();
+  const allArticles = await getArticles();
+
+  return allTags.flatMap((tag) => {
+    const locale = tag.locale;
+    const articles = allArticles.filter(
+      (article) => article.data.locale == locale && article.data.tags?.some((t) => kebabCase(t) == tag.id)
+    );
+    return {
+      params: { locale, slug: encodeURIComponent(tag.id) },
+      props: { locale, tag, articles },
+    };
+  });
 }
 
 type Props = {
-  articles: CollectionEntry<"articles">[];
+  articles: Article[];
   locale: Locale;
   tag: Tag;
 };
@@ -38,7 +32,7 @@ const { tag, locale, articles } = Astro.props;
 
 <Layout title="Tags">
   <main>
-    <h1>{tag.label_i18n[locale]}</h1>
+    <h1>{tag.label}</h1>
     <ul class="articles">
       {
         Array.from(articles).map((article) => (
