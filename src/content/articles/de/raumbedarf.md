@@ -30,4 +30,4 @@ Sollte das Heim für Kurse genutzt werden können, werden ungefähr diese Räume
 - 1-2 Gruppenräume
 - Möglichkeit für Lagerung Material, Garderobe usw.
 
-Aufgepasst, bei der Sammlung des Raumbedarfs wird häufig zu gross gerechnet. Auch hier lohnt es sich, nebst anderen Häuser anzuschauen, diese in der Grösse (bspw. Vergleich m2 der Räume) und mit einer Architekt*in die Raumbedürfnisse zu reflektieren. Dabei soll auch die Nutzungsüberlagerung betrachet werden, z.B. kann ein Raum als Besprechungsraum und auch als Schlafraum genutzt werden.
+Aufgepasst, bei der Sammlung des Raumbedarfs wird häufig zu gross gerechnet. Auch hier lohnt es sich, nebst anderen Häuser anzuschauen, diese in der Grösse (bspw. Vergleich m2 der Räume) und mit einer Architekt\*in die Raumbedürfnisse zu reflektieren. Dabei soll auch die Nutzungsüberlagerung betrachet werden, z.B. kann ein Raum als Besprechungsraum und auch als Schlafraum genutzt werden.

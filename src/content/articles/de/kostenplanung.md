@@ -10,8 +10,16 @@ links: [13,16,19,21,30]
 type: article
 ---
 
-Basierend auf der Kostenschätzung benötigt ihr einen ersten Wurf eines Businessplanes und Finanzierungplans. Daraus ergeben sich dann einige, viel spezifischer Fragen z.B. bezüglich einer Hypothek. Wichtig in diesem Prozessschritt ist auch die Liquiditätsplanung: Wann braucht es wieviel Eigenmittel? Wer ist verantwortlich für die Bezahlung von Löhnen? Welche Beiträge könnten von einer Stiftung unterstützt werden? In die Planung solltet ihr auch Beiträge von Stiftungen und Fundraising einberechnen. Diese sind je nach Regelungen der Stiftungen an Bedingungen geknüpft, dies ist frühzeitig abzuklären. Hier hilft der kantonale Austausch mit anderen Heimen und/oder dem Kantonalverband.
+Basierend auf der Kostenschätzung benötigt ihr einen ersten Wurf eines Businessplanes und Finanzierungplans. Daraus ergeben sich dann einige, viel spezifischere Fragen z.B. bezüglich einer Hypothek. Wichtig in diesem Prozessschritt ist auch die Liquiditätsplanung: 
 
-Hilfsmittel zur Suche nach Stifungen: fundraiso.ch 
-Eingabe Gesuch an Pfadistifung: pfadistiftung.ch/home/gesuch-eingeben/ 
+- Wann braucht es wie viele Eigenmittel? 
+- Wer ist verantwortlich für die Bezahlung von Löhnen? 
+- Welche Beiträge könnten von einer Stiftung unterstützt werden? 
+
+In die Planung solltet ihr auch Beiträge von Stiftungen und Fundraising einberechnen. Diese sind je nach Regelungen der Stiftungen an Bedingungen geknüpft, dies ist frühzeitig abzuklären. Hier hilft der kantonale Austausch mit anderen Heimen und/oder dem Kantonalverband.
+
+#### Links
+
+- Hilfsmittel zur Suche nach Stiftungen: [fundraiso.ch](https://fundraiso.ch)
+- Eingabe Gesuch an Pfadistifung: [pfadistiftung.ch/home/gesuch-eingeben/](pfadistiftung.ch/home/gesuch-eingeben/)
 

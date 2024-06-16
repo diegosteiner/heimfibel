@@ -10,4 +10,4 @@ links: [11,20,26,27,33,34,37,41,45,46]
 type: article
 ---
 
-In den Businessplan gehört auch ein Abschnitt zu den Betriebskosten. Dieser kann erst später präzisiert werden, aber es ist nötig, dass mit den generellen Überlegungen, zur Vermietung und allgemeinen Nutzung (Unterhalt, Abwart, Übergaben/Abnahmen). Die Ausrichtung verursacht unterschiedliche Kosten und auch Einnahmen (erwartete Spenden?). Diese Planung muss langfristig sein und für mehrere Jahre gesichert, inkl. Rückstellungen.
+In den Businessplan gehört auch ein Abschnitt zu den Betriebskosten. Diese können erst später präzisiert werden. Aber: die Ausrichtung des Hauses (Vermietung, Unterhalt, Hauswart, Übergaben/Abnahmen) verursacht unterschiedliche Kosten oder gar Einnahmen (erwartete Spenden?). Die finanzielle Tragbarkeit muss langfristig gewährleistet sein, inkl. Rückstellungen für erneute Renovationen.

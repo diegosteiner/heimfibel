@@ -1,6 +1,6 @@
 ---
 id: 1
-title: "generelle-uberlegungen"
+title: "Generelle Überlegungen"
 phase: "Konzeptionsphase"
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
@@ -10,9 +10,10 @@ links: [2,3,4,6,7,10,11,22,23,24,32,40,44]
 type: article
 ---
 
-Mit der Idee oder dem Plan, ein Pfadiheim zu bauen oder um zu bauen startet die Bedürfnisabfrage. 
+Mit der Idee oder dem Plan, ein Pfadiheim neu oder umzubauen startet die Bedürfnisabfrage. 
 
-Besprecht diesen Fragekatalog ausführlich in einer breit abgestützen Gruppe:
+Besprecht diesen Fragekatalog ausführlich in einer breit abgestützten Gruppe:
+
 - Welche Bedürfnisse wollen wir mit dem Heim erfüllen? 
 - Welche Zielgruppen sprechen wir an damit?
 - Wird das Heim extern vermietet oder ist es ein reines Abteilungsheim?

@@ -1,6 +1,6 @@
 ---
 id: 30
-title: "Finanzen und Solaranlage"
+title: "Finanzielle Chancen einer Solaranlage"
 phase: "Planungsphase"
 step: ""
 pubDate: 2023-11-24

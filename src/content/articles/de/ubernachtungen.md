@@ -15,4 +15,4 @@ Sollen Übernachtungen im Heim möglich sein? Wenn ja, wie soll übernachtet wer
 Tipps: 
 - notiert alle für euch möglichen Übernachtungsversionen 
 - notiert zu jeder Version nötige Anpassungen (Räume, Aufteilung, Toiletten, Duschen, Küche, Essplätze, etc.)
-- wählt die wahrscheinlichste(n) Möglichkeiten aus und gebt einer Planer*in den Auftrag, mal eine erste Skizze zu entwerfen
+- wählt die wahrscheinlichste(n) Möglichkeiten aus und gebt einer Planer\*in den Auftrag, mal eine erste Skizze zu entwerfen
