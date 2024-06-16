@@ -15,16 +15,18 @@ export async function getStaticPaths() {
 
 <Layout title="Übersicht">
   <main>
-    <h1>Übersicht</h1>
-    <p>
+    <h1 class="text-4xl font-bold mb-8 mt-3">Übersicht</h1>
+    <p class="mb-5">
       Zu den unterschiedlichsten Themen, welche bei einem Bauprojekt, in der Planung, Umsetzung oder im laufenden
       Betrieb wichtig sind gibt es Artikel.
     </p>
-    <ul class="articles">
+    <ul id="article-list" class="rounded-handdrawn border-gold-500 border-4 place-content-around p-8 flex flex-wrap">
       {
         Array.from(articles).map((article) => (
           <li>
-            <a href={`/${article.data.locale}/articles/${article.slug}`}>{article.data.title}</a>
+            <a class="m-4 underline" href={`/${article.data.locale}/articles/${article.slug}`}>
+              {article.data.title}
+            </a>
           </li>
         ))
       }

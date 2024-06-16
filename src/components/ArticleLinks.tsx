@@ -12,12 +12,12 @@ export function ArticleList({ articles, locale }: { articles: Article[]; locale:
 
   if (!shuffledArticles)
     return (
-      <ul className="links">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li>
-          <button className="showAll" onClick={() => setShowAll(true)}>
+      <ul className="list-disc pl-6">
+        <li className="mb-2"></li>
+        <li className="mb-2"></li>
+        <li className="mb-2"></li>
+        <li className="mb-2">
+          <button className="bg-transparent cursor-pointer underline" onClick={() => setShowAll(true)}>
             &hellip;
           </button>
         </li>
@@ -25,7 +25,7 @@ export function ArticleList({ articles, locale }: { articles: Article[]; locale:
     );
 
   return (
-    <ul className="links">
+    <ul className="list-disc pl-6">
       {shuffledArticles.slice(0, 3).map((link) => (
         <ArticleLink key={link.id} article={link} locale={locale}></ArticleLink>
       ))}
@@ -35,8 +35,8 @@ export function ArticleList({ articles, locale }: { articles: Article[]; locale:
           .slice(3, -1)
           .map((link) => <ArticleLink key={link.id} article={link} locale={locale}></ArticleLink>)}
       {shuffledArticles.length > 3 && !showAll && (
-        <li>
-          <button className="showAll" onClick={() => setShowAll(true)}>
+        <li className="mb-2">
+          <button className="bg-transparent cursor-pointer underline" onClick={() => setShowAll(true)}>
             &hellip;
           </button>
         </li>
@@ -47,8 +47,10 @@ export function ArticleList({ articles, locale }: { articles: Article[]; locale:
 
 function ArticleLink({ article, locale }: { article: CollectionEntry<"articles">; locale: Locale }) {
   return (
-    <li>
-      <a href={`/${locale}/articles/${article.slug?.toLowerCase()}`}>{article.data?.title}</a>
+    <li className="mb-2">
+      <a className="underline" href={`/${locale}/articles/${article.slug?.toLowerCase()}`}>
+        {article.data?.title}
+      </a>
     </li>
   );
 }

@@ -1,13 +1,13 @@
 ---
-import { getLangFromUrl, useTranslations } from "../i18n";
+import { MainNav } from "../components/MainNav";
+import { getLangFromUrl } from "../i18n";
 import "../styles/global.scss";
 export interface Props {
   title: string;
 }
 
-const locale = getLangFromUrl(Astro.url);
-const t = useTranslations(locale);
 const { title } = Astro.props;
+const locale = getLangFromUrl(Astro.url);
 ---
 
 <!doctype html>
@@ -19,28 +19,12 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
-    <main>
-      <slot />
-    </main>
-    <nav class="main-nav">
-      <ul>
-        <li>
-          <a class="outlined" href={`/${locale}/goals`}>{t("nav.goals")}</a>
-        </li>
-        <li>
-          <a class="outlined" href={`/${locale}/articles/`}>{t("nav.articles")}</a>
-        </li>
-        <li>
-          <a class="outlined" href={`/${locale}/questions`}>{t("nav.questions")}</a>
-        </li>
-        <li>
-          <a class="outlined" href={`/${locale}/about`}>{t("nav.about")}</a>
-        </li>
-        <li>
-          <a class="outlined" href="https://forms.office.com/e/W8YRJ5TaAQ">{t("nav.feedback")}</a>
-        </li>
-      </ul>
-    </nav>
+  <body class="bg-teal-700 text-gold-500 sm:p-5 md:p-10 leading-relaxed">
+    <div class="grid grid-cols-appshell gap-4 min-h-screen">
+      <main>
+        <slot />
+      </main>
+      <MainNav locale={locale} />
+    </div>
   </body>
 </html>

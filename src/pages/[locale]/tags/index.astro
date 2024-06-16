@@ -20,12 +20,14 @@ const { locale, tags } = Astro.props;
 
 <Layout title="Tags">
   <main>
-    <h1>Tags</h1>
-    <ul class="tags">
+    <h1 class="text-4xl font-bold mb-8 mt-3">Tags</h1>
+    <ul class="pl-6 list-disc">
       {
         Array.from(tags).map((tag) => (
-          <li>
-            <a href={`/${locale}/tags/${tag.slug}`}>{tag.label}</a>
+          <li class="mb-2">
+            <a class="underline" href={`/${locale}/tags/${tag.slug}`}>
+              {tag.label}
+            </a>
           </li>
         ))
       }

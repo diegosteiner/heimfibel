@@ -4,6 +4,7 @@ import Layout from "./Layout.astro";
 import { ArticleList } from "../components/ArticleLinks";
 import allTags from "../content/tags/index.json";
 import type { Tag } from "../content/tags";
+import Markdown from "./Markdown.astro";
 
 type Article = CollectionEntry<"articles">;
 type Props = Article;
@@ -22,51 +23,28 @@ const tags = article.data.tags
 ---
 
 <Layout title={title}>
-  <article>
-    <h1>{title}</h1>
-    <slot />
-    <ul class="tags">
+  <article class="bg-gold-500 p-10 rounded-xl text-teal-950 shadow-sm">
+    <h1 class="text-4xl font-bold mb-5">{title}</h1>
+    <ul class="mb-8">
       {
         tags?.map((tag) => (
-          <li>
+          <li class="text-base inline-block m-1 bg-[peachpuff] p-1 rounded-handdrawn border-2 border-[palevioletred]">
             <a href={`/${locale}/tags/${tag?.id}`}>{tag.label}</a>
           </li>
         ))
       }
     </ul>
-    <h4>Weiterstöbern</h4>
+    <div
+      class="prose-p:mb-4 prose-p:leading-loose
+             prose-h2:text-2xl prose-h2:font-bold prose-h2:mb-4
+             prose-h3:text-xl prose-h3:font-bold prose-h3:mb-4
+             prose-h4:text-lg prose-h4:font-bold prose-h4:mb-4
+             prose-ul:list-disc prose-ul:pl-6 prose-ul:mb-4
+             prose-li:mb-2 prose-a:underline"
+    >
+      <slot />
+    </div>
+    <h4 class="font-bold text-lg mb-3">Weiterstöbern</h4>
     <ArticleList client:load articles={links} locale={locale} />
   </article>
 </Layout>
-
-<style lang="scss">
-  article {
-    background-color: var(--color-fg);
-    color: var(--color-black);
-    padding: 2.5em;
-    border-radius: 2em;
-    font-size: 1.2rem;
-    line-height: 1.66em;
-  }
-
-  .tags {
-    list-style: none;
-    padding: 0;
-    margin: 2em 0;
-
-    & > li {
-      display: inline-block;
-      margin: 0.2em;
-
-      & > a {
-        font-size: 1rem;
-        background-color: peachpuff;
-        padding: 0.33em;
-        text-decoration: none;
-        color: var(--color-black);
-        border: 2px solid palevioletred;
-        border-radius: var(--handdrawn-border-radius);
-      }
-    }
-  }
-</style>
