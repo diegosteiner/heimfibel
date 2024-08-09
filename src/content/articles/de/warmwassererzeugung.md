@@ -10,9 +10,10 @@ links: [9,17,19,20,21,27]
 type: article
 ---
 
-Die Warmwassererzeugung ist eine zweite Frage im Rahmen der Heizsysteme. Es ist natürlich nicht ganz losgelöst, aber es gibt je nach Nutzung durchaus der Sinn, verschiedene Systeme zu nutzen. Hier lohnt es sich, beraten zu lassen. Wenn die Planer\*in oder Architekt\*in dazu zu wenig Erfahrung mitbringt, soll diese euch weitere Kontakte angeben.
+Die Wahl des Systems für die Warmwassererzeugung ist eine wichtige Frage. Sie sollte nicht losgelöst betrachtet werden. Bei einer Überarbeitung des Heizsystem können Synergien genutzt werden. So kann eine Pelletfeuerung das Gebäude heizen und ebenfalls für die Warmwassererzeugung genutzt werden. Hier lohnt es, sich beraten zu lassen. Wenn die Planer\*in oder Architek\*tin dazu zu wenig Erfahrung mitbringt, sollen diese euch weitere Kontakte angeben.
 
-Hilfreiche Links:
-- energie-zentralschweiz.ch/fachinformationen/muken.html 
-- buildigo.ch/de/article/energieberater (Fachstelle der Mobiliar)
+### Hilfreiche Links:
+
+- [Energie Zentralschweiz](energie-zentralschweiz.ch/fachinformationen/muken.html)
+- [Fachstelle der Mobiliarachstelle der Mobiliar](buildigo.ch/de/article/energieberater)
 - kantonale Förderprogramme
