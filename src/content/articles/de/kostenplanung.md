@@ -13,10 +13,9 @@ type: article
 Basierend auf der Kostenschätzung benötigt ihr einen ersten Wurf eines Businessplanes und Finanzierungplans. Daraus ergeben sich dann einige, viel spezifischere Fragen z.B. bezüglich einer Hypothek. Wichtig in diesem Prozessschritt ist auch die Liquiditätsplanung: 
 
 - Wann braucht es wie viele Eigenmittel? 
-- Wer ist verantwortlich für die Bezahlung von Löhnen? 
-- Welche Beiträge könnten von einer Stiftung unterstützt werden? 
+- Wer ist verantwortlich für die Bezahlung von allfälligen Löhnen? 
 
-In die Planung solltet ihr auch Beiträge von Stiftungen und Fundraising einberechnen. Diese sind je nach Regelungen der Stiftungen an Bedingungen geknüpft, dies ist frühzeitig abzuklären. Hier hilft der kantonale Austausch mit anderen Heimen und/oder dem Kantonalverband.
+In die Planung solltet ihr auch Unterstützungsbeiträge einrechnen (z.B von Stiftungen, kant. Lotteriefond, Firmen, Crowdfunding, Fundraising, Spenden etc.). Diese sind je nach Regelungen der Stiftungen an Bedingungen geknüpft, dies ist frühzeitig abzuklären. Hier hilft der kantonale Austausch mit anderen Heimen und/oder dem Kantonalverband.
 
 #### Links
 

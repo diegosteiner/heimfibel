@@ -10,7 +10,7 @@ links: [1,6,7,9,22,23,25,32,33,43,46]
 type: article
 ---
 
-Sollen Übernachtungen im Heim möglich sein? Wenn ja, wie soll übernachtet werden (Massennlager oder mehrere kleinere Zimmer, nur für eigene Abteilung, auch für Kurse, Schulen etc.). Sobald in einem Heim Übernachtungsmöglichkeiten angeboten werden, hat dies u.a. Auswirkungen auf die sanitären Anlagen, die Konzeption der Küche und den Brandschutz. Denkt auch daran, dass nach Geschlechtern getrennte Schlafräume zur Verfügung stehen sollen. 
+Sollen Übernachtungen im Heim möglich sein? Wenn ja, wie soll übernachtet werden (Massenlager oder mehrere kleinere Zimmer, nur für eigene Abteilung, auch für Kurse, Schulen etc.). Sobald in einem Heim Übernachtungsmöglichkeiten angeboten werden, hat dies u.a. Auswirkungen auf die sanitären Anlagen, die Konzeption der Küche und den Brandschutz. Denkt auch daran, dass nach Geschlechtern getrennte Schlafräume zur Verfügung stehen sollen. 
 
 Tipps:
 -besprecht mögliche Szenarien für Übernachtungen anhand eures Nutzungskonzeptes

@@ -10,7 +10,7 @@ links: [24,25,29,33,41]
 type: article
 ---
 
-Für einen sorgfältigen und bewussten Umgang im Haus sind Beschriftungen im und um das Haus wichtig. Bei der Erarbeitung ist darauf zu achten, dass eine verständliche Sprache verwendet wird, Hilfestellungen dazu gibt z.B. die Website portaleinfach.org. Pfadiheime in der Schweiz sollten in der lokalen Landessprache und einer weiteren Landessprache beschriftet werden (zB. Rätoromanisch und Deutsch im Kanton Graubünden)
+Für einen sorgfältigen und bewussten Umgang im Haus und in der Umgebung sind Beschriftungen wichtig. Bei der Erarbeitung ist darauf zu achten, dass eine verständliche Sprache verwendet wird, Hilfestellungen dazu gibt z.B. die Website portaleinfach.org. Pfadiheime in der Schweiz sollten in der lokalen Landessprache und einer weiteren Landessprache beschriftet werden (zB. Rätoromanisch und Deutsch im Kanton Graubünden)
 
 Folgende Beschriftungen sind sinnvoll:
 

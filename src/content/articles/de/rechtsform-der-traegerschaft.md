@@ -11,6 +11,11 @@ type: article
 ---
 
 Die Klärung der Rechtsform der Trägerschaft ist ein zentraler Aspekt bei den strukturellen Überlegungen. Es hat sich bewährt, dass ein Pfadiheim einem separaten Heimverein "gehört". So sind die Risiken rund um den Betrieb eines Pfadiheimes auch juristisch vom Abteilungsgeschäft getrennt. Denkbar ist auch die Errichtung einer Stiftung als Trägerin des Pfadiheims, dies ist aber recht aufwändig.  
+
 Sowohl ein Heimverein wie auch eine Stiftung können von der kant. Steuerverwaltung als gemeinnützig (Steuerbefreit) anerkannt werden. Dies ist ein aufwändiger, 1-2 Jahre dauernder Prozess, der sich aber sehr lohnen kann. Viele Lotteriefonds und vermehrt auch Vergabestiftungen unterstützen einen Pfadiheimbau nur, wenn die Steuerbefreitung vorliegt. Falls juristische Unterstützung gefragt ist, kann die Stiftung Pfadiheime "Pfadi-Fachjuristen" vermitteln.
 
-Beispiel Heimvereinstatuten als Download
+#### Links
+
+ - Rechtsform Verein: [ZGB Art. 60ff](https://www.fedlex.admin.ch/eli/cc/24/233_245_233/de#art_60)
+ - Rechtsform Stiftung: [ZGB Art, 80ff](https://www.fedlex.admin.ch/eli/cc/24/233_245_233/de#art_80)
+- (Beispiel Heimvereinstatuten als Download)

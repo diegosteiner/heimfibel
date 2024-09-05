@@ -12,7 +12,7 @@ type: article
 
 #### Qualität der Materialien
 
-Ob Umbau, Anbau, Neubau oder Anschaffung von Mobiliar: Eine zeitgemässe Wahl von Materialien beachtet ökologische Aspekte. Für Baumaterialien lasst ihr euch am besten beraten, welche Materialien welche Lebensdauern aufweisen. Oft sind nicht die billigsten Materialien jene, die dann auch auf Dauer günstig sind. Zudem ist "günstig" leider oft mit "ökologisch bedenklich" gepaart. Als Beispiel gibt es eine gekieste Zufahrt, welche im Winter schwieriger zu bewirtschaften ist und der allgemeine Wartungsaufwand etwas höher ist. Sie ist sowohl für den Abfluss von Regen als auch als Lebensraum für Kleintiere und für Wanderer\*innen die sinnvollere Wahl. 
+Ob Umbau, Anbau, Neubau oder Anschaffung von Mobiliar: beachtet ökologische Aspekte für eine zeitgemässe Wahl von Materialien. Für Baumaterialien lasst ihr euch am besten beraten, welche Materialien welche Lebensdauern aufweisen. Oft sind nicht die billigsten Materialien jene, die dann auch auf Dauer günstig sind. Zudem ist "günstig" leider oft mit "ökologisch bedenklich" gepaart. Als Beispiel gibt es eine gekieste Zufahrt, welche im Winter schwieriger zu bewirtschaften ist und der allgemeine Wartungsaufwand etwas höher ist. Sie ist sowohl für den Abfluss von Regen als auch als Lebensraum für Kleintiere und für Wanderer\*innen die sinnvollere Wahl. 
 
 #### Sinnmässigkeit
 
@@ -20,11 +20,11 @@ Baumaterial ist sinngemäss zu verwenden: Dort wo im Aussenraum Holz verwendet w
 
 #### Nachhaltigkeit
 
-Nachhaltig beinhaltet unterschiedliche Bereiche: so können Materialien, welche pflege- und unterhaltsarm sind nachhaltig sein, aber auch Materialien, die in einem Radius von 20km erstellt werden. Holzläden schleifen und streichen können auch von den Pfadis selbst erledigt werden!
+Nachhaltig beinhaltet unterschiedliche Bereiche: so können Materialien, welche pflege- und unterhaltsarm sind, nachhaltig sein, aber auch Materialien, die in einem Radius von 20km erstellt werden. Holzläden schleifen und streichen können auch von den Pfadis selbst erledigt werden!
 
 #### Einsatzzwecke
 
-Die Überlegungen zu Materialien gehen vom Baumaterial selbst bis zum Holzschneidebrett in der Küche. Über den ganzen Betrieb gesehen ist auch relevant, wie viel Material überhaupt gebraucht wird. Schlussendlich kann eine clevere Raumaufteilung dazu führen, dass das gesamte Haus weniger Fläche und Volumen und somit auch an Materialien spart - und schlussendlich auch Heiz- und Wartungsaufwand.
+Die Überlegungen zu Materialien betreffen nicht nur das Baumaterial, sondern auch Einrichtungs- und Gebrauchsgegenstände wie z.B. das Holzschneidebrett in der Küche. Über den ganzen Betrieb gesehen ist auch relevant, wie viel Material überhaupt gebraucht wird. Eine clevere Raumaufteilung kann dazu führen, dass das gesamte Haus weniger Fläche und Volumen aufweist und dass so an Material gespart - und auch der Heiz- und Wartungsaufwand reduziert werden kann.
 
 #### Hilfestellungen
 

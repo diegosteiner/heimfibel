@@ -19,4 +19,4 @@ Für die Grundrissplanung sind auch Vorgaben im Bereich Brandschutz ziemlich mas
 - RWA-Anlage 
 - usw.  
 
-Es ist dabei ein grosser Unterschied, ob im Heim übernachtet werden soll oder nicht. Diese Fragen sind insbesondere für jene wichtig, welche ein bestehendes Heim umbauen und später für Übernachtungen nutzen möchten. [Holt euch dafür am besten eine Fachperson](./beizug-fachpersonen) oder macht einen ersten Vorschlag und sprecht euch dann mit der Gemeinde ab.
+Es ist dabei ein grosser Unterschied, ob im Heim übernachtet werden soll oder nicht. Diese Fragen sind insbesondere für jene wichtig, welche ein bestehendes Heim umbauen und später für Übernachtungen nutzen möchten. Holt euch dafür am besten eine [Fachperson](./beizug-fachpersonen) oder macht einen ersten Vorschlag und sprecht euch dann mit der Gemeinde ab.
