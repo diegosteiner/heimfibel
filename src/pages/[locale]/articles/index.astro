@@ -6,7 +6,7 @@ import Layout from "../../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
 const articles = (await getCollection("articles")).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
-const pagefindPath = `${import.meta.env.DEV ? "" : import.meta.env.BASE_URL}/pagefind/pagefind.js`;
+const pagefindPath = `/pagefind/pagefind.js`;
 const phases: Record<string, Article[]> = {};
 Array.from(articles).forEach((article) => {
   article.data.phase.split(",").forEach((phase) => {
