@@ -13,18 +13,22 @@
     "@astrojs/react": "^3.6.2",
     "@astrojs/tailwind": "^5.1.0",
     "@types/lodash": "^4.17.7",
-    "astro": "^4.15.3",
+    "astro": "^4.15.4",
     "csv-parse": "^5.5.6",
     "lodash": "^4.17.21",
+    "pagefind": "^1.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "sass": "^1.78.0",
+    "sharp": "^0.33.5",
     "tailwindcss": "^3.4.10",
-    "typescript": "^5.5.4"
+    "typescript": "^5.6.2"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.15",
+    "@types/node": "^22.5.4",
     "@types/react": "^18.3.5",
-    "@types/react-dom": "^18.3.0"
+    "@types/react-dom": "^18.3.0",
+    "sirv": "^2.0.4"
   }
 }

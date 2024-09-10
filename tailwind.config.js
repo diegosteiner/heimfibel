@@ -38,6 +38,9 @@ export default {
       gridTemplateColumns: {
         appshell: "1fr minmax(20em, 30vw)",
       },
+      gridTemplateRows: {
+        appshell: "8rem auto 3rem",
+      },
       borderRadius: {
         handdrawn: "255px 15px 225px 15px/15px 225px 15px 255px",
       },

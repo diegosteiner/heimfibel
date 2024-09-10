@@ -1,9 +1,19 @@
 ---
+import Search from "../../../components/Search";
+import type { Article } from "../../../content/articles";
 import { locales, type Locale } from "../../../i18n";
 import Layout from "../../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
 const articles = (await getCollection("articles")).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+const pagefindPath = `${import.meta.env.DEV ? "" : import.meta.env.BASE_URL}/pagefind/pagefind.js`;
+const phases: Record<string, Article[]> = {};
+Array.from(articles).forEach((article) => {
+  article.data.phase.split(",").forEach((phase) => {
+    phase = phase.trim().toUpperCase();
+    phases[phase] ? phases[phase].push(article) : (phases[phase] = [article]);
+  });
+});
 
 export async function getStaticPaths() {
   return (Object.keys(locales) as Locale[]).flatMap((locale) => ({
@@ -20,16 +30,28 @@ export async function getStaticPaths() {
       Zu den unterschiedlichsten Themen, welche bei einem Bauprojekt, in der Planung, Umsetzung oder im laufenden
       Betrieb wichtig sind gibt es Artikel.
     </p>
-    <ul id="article-list" class="rounded-handdrawn border-gold-500 border-4 place-content-around p-8 flex flex-wrap">
-      {
-        Array.from(articles).map((article) => (
-          <li>
-            <a class="m-4 underline" href={`/${article.data.locale}/articles/${article.slug}`}>
-              {article.data.title}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
+    <div class="mb-5">
+      <Search path={pagefindPath} placeholder={"Suche"} client:load />
+    </div>
+
+    {
+      Object.entries(phases).map(([phase, articleGroup]) => (
+        <>
+          <h3 class="text-2xl font-bold mt-10 mb-5 text-center">{phase}</h3>
+          <ul
+            id="article-list"
+            class="rounded-handdrawn border-gold-500 border-4 place-content-around p-8 flex flex-wrap"
+          >
+            {Array.from(articleGroup).map((article) => (
+              <li>
+                <a class="m-4 underline" href={`/${article.data.locale}/articles/${article.slug}`}>
+                  {article.data.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </>
+      ))
+    }
   </main>
 </Layout>

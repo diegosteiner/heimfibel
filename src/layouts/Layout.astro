@@ -1,5 +1,6 @@
 ---
 import { MainNav } from "../components/MainNav";
+import Search from "../components/Search";
 import { getLangFromUrl } from "../i18n";
 import "../styles/global.scss";
 export interface Props {
@@ -11,7 +12,7 @@ const locale = getLangFromUrl(Astro.url);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={locale}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -21,7 +22,7 @@ const locale = getLangFromUrl(Astro.url);
   </head>
   <body class="bg-teal-700 text-gold-500 sm:p-5 md:p-10 leading-relaxed">
     <div class="grid grid-cols-appshell gap-4 min-h-screen">
-      <main>
+      <main data-pagefind-body>
         <slot />
       </main>
       <MainNav locale={locale} />
