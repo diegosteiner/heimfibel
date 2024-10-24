@@ -4,9 +4,10 @@ import type { Article } from "../../../content/articles";
 import { locales, type Locale } from "../../../i18n";
 import Layout from "../../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
+import logo from "../../../../public/images/logo.svg";
 
 const articles = ((await getCollection("articles")) as Article[]).sort(
-  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
 );
 const pagefindPath = `/pagefind/pagefind.js`;
 const phases: Record<string, Article[]> = {};
@@ -27,22 +28,22 @@ export async function getStaticPaths() {
 
 <Layout title="Übersicht">
   <main>
+    <img src={logo.src} class="h-48 float-right m-5 hidden lg:inline" />
     <h1 class="text-4xl font-bold mt-3">
       <span class="font-normal text-stiftung-200">Pfadiheim-</span>Fibel
     </h1>
     <p class="italic">
       Ein Tool der <a class="underline" href="https://www.stiftung-pfadiheime.ch/de">Stiftung Pfadiheime Schweiz</a>
     </p>
-    <h2 class="text-2xl font-bold mt-5 mb-3">Der Wissensspeicher für den Bau und den Betrieb von Pfadiheimen</h2>
-
-    <p class="mb-4 leading-relaxed">
+    <h2 class="text-2xl font-bold mt-10 mb-5">Der Wissensspeicher für den Bau und den Betrieb von Pfadiheimen</h2>
+    <p class="mb-4 leading-loose">
       Die Fibel ist ein Wissensspeicher rund um die Fragen zum Pfadiheimumbau oder Pfadiheimneubau! Es kann auch für
       eine Reflektion oder Neuausrichtung bei einem bestehenden Haus verwendet und als Input für neue Themen verwendet
       werden. Die Artikel hier sind nicht als «fixfertiges Rezept» zu betrachten, sondern als Sammlung von Erfahrungen,
       Tipps und Tricks. Zu den unterschiedlichsten Themen, welche bei einem Bauprojekt, in der Planung, Umsetzung oder
       im laufenden Betrieb wichtig sind gibt es Artikel.
     </p>
-    <div class="mb-5">
+    <div class="mb-5 mt-10">
       <Search path={pagefindPath} placeholder={"Suche"} client:load />
     </div>
 
@@ -67,3 +68,46 @@ export async function getStaticPaths() {
     }
   </main>
 </Layout>
+
+<style>
+  ul#article-list {
+    a {
+      transition-property: opacity, transform;
+      transition: 100ms linear;
+      display: block;
+    }
+
+    &:has(a:hover) {
+      a {
+        opacity: 0.3;
+      }
+
+      a:hover {
+        opacity: 1;
+        transform: scale(1.3);
+      }
+    }
+
+    & > li {
+      &:nth-child(3n) a {
+        transform: rotate(-3deg);
+      }
+
+      &:nth-child(3n + 1) a {
+        transform: rotate(2deg);
+      }
+
+      &:nth-child(3n + 2) a {
+        transform: rotate(4deg);
+      }
+
+      &:nth-child(4n) a {
+        transform: scale(110%);
+      }
+
+      &:nth-child(4n + 2) a {
+        margin: 1.5rem;
+      }
+    }
+  }
+</style>

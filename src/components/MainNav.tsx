@@ -1,3 +1,4 @@
+import * as React from "react";
 import { useTranslations, type Locale } from "../i18n";
 
 export function MainNav({ locale }: { locale: Locale }) {
