@@ -34,7 +34,7 @@ const locale = getLangFromUrl(Astro.url);
         </label>
       </div>
       <input type="checkbox" id="menu-toggle" class="hidden" />
-      <div id="menu-wrapper" class="hidden h-screen w-screen fixed bg-stiftung-800 z-40">
+      <div id="menu-wrapper" class="hidden h-screen w-screen fixed bg-stiftung-800/50 backdrop-blur z-40">
         <MainNav locale={locale} />
       </div>
     </header>
