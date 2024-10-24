@@ -18,7 +18,7 @@ export function MainNav({ locale }: { locale: Locale }) {
         <li>
           <a
             className="rounded-handdrawn border-amber-200 hover:border-rust-600 hover:bg-amber-200 hover:text-rust-600 border-4 font-bold border-solid p-3 m-6 block"
-            href={`/${locale}/articles/`}
+            href={`/${locale}/articles`}
           >
             {t("nav.articles")}
           </a>
