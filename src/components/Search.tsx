@@ -48,9 +48,10 @@ export default function Search({ path, placeholder }: Props) {
       />
       <ul>
         {results.map((r) => (
-          <li key={r.url} className="mt-3">
+          <li key={r.url} className="mt-3 ">
+            <hr className="my-5 mx-1 border-gold-900" />
             <a href={r.url}>
-              <strong>{r.meta.title}: </strong>
+              <strong>{r.meta.title}</strong>
               <p dangerouslySetInnerHTML={{ __html: r.excerpt }}></p>
             </a>
           </li>
