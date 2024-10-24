@@ -8,7 +8,7 @@ export function MainNav({ locale }: { locale: Locale }) {
       <ul>
         <li>
           <a
-            className="rounded-handdrawn border-transparent hover:border-gold-500 border-4 font-bold border-solid p-3 m-3 block"
+            className="rounded-handdrawn border-transparent hover:border-rust-600 hover:bg-amber-200 hover:text-rust-600 border-4 font-bold border-solid p-3 m-3 block"
             href={`/${locale}/goals`}
           >
             {t("nav.goals")}
@@ -16,7 +16,7 @@ export function MainNav({ locale }: { locale: Locale }) {
         </li>
         <li>
           <a
-            className="rounded-handdrawn border-transparent hover:border-gold-500 border-4 font-bold border-solid p-3 m-3 block"
+            className="rounded-handdrawn border-transparent hover:border-rust-600 hover:bg-amber-200 hover:text-rust-600 border-4 font-bold border-solid p-3 m-3 block"
             href={`/${locale}/articles/`}
           >
             {t("nav.articles")}
@@ -24,7 +24,7 @@ export function MainNav({ locale }: { locale: Locale }) {
         </li>
         <li>
           <a
-            className="rounded-handdrawn border-transparent hover:border-gold-500 border-4 font-bold border-solid p-3 m-3 block"
+            className="rounded-handdrawn border-transparent hover:border-rust-600 hover:bg-amber-200 hover:text-rust-600 border-4 font-bold border-solid p-3 m-3 block"
             href={`/${locale}/questions`}
           >
             {t("nav.questions")}
@@ -32,7 +32,7 @@ export function MainNav({ locale }: { locale: Locale }) {
         </li>
         <li>
           <a
-            className="rounded-handdrawn border-transparent hover:border-gold-500 border-4 font-bold border-solid p-3 m-3 block"
+            className="rounded-handdrawn border-transparent hover:border-rust-600 hover:bg-amber-200 hover:text-rust-600 border-4 font-bold border-solid p-3 m-3 block"
             href={`/${locale}/about`}
           >
             {t("nav.about")}
@@ -40,7 +40,7 @@ export function MainNav({ locale }: { locale: Locale }) {
         </li>
         <li>
           <a
-            className="rounded-handdrawn border-transparent hover:border-gold-500 border-4 font-bold border-solid p-3 m-3 block"
+            className="rounded-handdrawn border-transparent hover:border-rust-600 hover:bg-amber-200 hover:text-rust-600 border-4 font-bold border-solid p-3 m-3 block"
             href="https://forms.office.com/e/W8YRJ5TaAQ"
           >
             {t("nav.feedback")}

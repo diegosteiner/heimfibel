@@ -2,7 +2,6 @@
 /// <reference types="astro/client" />
 
 export {};
-
 declare global {
   module globalThis {
     var pagefind: Pagefind | undefined;

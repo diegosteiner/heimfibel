@@ -3,6 +3,7 @@ import { MainNav } from "../components/MainNav";
 import Search from "../components/Search";
 import { getLangFromUrl } from "../i18n";
 import "../styles/global.scss";
+import "../images/logo.svg";
 export interface Props {
   title: string;
 }
@@ -16,11 +17,12 @@ const locale = getLangFromUrl(Astro.url);
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="logo.svg" />
+    <meta name="theme-color" content="#1C4A2B" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-teal-700 text-gold-500 sm:p-5 md:p-10 leading-relaxed">
+  <body class="bg-stiftung-800 text-amber-200 sm:p-5 md:p-10 leading-relaxed">
     <div class="grid grid-cols-appshell gap-4 min-h-screen">
       <main data-pagefind-body>
         <slot />

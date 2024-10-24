@@ -5,11 +5,13 @@ import { locales, type Locale } from "../../../i18n";
 import Layout from "../../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
-const articles = (await getCollection("articles")).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+const articles = ((await getCollection("articles")) as Article[]).sort(
+  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
 const pagefindPath = `/pagefind/pagefind.js`;
 const phases: Record<string, Article[]> = {};
 Array.from(articles).forEach((article) => {
-  article.data.phase.split(",").forEach((phase) => {
+  article.data.phase.split(",").forEach((phase: string) => {
     phase = phase.trim().toUpperCase();
     phases[phase] ? phases[phase].push(article) : (phases[phase] = [article]);
   });
@@ -25,10 +27,20 @@ export async function getStaticPaths() {
 
 <Layout title="Übersicht">
   <main>
-    <h1 class="text-4xl font-bold mb-8 mt-3">Übersicht</h1>
-    <p class="mb-5">
-      Zu den unterschiedlichsten Themen, welche bei einem Bauprojekt, in der Planung, Umsetzung oder im laufenden
-      Betrieb wichtig sind gibt es Artikel.
+    <h1 class="text-4xl font-bold mt-3">
+      <span class="font-normal text-stiftung-200">Pfadiheim-</span>Fibel
+    </h1>
+    <p class="italic">
+      Ein Tool der <a class="underline" href="https://www.stiftung-pfadiheime.ch/de">Stiftung Pfadiheime Schweiz</a>
+    </p>
+    <h2 class="text-2xl font-bold mt-5 mb-3">Der Wissensspeicher für den Bau und den Betrieb von Pfadiheimen</h2>
+
+    <p class="mb-4 leading-relaxed">
+      Die Fibel ist ein Wissensspeicher rund um die Fragen zum Pfadiheimumbau oder Pfadiheimneubau! Es kann auch für
+      eine Reflektion oder Neuausrichtung bei einem bestehenden Haus verwendet und als Input für neue Themen verwendet
+      werden. Die Artikel hier sind nicht als «fixfertiges Rezept» zu betrachten, sondern als Sammlung von Erfahrungen,
+      Tipps und Tricks. Zu den unterschiedlichsten Themen, welche bei einem Bauprojekt, in der Planung, Umsetzung oder
+      im laufenden Betrieb wichtig sind gibt es Artikel.
     </p>
     <div class="mb-5">
       <Search path={pagefindPath} placeholder={"Suche"} client:load />
@@ -40,7 +52,7 @@ export async function getStaticPaths() {
           <h3 class="text-2xl font-bold mt-10 mb-5 text-center">{phase}</h3>
           <ul
             id="article-list"
-            class="rounded-handdrawn border-gold-500 border-4 place-content-around p-8 flex flex-wrap"
+            class="rounded-handdrawn border-rust-600 border-4 bg-amber-200 text-stiftung-900 place-content-around p-8 flex flex-wrap"
           >
             {Array.from(articleGroup).map((article) => (
               <li>

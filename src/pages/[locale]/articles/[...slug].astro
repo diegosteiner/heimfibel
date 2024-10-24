@@ -3,8 +3,10 @@ import { locales, type Locale } from "../../../i18n";
 import { getArticles, type Article } from "../../../content/articles";
 import { getCollection } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
+import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
+import { Fragment } from "react";
 
-export async function getStaticPaths() {
+export const getStaticPaths = (async () => {
   const allArticles = await getArticles({});
   return (Object.keys(locales) as Locale[]).flatMap((locale) =>
     allArticles
@@ -16,17 +18,13 @@ export async function getStaticPaths() {
         };
       })
   );
-}
-type Props = {
-  article: Article;
-  locale: Locale;
-};
+}) satisfies GetStaticPaths;
 
-const { article } = Astro.props;
+const { article } = Astro.props as InferGetStaticPropsType<typeof getStaticPaths>;
 const { Content } = await article.render();
 
 const { title, locale } = article.data;
-const articles = await getCollection("articles");
+const articles = (await getCollection("articles")) as Article[];
 const links =
   article.data.links
     ?.map((link) => articles.find((article) => article.data.id == link))
@@ -34,7 +32,7 @@ const links =
 ---
 
 <Layout title={title}>
-  <article class="bg-gold-500 p-10 rounded-xl text-teal-950 shadow-sm">
+  <article class="bg-amber-200 p-10 rounded-xl text-stiftung-900 shadow-sm">
     <h1 class="text-4xl font-bold mb-5">{title}</h1>
     <div class="hidden">
       {article.data.tags?.map((tag) => <h2>{tag}</h2>)}
@@ -53,7 +51,7 @@ const links =
     <ul>
       {
         links?.map((linkedArticle) => (
-          <li class="text-base inline-block m-1 bg-[peachpuff] p-1 rounded-handdrawn border-2 border-[palevioletred]">
+          <li class="text-base inline-block m-1 bg-rust-200 p-1 rounded-handdrawn border-2 border-rust-600">
             <a href={`/${locale}/articles/${linkedArticle.slug?.toLowerCase()}`}>{linkedArticle.data?.title}</a>
           </li>
         ))

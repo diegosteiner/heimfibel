@@ -37,7 +37,7 @@ export default function Search({ path, placeholder }: Props) {
   }, [query]);
 
   return (
-    <div className="bg-gold-400 border-teal-600 border-8 border-solid p-2 rounded-lg text-teal-950 shadow-xl">
+    <div className="bg-amber-200 border-rust-600 border-8 border-solid p-2 rounded-lg text-stiftung-900 shadow-xl">
       <input
         type="search"
         placeholder={placeholder}
@@ -49,7 +49,7 @@ export default function Search({ path, placeholder }: Props) {
       <ul>
         {results.map((r) => (
           <li key={r.url} className="mt-3 ">
-            <hr className="my-5 mx-1 border-gold-900" />
+            <hr className="my-5 mx-1 border-rust-600" />
             <a href={r.url}>
               <strong>{r.meta.title}</strong>
               <p dangerouslySetInnerHTML={{ __html: r.excerpt }}></p>
