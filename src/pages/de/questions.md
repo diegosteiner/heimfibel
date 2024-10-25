@@ -1,13 +1,9 @@
 ---
 layout: "../../layouts/Markdown.astro"
 title: 'Fragen'
+locale: de
 ---
 
-# Fragen
+Du weisst nicht wo du beginnen sollst oder was dich ganz konkret interessiert? 
 
-Du weisst nicht wo du beginnen sollst oder was dich ganz konkret interessiert? Beantworte hier die folgenden Fragen
-und es zeigt dir diese Artikel an, welche dich betreffen könnten.
-
-- Wer ist deine Zielgruppe?
-- In welchem Kanton?
-- Welche Phase?
+Wir planen dich hier mit ein paar Fragen zu den richtigen Artikeln zu führen. Schaue ein ander mal nochmals rein.

@@ -16,11 +16,13 @@ export const getStaticPaths = (async () => {
           params: { locale, slug: article.slug },
           props: { locale, article },
         };
-      })
+      }),
   );
 }) satisfies GetStaticPaths;
 
-const { article } = Astro.props as InferGetStaticPropsType<typeof getStaticPaths>;
+const { article } = Astro.props as InferGetStaticPropsType<
+  typeof getStaticPaths
+>;
 const { Content } = await article.render();
 
 const { title, locale } = article.data;
@@ -32,18 +34,18 @@ const links =
 ---
 
 <Layout title={title}>
-  <article class="bg-amber-200 p-10 rounded-xl text-stiftung-900 shadow-sm">
-    <h1 class="text-4xl font-bold mb-5">{title}</h1>
+  <article class="bg-amber-200 p-10 rounded-xl text-stiftung-900 shadow-xl">
+    <h1 class="text-4xl font-bold mb-5 text-stiftung-900">{title}</h1>
     <div class="hidden">
       {article.data.tags?.map((tag) => <h2>{tag}</h2>)}
     </div>
     <div
-      class="prose-p:mb-4 prose-p:leading-loose
+      class="prose-p:mb-4 prose-p:leading-relaxed
              prose-h2:text-2xl prose-h2:font-bold prose-h2:mb-4
              prose-h3:text-xl prose-h3:font-bold prose-h3:mb-4
              prose-h4:text-lg prose-h4:font-bold prose-h4:mb-4
              prose-ul:list-disc prose-ul:pl-6 prose-ul:mb-4
-             prose-li:mb-2 prose-a:underline
+             prose-li:mb-1 prose-a:underline
              my-8"
     >
       <Content />
@@ -52,7 +54,11 @@ const links =
       {
         links?.map((linkedArticle) => (
           <li class="text-base inline-block m-1 bg-rust-200 p-1 rounded-handdrawn border-2 border-rust-600">
-            <a href={`/${locale}/articles/${linkedArticle.slug?.toLowerCase()}`}>{linkedArticle.data?.title}</a>
+            <a
+              href={`/${locale}/articles/${linkedArticle.slug?.toLowerCase()}`}
+            >
+              {linkedArticle.data?.title}
+            </a>
           </li>
         ))
       }

@@ -1,10 +1,10 @@
 ---
+import logo from "../../../../public/images/logo.svg";
 import Search from "../../../components/Search";
 import type { Article } from "../../../content/articles";
 import { locales, type Locale } from "../../../i18n";
 import Layout from "../../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
-import logo from "../../../../public/images/logo.svg";
 
 const articles = ((await getCollection("articles")) as Article[]).sort(
   (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
@@ -24,24 +24,34 @@ export async function getStaticPaths() {
     props: { locale },
   }));
 }
+
+const { locale } = Astro.props;
 ---
 
 <Layout title="Übersicht">
   <main>
-    <img src={logo.src} class="h-48 float-right m-5 hidden lg:inline" />
+    <img src={logo.src} class="h-48 w-48 float-right m-5 hidden lg:inline" />
     <h1 class="text-4xl font-bold mt-3">
       <span class="font-normal text-stiftung-200">Pfadiheim-</span>Fibel
     </h1>
     <p class="italic">
-      Ein Tool der <a class="underline" href="https://www.stiftung-pfadiheime.ch/de">Stiftung Pfadiheime Schweiz</a>
+      Ein Tool der <a
+        class="underline"
+        href="https://www.stiftung-pfadiheime.ch/de"
+        >Stiftung Pfadiheime Schweiz</a
+      >
     </p>
-    <h2 class="text-2xl font-bold mt-10 mb-5">Der Wissensspeicher für den Bau und den Betrieb von Pfadiheimen</h2>
-    <p class="mb-4 leading-loose">
-      Die Fibel ist ein Wissensspeicher rund um die Fragen zum Pfadiheimumbau oder Pfadiheimneubau! Es kann auch für
-      eine Reflektion oder Neuausrichtung bei einem bestehenden Haus verwendet und als Input für neue Themen verwendet
-      werden. Die Artikel hier sind nicht als «fixfertiges Rezept» zu betrachten, sondern als Sammlung von Erfahrungen,
-      Tipps und Tricks. Zu den unterschiedlichsten Themen, welche bei einem Bauprojekt, in der Planung, Umsetzung oder
-      im laufenden Betrieb wichtig sind gibt es Artikel.
+    <h2 class="text-2xl font-bold mt-10 mb-5">
+      Der Wissensspeicher für den Bau und den Betrieb von Pfadiheimen
+    </h2>
+    <p class="mb-4 leading-relaxed">
+      Die Fibel ist ein Wissensspeicher rund um die Fragen zum Pfadiheimumbau
+      oder Pfadiheimneubau! Es kann auch für eine Reflektion oder Neuausrichtung
+      bei einem bestehenden Haus verwendet und als Input für neue Themen
+      verwendet werden. Die Artikel hier sind nicht als «fixfertiges Rezept» zu
+      betrachten, sondern als Sammlung von Erfahrungen, Tipps und Tricks. Zu den
+      unterschiedlichsten Themen, welche bei einem Bauprojekt, in der Planung,
+      Umsetzung oder im laufenden Betrieb wichtig sind gibt es Artikel.
     </p>
     <div class="mb-5 mt-10">
       <Search path={pagefindPath} placeholder={"Suche"} client:load />
@@ -50,14 +60,14 @@ export async function getStaticPaths() {
     {
       Object.entries(phases).map(([phase, articleGroup]) => (
         <>
-          <h3 class="text-2xl font-bold mt-10 mb-5 text-center">{phase}</h3>
-          <ul
-            id="article-list"
-            class="rounded-handdrawn border-4 border-amber-200 text-stiftung-50 place-content-around p-8 flex flex-wrap"
-          >
+          <h3 class="text-3xl font-bold mt-20 mb-10 text-center">{phase}</h3>
+          <ul class="article-list bg-stiftung-700 shadow-xl rounded-handdrawn border-4 border-amber-200 text-stiftung-50 place-content-around p-8 flex flex-wrap">
             {Array.from(articleGroup).map((article) => (
               <li>
-                <a class="m-4 underline" href={`/${article.data.locale}/articles/${article.slug}`}>
+                <a
+                  class="m-4 underline text-xl"
+                  href={`/${article.data.locale}/articles/${article.slug}`}
+                >
                   {article.data.title}
                 </a>
               </li>
@@ -70,7 +80,7 @@ export async function getStaticPaths() {
 </Layout>
 
 <style>
-  ul#article-list {
+  ul.article-list {
     a {
       transition-property: opacity, transform;
       transition: 100ms linear;
