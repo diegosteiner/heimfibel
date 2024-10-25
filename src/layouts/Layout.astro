@@ -20,23 +20,17 @@ const locale = getLangFromUrl(Astro.url);
     <meta name="theme-color" content="#1C4A2B" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-    <style>
-      #menu-toggle:checked ~ #menu-wrapper {
-        display: block;
-      }
-    </style>
   </head>
   <body class="bg-stiftung-800 text-amber-200 min-h-screen gap-5 flex flex-col">
     <header class="lg:hidden">
-      <div class="flex justify-end p-2 h-20">
-        <label for="menu-toggle" class="block h-full cursor-pointer">
-          <img src={logo.src} class="h-full" />
-        </label>
-      </div>
-      <input type="checkbox" id="menu-toggle" class="hidden" />
-      <div id="menu-wrapper" class="hidden h-screen w-screen fixed bg-stiftung-800/50 backdrop-blur z-40">
-        <MainNav locale={locale} />
-      </div>
+      <details>
+        <summary class="flex justify-end p-2 h-20">
+          <img src={logo.src} class="block h-full cursor-pointer" />
+        </summary>
+        <div id="menu-wrapper" class="h-screen w-screen fixed bg-stiftung-800/50 backdrop-blur z-40">
+          <MainNav locale={locale} />
+        </div>
+      </details>
     </header>
     <div class="flex flex-grow gap-4 max-w-screen-2xl mx-auto">
       <main data-pagefind-body class="p-5 flex-grow w-full">
