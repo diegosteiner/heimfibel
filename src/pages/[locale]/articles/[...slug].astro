@@ -34,7 +34,9 @@ const links =
 ---
 
 <Layout title={title}>
-  <article class="bg-amber-200 p-10 rounded-xl text-stiftung-900 shadow-xl">
+  <article
+    class="bg-amber-200 p-5 lg:p-10 rounded-xl text-stiftung-900 shadow-xl"
+  >
     <h1 class="text-4xl font-bold mb-5 text-stiftung-900">{title}</h1>
     <div class="hidden">
       {article.data.tags?.map((tag) => <h2>{tag}</h2>)}
