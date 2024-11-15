@@ -10,9 +10,9 @@ links: []
 type: article
 ---
 
-Wenn die kälteren Monate vor der Tür stehen, und es wird Zeit, das Pfadiheim auf den Winter vorzubereiten. Die genauen Arbeiten sind abhängig vom Standort des Hauses, aber auch davon, ob das Pfadiheim über den Winter genutzt wird.  Hier einige Hinweise:  
+Wenn die kälteren Monate vor der Tür stehen, wird es Zeit, das Pfadiheim auf den Winter vorzubereiten. Die genauen Arbeiten sind abhängig vom Standort des Hauses, aber auch davon, ob das Pfadiheim über den Winter genutzt wird.  Hier einige Hinweise:  
 
-- **Kontrolliere auf Schäden**: Geht im und um das Haus herum und kontrolliert, ob etwas kaputt gegangen ist. Plant alle nötigen Reparaturarbeiten frühzeitig, um Probleme während der Wintermonate zu vermeiden. 
+- **Kontrolliere auf Schäden**: Geht im und um das Haus herum und kontrolliert, ob etwas kaputt gegangen ist. Plant alle nötigen Reparaturarbeiten frühzeitig, um Probleme während der Wintermonate zu vermeiden.
 
 - **Winterschnitt**: Schneidet im Herbst eure Büsche und Hecken ein wenig zurück, stutz wenn nötig Bäume, mäht ein letztes Mal die Wiesen rund ums Heim. Wachsen Büsche und Bäume zu nahe an Fassaden und/oder Dächer, so schneidet diese zurück. Doch Achtung: Schneidet euren Bewuchs nicht zu stark zurück; viele Kleinlebewesen überwintern in Stängeln und unter Laub. Wenn Pflanzen im Herbst geschnitten und kompostiert werden, überleben diese Tiere nicht. Es sollte immer ein Teil stehen gelassen werden, damit die Tiere überwintern können. Solche ursprünglichen Bereiche bieten Unterschlupf für Arten, die im Winter ruhen oder Schutz suchen. Wenn das Schnittgut, Laub und Äste zudem an Haufen gelegt werden, dann bieten diese auch Igeln, Hermelinen und anderen Arten Schutz.
 
