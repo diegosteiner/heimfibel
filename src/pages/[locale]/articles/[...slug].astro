@@ -1,10 +1,10 @@
 ---
-import { locales, type Locale } from "../../../i18n";
-import { getArticles, type Article } from "../../../content/articles";
 import { getCollection } from "astro:content";
-import Layout from "../../../layouts/Layout.astro";
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
 import { Fragment } from "react";
+import { type Article, getArticles } from "../../../content/articles";
+import { type Locale, locales } from "../../../i18n";
+import Layout from "../../../layouts/Layout.astro";
 
 export const getStaticPaths = (async () => {
   const allArticles = await getArticles({});

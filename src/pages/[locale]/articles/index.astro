@@ -1,10 +1,10 @@
 ---
+import { getCollection } from "astro:content";
 import logo from "../../../../public/images/logo.svg";
 import Search from "../../../components/Search";
 import type { Article } from "../../../content/articles";
-import { locales, type Locale } from "../../../i18n";
+import { type Locale, locales } from "../../../i18n";
 import Layout from "../../../layouts/Layout.astro";
-import { getCollection } from "astro:content";
 
 const articles = ((await getCollection("articles")) as Article[]).sort(
   (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useTranslations, type Locale } from "../i18n";
+import { type Locale, useTranslations } from "../i18n";
 
 export function MainNav({ locale }: { locale: Locale }) {
   const t = useTranslations(locale);
