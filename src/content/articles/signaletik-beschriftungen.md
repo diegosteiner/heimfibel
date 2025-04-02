@@ -1,13 +1,14 @@
 ---
 nr: 39
 title: "Signaletik & Beschriftungen"
-phase: "Betriebsphase"
+phases:
+  - Betriebsphase
 step: "Vorinbetriebnahme"
 pubDate: 2023-11-24
 locale: de
 tags: ["Sprachen","Bilder","Beschriftungen"]
 links: [24,25,29,33,41]
-type: article
+
 ---
 
 Für einen sorgfältigen und bewussten Umgang im Haus und in der Umgebung sind Beschriftungen wichtig. Bei der Erarbeitung ist darauf zu achten, dass eine verständliche Sprache verwendet wird, Hilfestellungen dazu gibt z.B. die Website portaleinfach.org. Pfadiheime in der Schweiz sollten in der lokalen Landessprache und einer weiteren Landessprache beschriftet werden (zB. Rätoromanisch und Deutsch im Kanton Graubünden)

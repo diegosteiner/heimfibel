@@ -7,11 +7,7 @@ export function Brand({ locale }: { locale: Locale }) {
 
   return (
     <div className="flex mb-5 gap-5">
-      <img
-        alt="Logo"
-        src={logo.src}
-        className="w-16 object-cover hidden lg:block"
-      />
+      <img alt="Logo" src={logo.src} className="w-16 object-cover hidden lg:block" />
       <div>
         <h1 className="text-4xl font-bold">
           <span className="font-normal text-stiftung-200">Pfadiheim-</span>Fibel

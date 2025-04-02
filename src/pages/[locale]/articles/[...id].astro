@@ -1,18 +1,18 @@
 ---
-import { getCollection, render } from "astro:content";
+import { getCollection, getEntries, render } from "astro:content";
+import type { CollectionEntry } from "astro:content";
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
 import { Fragment } from "react";
-import { type Article, getArticles } from "../../../content/articles";
 import { type Locale, locales } from "../../../i18n";
 import Layout from "../../../layouts/Layout.astro";
+import { getArticleFilter } from "../../../utils/articleFilter";
 
 export const getStaticPaths = (async () => {
-  const allArticles = await getArticles({});
+  const allArticles = await getCollection("articles", getArticleFilter({ published: true }));
   return (Object.keys(locales) as Locale[]).flatMap((locale) =>
     allArticles
       .filter((article) => article.data.locale === locale)
       .map((article) => {
-        console.log(article.id)
         return {
           params: { locale, id: article.id },
           props: { locale, article },
@@ -21,17 +21,10 @@ export const getStaticPaths = (async () => {
   );
 }) satisfies GetStaticPaths;
 
-const { article } = Astro.props as InferGetStaticPropsType<
-  typeof getStaticPaths
->;
+const { article } = Astro.props as InferGetStaticPropsType<typeof getStaticPaths>;
 const { Content, headings } = await render(article);
-
-const { title, locale } = article.data;
-const articles = (await getCollection("articles")) as Article[];
-const links =
-  article.data.links
-    ?.map((link) => articles.find((article) => article.data.nr === link))
-    .filter((article): article is Article => !!article) || [];
+const { title, locale, links, tags } = article.data;
+const linkedArticles = await getCollection('articles', (article) => links?.includes(article.data.nr))
 ---
 
 <Layout title={title}>
@@ -40,7 +33,7 @@ const links =
   >
     <h1 class="text-4xl font-bold mb-5 text-stiftung-900">{title}</h1>
     <div class="hidden">
-      {article.data.tags?.map((tag) => <h2>{tag}</h2>)}
+      {tags?.map((tag) => <h2>{tag}</h2>)}
     </div>
     <div
       class="prose-p:mb-4 prose-p:leading-relaxed
@@ -48,14 +41,13 @@ const links =
              prose-h3:text-xl prose-h3:font-bold prose-h3:mb-4
              prose-h4:text-lg prose-h4:font-bold prose-h4:mb-4
              prose-ul:list-disc prose-ul:pl-6 prose-ul:mb-4
-             prose-li:mb-1 prose-a:underline
-             my-8"
+             prose-li:mb-1 prose-a:underline my-8"
     >
       <Content />
     </div>
     <ul>
       {
-        links?.map((linkedArticle) => (
+        linkedArticles.map((linkedArticle) => (
           <li class="text-base inline-block m-1 bg-rust-200 p-1 rounded-handdrawn border-2 border-rust-600">
             <a
               href={`/${locale}/articles/${linkedArticle.id?.toLowerCase()}`}

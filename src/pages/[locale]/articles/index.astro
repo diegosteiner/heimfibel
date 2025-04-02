@@ -4,20 +4,18 @@ import logo from "../../../../public/images/logo.svg";
 import Search from "../../../components/Search";
 import { type Locale, locales } from "../../../i18n";
 import Layout from "../../../layouts/Layout.astro";
-import type { Article } from "../../../content/articles";
 
-const articles = ((await getCollection("articles")) as Article[]).sort(
+const articles = ((await getCollection("articles")) as CollectionEntry<"articles">[]).sort(
   (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
 );
 const pagefindPath = "/pagefind/pagefind.js";
-const phases: Record<string, Article[]> = {};
-Array.from(articles).forEach((article) => {
-  article.data.phase.split(",").forEach((uncleanPhase: string) => {
-    const phase = uncleanPhase.trim().toUpperCase();
-    const articles = phases[phase] || []
+const phases: Record<CollectionEntry<"articles">["data"]["phases"][number], CollectionEntry<"articles">[]> = {};
+for (const article of articles) {
+  for (const phase of article.data.phases) {
+    const articles = phases[phase] || [];
     phases[phase] = [...articles, article];
-  });
-});
+  }
+}
 
 export async function getStaticPaths() {
   return (Object.keys(locales) as Locale[]).flatMap((locale) => ({

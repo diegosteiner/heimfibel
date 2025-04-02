@@ -1,13 +1,14 @@
 ---
 nr: 42
 title: "Nutzungen koordinieren"
-phase: "Betriebsphase"
+phases:
+  - Betriebsphase
 step: "Struktur und Organisation"
 pubDate: 2023-11-24
 locale: de
 tags: ["Vermietung"]
 links: [1,15,37,38,41]
-type: article
+
 ---
 
 Plant die Zeitfenster für die Benutzung des Hauses durch die eigenen Pfadis oder Vermietungen. Stellt euch folgende Fragen, damit ihr nicht später unglückliche Situationen rund ums Heim erlebt:

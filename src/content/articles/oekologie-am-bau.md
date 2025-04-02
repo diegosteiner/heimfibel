@@ -1,13 +1,16 @@
 ---
 nr: 10
 title: "Ökologie am Bau"
-phase: "über alle Phasen"
+phases:
+  - Konzeptionsphase 
+  - Konzeptionsphase
+  - Betriebsphase
 step: "Bauliche, ortbedingte Rahmenbedingungen"
 pubDate: 2023-11-24
 locale: de
 tags: ["Materialwahl","Mobiliar"]
 links: [3,9,17,29,44,46]
-type: article
+
 ---
 
 Ökologische Aspekte sind über den gesamten Bauablauf zu betrachten. Diese Auseinandersetzung mit den unterschiedlichsten Themen wie Erreichbarkeit, Bauweise, Nutzung, Wärmegewinnung, verwendete Materialien ist zentral. Ihr entscheidet, wieviel Ökologie und Umweltfreundlichkeit ihr "einbauen" möchtet und wo ihr andere Schwerpunkte setzt.

@@ -28,9 +28,7 @@ export default function Search({ path, placeholder }: Props) {
       const records = await globalThis.pagefind?.debouncedSearch(query);
       if (records?.results) {
         // Load the first 5 results
-        setResults(
-          await Promise.all(records.results.slice(0, 5).map((r) => r.data())),
-        );
+        setResults(await Promise.all(records.results.slice(0, 5).map((r) => r.data())));
       } else {
         setResults([]);
       }

@@ -1,13 +1,14 @@
 ---
 nr: 20
 title: "Kostenplanung"
-phase: "Konzeptionsphase"
+phases:
+  - Konzeptionsphase
 step: "Finanzierung"
 pubDate: 2023-11-24
 locale: de
 tags: ["Hypothek","liquiditatsplanung","Pfadistiftung"]
 links: [13,16,19,21,30]
-type: article
+
 ---
 
 Basierend auf der Kostenschätzung benötigt ihr einen ersten Wurf eines Businessplanes und Finanzierungplans. Daraus ergeben sich dann einige, viel spezifischere Fragen z.B. bezüglich einer Hypothek. Wichtig in diesem Prozessschritt ist auch die Liquiditätsplanung:

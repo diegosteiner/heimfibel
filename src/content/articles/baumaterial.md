@@ -1,13 +1,14 @@
 ---
 nr: 44
 title: "Baumaterial"
-phase: "Planungsphase"
+phases:
+  - Planungsphase
 step: "Bauliche, ortbedingte Rahmenbedingungen"
 pubDate: 2023-11-24
 locale: de
 tags: ["Baumaterial","Raumaufteilung","Mobiliar","Inventar","Wartung"]
 links: [3,10,22,23,26,27,29,33]
-type: article
+
 ---
 
 #### Qualität der Materialien

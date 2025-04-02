@@ -1,13 +1,14 @@
 ---
 nr: 29
 title: "Solaranlage"
-phase: "Planungsphase"
+phases:
+  - Planungsphase
 step: "Bauliche, ortbedingte Rahmenbedingungen"
 pubDate: 2023-11-24
 locale: de
 tags: []
 links: [3,10,19,26,27,32,36]
-type: article
+
 ---
 
 Der Begriff Solaranlage ist sehr allgemein und besagt nur, dass eine Anlage die Energie der Sonne nutzt. Beim Begriff Photovoltaik handelt es sich dagegen um eine spezifische Anwendung: Die Sonnenenergie wird direkt in Elektrizität umgewandelt.

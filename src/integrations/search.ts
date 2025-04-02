@@ -17,13 +17,9 @@ export default function search(): AstroIntegration {
         }
 
         if (config.adapter?.name.startsWith("@astrojs/vercel")) {
-          outDir = fileURLToPath(
-            new URL(".vercel/output/static/", config.root),
-          );
+          outDir = fileURLToPath(new URL(".vercel/output/static/", config.root));
         } else if (config.adapter?.name === "@astrojs/cloudflare") {
-          outDir = fileURLToPath(
-            new URL(config.base?.replace(/^\//, ""), config.outDir),
-          );
+          outDir = fileURLToPath(new URL(config.base?.replace(/^\//, ""), config.outDir));
         } else {
           outDir = fileURLToPath(config.outDir);
         }

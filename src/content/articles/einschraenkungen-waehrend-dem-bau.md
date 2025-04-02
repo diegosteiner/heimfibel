@@ -1,13 +1,14 @@
 ---
 nr: 38
 title: "Einschränkungen während dem Bau"
-phase: "Planungsphase"
+phases:
+  - Planungsphase
 step: "Struktur und Organisation"
 pubDate: 2023-11-24
 locale: de
 tags: ["Netzwerk","Abteilungsbetrieb"]
 links: [8,13,15,43]
-type: article
+
 ---
 
 Bei einem umfangreichen Bauprojekt kann der Pfadibetrieb für mehrere Monate eingeschränkt sein.

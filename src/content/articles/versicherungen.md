@@ -1,13 +1,14 @@
 ---
 nr: 47
 title: "Versicherungen"
-phase: "Planungsphase"
+phases:
+  - Planungsphase
 step: "Finanzierung"
 pubDate: 2023-11-24
 locale: de
 tags: []
 links: [12,21,33,35,39,41]
-type: article
+
 ---
 
 Dein Pfadiheim sollte auch gut versichert sein – hier paar generelle Tipps:

@@ -1,13 +1,15 @@
 ---
 nr: 46
 title: "Belichtung und Beleuchtung"
-phase: "Planungsphase, Betriebsphase"
+phases:
+  - Planungsphase
+  - Betriebsphase
 step: ""
 pubDate: 2023-11-24
 locale: de
 tags: ["Mobiliar","Licht","Luft"]
 links: [10,17,33,39]
-type: article
+
 ---
 
 In erster Linie sind Räume natürlich zu belichten und belüften. Je nach Raumaufteilung gibt es Räume, die künstlich belichtet und belüftet werden müssen. Für die Planung von Öffnung ist als Mindestmass die Bodenfläche relevant, zieht dafür die entsprechenden rechtlichen Grundlagen (u.a. Kantonale Bauverordnung) hinzu. Eine Öffnung hat immer eine Konsequenz für die Gestalt und Ausdruck der Fassade, aber auch auf den Unterhalt und beispielsweise Konsequenzen für die Sicherheit, zum Beispiel Brüstungshöhe.  

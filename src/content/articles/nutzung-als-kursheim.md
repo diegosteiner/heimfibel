@@ -1,13 +1,14 @@
 ---
 nr: 6
 title: "Nutzung als Kursheim"
-phase: "Konzeptionsphase"
+phases:
+  - Konzeptionsphase
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
 tags: ["Haustyp","Kursheim","Pfadiheim","Mieteinnahmen","Raumbedarf"]
 links: [1,2,3,7,9,22,23,24,40]
-type: article
+
 ---
 
 Eine zeitgemässe Zielgruppe sind Kurse. Das Raumangebot soll dabei folgende Elemente enthalten, damit es für diese Nutzung sinnvoll ist:

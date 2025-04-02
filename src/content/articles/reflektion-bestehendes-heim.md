@@ -1,13 +1,14 @@
 ---
 nr: 32
 title: "Reflektion bestehendes Heim"
-phase: "Betriebsphase"
+phases:
+  - Betriebsphase
 step: "Umbauten"
 pubDate: 2023-11-24
 locale: de
 tags: []
 links: [1,2,3,4,6,7,10,21,23,26,27,40,45,46,47]
-type: article
+
 ---
 
 Betreibt ihr euer Heim schon länger? Gehen die regelmässigen Vermietungen zurück? Gab es vereinzelte Beschwerden?

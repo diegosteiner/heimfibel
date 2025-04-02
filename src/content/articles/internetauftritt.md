@@ -1,13 +1,14 @@
 ---
 nr: 37
 title: "Kommunikation: Internetauftritt und Bearbeitung"
-phase: "Betriebsphase"
+phases:
+  - Betriebsphase
 step: "Vorinbetriebnahme"
 pubDate: 2023-11-24
 locale: de
 tags: ["Fotos","Website","Heimverzeichnis","ubersetzungen"]
 links: [15,34,43]
-type: article
+
 ---
 
 Eine gute Kommunikation ist das A und O. Schliesslich möchte man möglichst viele potentielle Mietendende erreichen können. Es gibt viele Plattformen resp. Heim- und Gruppenhausverzeichnisse, welche nur noch "befüllt" werden müssen.

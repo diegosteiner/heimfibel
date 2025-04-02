@@ -1,13 +1,13 @@
 ---
 nr: 50
 title: Administration & Vermietung 
-phase: "Betriebsphase"
+phases:
+  - Betriebsphase
 step: ""
 pubDate: 2025-04-02
 locale: de
 tags: [ Mietvertrage, Checkliste, Betriebskosten, Unterhalt, HeimV]
 links: []
-type: article
 ---
 
 Die Verwaltung eines Pfadiheims umfasst verschiedene administrative und organisatorische Aufgaben, um einen reibungslosen Ablauf der Vermietung zu gewährleisten. Eine klare Struktur sowie effiziente digitale Prozesse und Tools helfen, den Aufwand zu minimieren und gleichzeitig eine hohe Zufriedenheit aller Beteiligten sicherzustellen.

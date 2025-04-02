@@ -11,7 +11,7 @@ const records = parse(content, {
   // encoding: 'utf8'
 });
 
-records.forEach((record) => {
+for (const record of records) {
   console.log(Object.keys(record));
   const title = record["Unterschritt = Titel"];
   const fileContent = `---
@@ -23,14 +23,11 @@ pubDate: 2023-11-24
 locale: de
 tags: ${JSON.stringify(record["Tags "].split(",").map((tag) => tag.trim()))}
 links: ${JSON.stringify(record["Verlinkung zu anderen Texten (Listen Titel)"].split(",").map((links) => Number.parseInt(links.trim())))}
-type: article
+
 ---
 
 ${record.Text}
 `;
 
-  fs.writeFile(
-    `src/content/articles/${title.toLowerCase().replace(/\W/g, "")}.de.md`,
-    fileContent,
-  );
-});
+  fs.writeFile(`src/content/articles/${title.toLowerCase().replace(/\W/g, "")}.de.md`, fileContent);
+}

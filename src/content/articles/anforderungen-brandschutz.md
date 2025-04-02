@@ -1,13 +1,14 @@
 ---
 nr: 35
 title: "Anforderungen Brandschutz"
-phase: "Planungsphase"
+phases:
+  - Planungsphase
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
 tags: ["Budget","Grundriss","planung-zielgrupppe","Umbauten","Raumbedarf"]
 links: [2,7,17,19,28,32,46]
-type: article
+
 ---
 
 Für die Grundrissplanung sind auch Vorgaben im Bereich Brandschutz ziemlich massgebend. Dazu müssen sowohl platzmässig als auch im Budget eingeplant werden:

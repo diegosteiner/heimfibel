@@ -1,13 +1,14 @@
 ---
 nr: 23
 title: "Raumbedarf"
-phase: "Planungsphase"
+phases:
+  - Planungsphase
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
 tags: ["Raumeinteilung","generelle-uberlegungen"]
 links: [1,2,3,6,7,22,25,32]
-type: article
+
 ---
 
 Je nach Nutzung stellen sich verschiedene Fragen, dazu gehören:

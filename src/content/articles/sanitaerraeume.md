@@ -1,13 +1,14 @@
 ---
 nr: 25
 title: "Sanitärräume"
-phase: "Planungsphase"
+phases:
+  - Planungsphase
 step: "Art und Weise des Projekts"
 pubDate: 2023-11-24
 locale: de
 tags: ["Raumeinteilung","Raumbedarf","sanitare-anlagen"]
 links: [2,6,23,32,33,42]
-type: article
+
 ---
 
 Einige Tipps für die Ausgestaltung der Sanitärräume:

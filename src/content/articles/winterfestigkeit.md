@@ -1,13 +1,14 @@
 ---
 nr: 49
 title: "Winterfestigkeit"
-phase: "Betriebsphase"
+phases:
+  - Betriebsphase
 step: ""
 pubDate: 2024-11-15
 locale: de
 tags: ["Wasser", "Winter"]
 links: []
-type: article
+
 ---
 
 Wenn die kälteren Monate vor der Tür stehen, wird es Zeit, das Pfadiheim auf den Winter vorzubereiten. Die genauen Arbeiten sind abhängig vom Standort des Hauses, aber auch davon, ob das Pfadiheim über den Winter genutzt wird.  Hier einige Hinweise:  

@@ -1,13 +1,14 @@
 ---
 nr: 34
 title: "HeimV"
-phase: "Betriebsphase"
+phases:
+  - Betriebsphase
 step: "Struktur und Organisation"
 pubDate: 2023-11-24
 locale: de
 tags: ["Heimverwaltung","Reservationen","Vermietungen"]
 links: [21,37,41]
-type: article
+
 ---
 
 Von A wie Anfrage bis Z wie Zahlung
