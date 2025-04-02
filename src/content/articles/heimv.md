@@ -1,5 +1,5 @@
 ---
-id: 34
+nr: 34
 title: "HeimV"
 phase: "Betriebsphase"
 step: "Struktur und Organisation"

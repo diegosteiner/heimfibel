@@ -1,5 +1,5 @@
 ---
-id: 30
+nr: 30
 title: "Finanzielle Chancen einer Solaranlage"
 phase: "Planungsphase"
 step: ""

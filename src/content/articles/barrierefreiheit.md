@@ -1,5 +1,5 @@
 ---
-id: 7
+nr: 7
 title: "Barrierefreiheit"
 phase: "Konzeptionsphase"
 step: "Art und Weise des Projekts"

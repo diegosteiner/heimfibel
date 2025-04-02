@@ -1,5 +1,5 @@
 ---
-id: 28
+nr: 28
 title: "Baupläne"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"

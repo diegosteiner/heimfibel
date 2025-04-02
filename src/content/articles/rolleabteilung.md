@@ -1,5 +1,5 @@
 ---
-id: 15
+nr: 15
 title: "Rolle Abteilung"
 phase: "über alle Phasen"
 step: "Struktur und Organisation"

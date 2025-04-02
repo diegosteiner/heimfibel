@@ -1,5 +1,5 @@
 ---
-id: 39
+nr: 39
 title: "Signaletik & Beschriftungen"
 phase: "Betriebsphase"
 step: "Vorinbetriebnahme"

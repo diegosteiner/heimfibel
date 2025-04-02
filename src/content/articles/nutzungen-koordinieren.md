@@ -1,5 +1,5 @@
 ---
-id: 42
+nr: 42
 title: "Nutzungen koordinieren"
 phase: "Betriebsphase"
 step: "Struktur und Organisation"

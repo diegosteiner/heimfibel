@@ -1,5 +1,5 @@
 ---
-id: 12
+nr: 12
 title: "Anforderungen an die Trägerschaft"
 phase: "Konzeptionsphase"
 step: "Struktur und Organisation"

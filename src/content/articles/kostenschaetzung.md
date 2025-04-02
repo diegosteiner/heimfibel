@@ -1,5 +1,5 @@
 ---
-id: 19
+nr: 19
 title: "Kostenschätzung"
 phase: "Konzeptionsphase"
 step: "Finanzierung"

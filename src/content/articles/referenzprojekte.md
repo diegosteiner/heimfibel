@@ -1,5 +1,5 @@
 ---
-id: 9
+nr: 9
 title: "Referenzprojekte"
 phase: "Konzeptionsphase"
 step: "Art und Weise des Projekts"

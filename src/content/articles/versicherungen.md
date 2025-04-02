@@ -1,5 +1,5 @@
 ---
-id: 47
+nr: 47
 title: "Versicherungen"
 phase: "Planungsphase"
 step: "Finanzierung"

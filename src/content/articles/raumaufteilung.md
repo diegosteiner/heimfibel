@@ -1,5 +1,5 @@
 ---
-id: 22
+nr: 22
 title: "Raumaufteilung"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"

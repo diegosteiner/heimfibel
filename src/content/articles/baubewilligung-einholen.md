@@ -1,5 +1,5 @@
 ---
-id: 5
+nr: 5
 title: "Baubewilligung einholen"
 phase: "Planungsphase"
 step: ""

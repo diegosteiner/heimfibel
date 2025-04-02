@@ -1,5 +1,5 @@
 ---
-id: 1
+nr: 1
 title: "Generelle Überlegungen"
 phase: "Konzeptionsphase"
 step: "Art und Weise des Projekts"

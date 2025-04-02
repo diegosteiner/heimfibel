@@ -1,5 +1,33 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 :root {
-	font-size: clamp(1rem, calc(0.5rem + 1vw), 1.2rem)
+  font-size: clamp(1rem, calc(0.5rem + 1vw), 1.2rem);
+}
+
+@theme {
+  --color-stiftung-50: #f0ece0;
+  --color-stiftung-100: #e7e5cb;
+  --color-stiftung-200: #d7dcb2;
+  --color-stiftung-300: #bfd298;
+  --color-stiftung-400: #89ba5e;
+  --color-stiftung-500: #5fa545;
+  --color-stiftung-600: #3c8637;
+  --color-stiftung-700: #296631;
+  --color-stiftung-800: #1c4a2b;
+  --color-stiftung-900: #0d2114;
+  --color-stiftung-950: #050d08;
+  --color-amber-200: #fdf1ce;
+  --color-rust-50: #f4dbc9;
+  --color-rust-100: #f1cfb8;
+  --color-rust-200: #eab896;
+  --color-rust-300: #e3a274;
+  --color-rust-400: #dc8b52;
+  --color-rust-500: #d57430;
+  --color-rust-600: #b86125;
+  --color-rust-700: #89481c;
+  --color-rust-800: #5b3012;
+  --color-rust-900: #2c1709;
+  --color-rust-950: #150b04;
+  --radius-handdrawn: 255px 15px 225px 15px / 15px 225px 15px 255px;
 }

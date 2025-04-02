@@ -1,5 +1,5 @@
 ---
-id: 24
+nr: 24
 title: "Gastronomie"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"

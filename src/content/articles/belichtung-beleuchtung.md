@@ -1,5 +1,5 @@
 ---
-id: 46
+nr: 46
 title: "Belichtung und Beleuchtung"
 phase: "Planungsphase, Betriebsphase"
 step: ""

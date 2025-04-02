@@ -1,5 +1,5 @@
 ---
-id: 27
+nr: 27
 title: "Heizsysteme"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"

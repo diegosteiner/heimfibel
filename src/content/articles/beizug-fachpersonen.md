@@ -1,5 +1,5 @@
 ---
-id: 17
+nr: 17
 title: "Beizug Fachpersonen"
 phase: "Konzeptionsphase"
 step: "Struktur und Organisation"

@@ -1,5 +1,5 @@
 ---
-id: 40
+nr: 40
 title: "Erschliessung"
 phase: "Konzeptionsphase"
 step: ""

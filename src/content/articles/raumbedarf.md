@@ -1,5 +1,5 @@
 ---
-id: 23
+nr: 23
 title: "Raumbedarf"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"

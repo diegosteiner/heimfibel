@@ -1,5 +1,5 @@
 ---
-id: 21
+nr: 21
 title: "Betriebskosten"
 phase: "Konzeptionsphase"
 step: "Finanzierung"

@@ -1,5 +1,5 @@
 ---
-id: 48
+nr: 48
 title: "Umgebungsplanung"
 phase: "Planungsphase"
 step: ""

@@ -1,5 +1,5 @@
 ---
-id: 8
+nr: 8
 title: "Meilensteine"
 phase: "Konzeptionsphase"
 step: "Struktur und Organisation"

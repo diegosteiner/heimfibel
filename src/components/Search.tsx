@@ -55,7 +55,8 @@ export default function Search({ path, placeholder }: Props) {
             <hr className="my-5 mx-1 border-rust-600" />
             <a href={r.url}>
               <strong>{r.meta.title}</strong>
-              <p dangerouslySetInnerHTML={{ __html: r.excerpt }}></p>
+              {/* biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation> */}
+              <p dangerouslySetInnerHTML={{ __html: r.excerpt }} />
             </a>
           </li>
         ))}

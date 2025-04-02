@@ -1,5 +1,5 @@
 ---
-id: 18
+nr: 18
 title: "Suche nach einer Bauleitung"
 phase: "Konzeptionsphase"
 step: "Struktur und Organisation"

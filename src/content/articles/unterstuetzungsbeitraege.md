@@ -1,5 +1,5 @@
 ---
-id: 36
+nr: 36
 title: "Unterstützungsbeiträge"
 phase: "Planungsphase"
 step: "Finanzierung"

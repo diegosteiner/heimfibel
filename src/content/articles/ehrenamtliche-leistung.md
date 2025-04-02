@@ -1,5 +1,5 @@
 ---
-id: 14
+nr: 14
 title: "Ehrenamtliche Leistung"
 phase: "über alle Phasen"
 step: "Struktur und Organisation"

@@ -1,5 +1,5 @@
 ---
-id: 49
+nr: 49
 title: "Winterfestigkeit"
 phase: "Betriebsphase"
 step: ""

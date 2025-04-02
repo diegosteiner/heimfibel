@@ -1,5 +1,5 @@
 ---
-id: 32
+nr: 32
 title: "Reflektion bestehendes Heim"
 phase: "Betriebsphase"
 step: "Umbauten"

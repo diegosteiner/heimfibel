@@ -1,5 +1,5 @@
 ---
-id: 38
+nr: 38
 title: "Einschränkungen während dem Bau"
 phase: "Planungsphase"
 step: "Struktur und Organisation"

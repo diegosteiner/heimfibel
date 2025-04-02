@@ -1,5 +1,5 @@
 ---
-id: 3
+nr: 3
 title: "Art der Erneuerung"
 phase: "Konzeptionsphase"
 step: "Art und Weise des Projekts"

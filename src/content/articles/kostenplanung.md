@@ -1,5 +1,5 @@
 ---
-id: 20
+nr: 20
 title: "Kostenplanung"
 phase: "Konzeptionsphase"
 step: "Finanzierung"

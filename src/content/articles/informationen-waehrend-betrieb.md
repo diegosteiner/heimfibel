@@ -1,5 +1,5 @@
 ---
-id: 41
+nr: 41
 title: "Informationen während des Betriebs"
 phase: "Betriebsphase"
 step: "Struktur und Organisation"

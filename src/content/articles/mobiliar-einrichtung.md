@@ -1,5 +1,5 @@
 ---
-id: 33
+nr: 33
 title: "Mobiliar & Einrichtung"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"

@@ -1,11 +1,14 @@
 import { defineCollection, z } from "astro:content";
+import { glob } from "astro/loaders";
 import { locales } from "./i18n";
-import { glob } from 'astro/loaders';
 
 const articles = defineCollection({
-  loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: "./src/content/articles" }),
+  loader: glob({
+    pattern: "**/[^_]*.{md,mdx}",
+    base: "./src/content/articles",
+  }),
   schema: z.object({
-    id: z.number(),
+    nr: z.number(),
     title: z.string(),
     phase: z.string(),
     step: z.string(),

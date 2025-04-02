@@ -1,5 +1,5 @@
 ---
-id: 13
+nr: 13
 title: "Organisation Projektteam"
 phase: "Konzeptionsphase"
 step: "Struktur und Organisation"

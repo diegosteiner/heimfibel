@@ -1,5 +1,5 @@
 ---
-id: 26
+nr: 26
 title: "Warmwassererzeugung"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"

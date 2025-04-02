@@ -1,5 +1,5 @@
 ---
-id: 45
+nr: 45
 title: "Laufender Unterhalt & Wartung"
 phase: "Betriebsphase"
 step: "Struktur und Organisation"

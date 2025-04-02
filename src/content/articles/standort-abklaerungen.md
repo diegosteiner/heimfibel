@@ -1,5 +1,5 @@
 ---
-id: 4
+nr: 4
 title: "Standort und Abklärungen"
 phase: "Konzeptionsphase"
 step: "Bauliche, ortbedingte Rahmenbedingungen"

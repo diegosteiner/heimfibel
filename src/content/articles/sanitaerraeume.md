@@ -1,5 +1,5 @@
 ---
-id: 25
+nr: 25
 title: "Sanitärräume"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"

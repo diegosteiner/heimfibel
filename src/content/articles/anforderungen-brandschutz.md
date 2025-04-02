@@ -1,5 +1,5 @@
 ---
-id: 35
+nr: 35
 title: "Anforderungen Brandschutz"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"

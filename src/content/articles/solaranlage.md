@@ -1,5 +1,5 @@
 ---
-id: 29
+nr: 29
 title: "Solaranlage"
 phase: "Planungsphase"
 step: "Bauliche, ortbedingte Rahmenbedingungen"

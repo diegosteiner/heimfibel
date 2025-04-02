@@ -1,4 +1,4 @@
-import { execSync } from "child_process";
+import { execSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import type { AstroIntegration } from "astro";
 import sirv from "sirv";
@@ -24,11 +24,6 @@ export default function search(): AstroIntegration {
           outDir = fileURLToPath(
             new URL(config.base?.replace(/^\//, ""), config.outDir),
           );
-        } else if (
-          config.adapter?.name === "@astrojs/node" &&
-          config.output === "hybrid"
-        ) {
-          outDir = fileURLToPath(config.build.client!);
         } else {
           outDir = fileURLToPath(config.outDir);
         }

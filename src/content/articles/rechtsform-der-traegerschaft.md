@@ -1,5 +1,5 @@
 ---
-id: 11
+nr: 11
 title: "Rechtsform der Trägerschaft"
 phase: "Konzeptionsphase"
 step: "Struktur und Organisation"

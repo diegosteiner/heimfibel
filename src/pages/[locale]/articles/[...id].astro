@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
 import { Fragment } from "react";
 import { type Article, getArticles } from "../../../content/articles";
@@ -10,10 +10,11 @@ export const getStaticPaths = (async () => {
   const allArticles = await getArticles({});
   return (Object.keys(locales) as Locale[]).flatMap((locale) =>
     allArticles
-      .filter((article) => article.data.locale == locale)
+      .filter((article) => article.data.locale === locale)
       .map((article) => {
+        console.log(article.id)
         return {
-          params: { locale, slug: article.slug },
+          params: { locale, id: article.id },
           props: { locale, article },
         };
       }),
@@ -23,13 +24,13 @@ export const getStaticPaths = (async () => {
 const { article } = Astro.props as InferGetStaticPropsType<
   typeof getStaticPaths
 >;
-const { Content } = await article.render();
+const { Content, headings } = await render(article);
 
 const { title, locale } = article.data;
 const articles = (await getCollection("articles")) as Article[];
 const links =
   article.data.links
-    ?.map((link) => articles.find((article) => article.data.id == link))
+    ?.map((link) => articles.find((article) => article.data.nr === link))
     .filter((article): article is Article => !!article) || [];
 ---
 
@@ -57,7 +58,7 @@ const links =
         links?.map((linkedArticle) => (
           <li class="text-base inline-block m-1 bg-rust-200 p-1 rounded-handdrawn border-2 border-rust-600">
             <a
-              href={`/${locale}/articles/${linkedArticle.slug?.toLowerCase()}`}
+              href={`/${locale}/articles/${linkedArticle.id?.toLowerCase()}`}
             >
               {linkedArticle.data?.title}
             </a>

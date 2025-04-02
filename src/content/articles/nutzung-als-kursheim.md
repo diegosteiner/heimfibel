@@ -1,5 +1,5 @@
 ---
-id: 6
+nr: 6
 title: "Nutzung als Kursheim"
 phase: "Konzeptionsphase"
 step: "Art und Weise des Projekts"

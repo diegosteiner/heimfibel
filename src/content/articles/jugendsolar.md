@@ -1,5 +1,5 @@
 ---
-id: 31
+nr: 31
 title: "Jugendsolar"
 phase: "Planungsphase"
 step: "Art und Weise des Projekts"

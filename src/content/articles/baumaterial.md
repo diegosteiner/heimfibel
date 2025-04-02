@@ -1,5 +1,5 @@
 ---
-id: 44
+nr: 44
 title: "Baumaterial"
 phase: "Planungsphase"
 step: "Bauliche, ortbedingte Rahmenbedingungen"

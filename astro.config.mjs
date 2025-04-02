@@ -1,7 +1,7 @@
 import react from "@astrojs/react";
+import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 import search from "./src/integrations/search";
-import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
@@ -10,5 +10,8 @@ export default defineConfig({
   build: {
     format: "file",
   },
-  integrations: [react(), tailwindcss(), search()],
+  integrations: [react(), search()],
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });

@@ -1,7 +1,7 @@
 import { type CollectionEntry, getCollection } from "astro:content";
 import type { Locale } from "../../i18n";
 
-export type Article = CollectionEntry<"article">;
+export type Article = CollectionEntry<"articles">;
 
 type ArticleFilter = {
   tag?: string;
@@ -14,7 +14,7 @@ export async function getArticles(filter?: ArticleFilter) {
 
   if (filter?.locale)
     articles = articles.filter(
-      (article) => article.data.locale == filter.locale,
+      (article) => article.data.locale === filter.locale,
     );
   if (filter?.tag)
     articles = articles.filter((article) =>

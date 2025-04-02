@@ -1,5 +1,5 @@
 ---
-id: 2
+nr: 2
 title: "Übernachtungen"
 phase: "Konzeptionsphase"
 step: "Art und Weise des Projekts"

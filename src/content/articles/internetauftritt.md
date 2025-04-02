@@ -1,5 +1,5 @@
 ---
-id: 37
+nr: 37
 title: "Kommunikation: Internetauftritt und Bearbeitung"
 phase: "Betriebsphase"
 step: "Vorinbetriebnahme"

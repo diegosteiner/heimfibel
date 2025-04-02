@@ -1,5 +1,5 @@
 ---
-id: 10
+nr: 10
 title: "Ökologie am Bau"
 phase: "über alle Phasen"
 step: "Bauliche, ortbedingte Rahmenbedingungen"
