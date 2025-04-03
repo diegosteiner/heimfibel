@@ -2,8 +2,8 @@
 import { type CollectionEntry, getCollection } from "astro:content";
 import logo from "../../../../public/images/logo.svg";
 import Search from "../../../components/Search";
-import { type Locale, locales } from "../../../i18n";
 import Layout from "../../../layouts/Layout.astro";
+import { type Locale, locales } from "../../../utils/i18n";
 
 const articles = ((await getCollection("articles")) as CollectionEntry<"articles">[]).sort(
   (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),

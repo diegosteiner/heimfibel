@@ -1,0 +1,51 @@
+backend:
+  name: github
+  repo: diegosteiner/heimfibel
+  branch: main
+  auth_scope: repo
+  open_authoring: false
+
+media_folder: "static/uploads"  # Where images/files are stored in the repo
+public_folder: "/uploads"  # Public path for media
+
+collections:
+  - name: "articles"
+    label: "articles"
+    folder: "src/content/articles"  # Where Markdown files are stored
+    create: true 
+    slug: "{{slug}}"
+    widget: "markdown"
+    fields:
+      - label: "Nr"
+        name: "nr"
+        widget: "number"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Phases"
+        name: "phases"
+        widget: "select"
+        multiple: true
+        options: ["Betriebsphase", "Planungsphase", "Konzeptionsphase"]
+      - label: "Publiziert"
+        name: "pubDate"
+        widget: "datetime"
+      - label: "Aktualisiert"
+        name: "updatedDate"
+        widget: "datetime"
+        required: false
+      - label: "Sprache"
+        name: "locale"
+        widget: "select"
+        options: ["de", "fr"]
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+      - label: "Links"
+        name: "links"
+        widget: "list"
+        required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"

@@ -3,9 +3,9 @@ import { getCollection, getEntries, render } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
 import { Fragment } from "react";
-import { type Locale, locales } from "../../../i18n";
 import Layout from "../../../layouts/Layout.astro";
 import { getArticleFilter } from "../../../utils/articleFilter";
+import { type Locale, locales } from "../../../utils/i18n";
 
 export const getStaticPaths = (async () => {
   const allArticles = await getCollection("articles", getArticleFilter({ published: true }));
@@ -24,7 +24,7 @@ export const getStaticPaths = (async () => {
 const { article } = Astro.props as InferGetStaticPropsType<typeof getStaticPaths>;
 const { Content, headings } = await render(article);
 const { title, locale, links, tags } = article.data;
-const linkedArticles = await getCollection('articles', (article) => links?.includes(article.data.nr))
+const linkedArticles = await getCollection("articles", (article) => links?.includes(article.data.nr));
 ---
 
 <Layout title={title}>

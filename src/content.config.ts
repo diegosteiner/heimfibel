@@ -1,6 +1,6 @@
 import { defineCollection, reference, z } from "astro:content";
 import { glob } from "astro/loaders";
-import { locales } from "./i18n";
+import { locales } from "./utils/i18n";
 
 const articles = defineCollection({
   loader: glob({

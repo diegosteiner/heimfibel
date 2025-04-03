@@ -1,6 +1,6 @@
 import * as React from "react";
 import logo from "../../public/images/logo.svg";
-import { type Locale, useTranslations } from "../i18n";
+import { type Locale, useTranslations } from "../utils/i18n";
 
 export function Brand({ locale }: { locale: Locale }) {
   const t = useTranslations(locale);
