@@ -7,7 +7,7 @@ step: ""
 pubDate: 2025-04-02
 locale: de
 tags: [ Mietvertrage, Checkliste, Betriebskosten, Unterhalt, HeimV]
-links: []
+links: [34]
 ---
 
 Die Verwaltung eines Pfadiheims umfasst verschiedene administrative und organisatorische Aufgaben, um einen reibungslosen Ablauf der Vermietung zu gewährleisten. Eine klare Struktur sowie effiziente digitale Prozesse und Tools helfen, den Aufwand zu minimieren und gleichzeitig eine hohe Zufriedenheit aller Beteiligten sicherzustellen.
@@ -16,7 +16,7 @@ Für den gesamten Vermietungsprozess ist es hilfreich, eine Übersicht zu erstel
 
 ## Reservationen & Kalenderführung
 
-Der Belegungsplan sollte stets aktuell, transparent und gut ersichtlich sein. So ist klar, wann das Haus oder einzelne Räumlichkeiten gebucht sind. Dafür bietet sich beispielsweise das Tool HeimV an.
+Der Belegungsplan sollte stets aktuell, transparent und gut ersichtlich sein. So ist klar, wann das Haus oder einzelne Räumlichkeiten gebucht sind. Dafür bietet sich beispielsweise [das Tool HeimV](./heimv) an.
 
 ## Mietverträge
 
