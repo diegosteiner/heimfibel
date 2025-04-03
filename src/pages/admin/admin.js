@@ -1,3 +1,3 @@
-import stylesUrl from "../../styles.css?url";
+// import stylesUrl from "../../styles.css?url";
 
-CMS.registerPreviewStyle(stylesUrl);
+// CMS.registerPreviewStyle(stylesUrl);
