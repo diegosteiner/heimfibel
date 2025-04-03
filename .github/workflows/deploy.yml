@@ -39,7 +39,9 @@ jobs:
 
   deploy:
     if: github.ref == 'refs/heads/main'
-    needs: build
+    needs: 
+      - check
+      - build
     runs-on: ubuntu-latest
 
     environment:
