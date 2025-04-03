@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@astrojs/react':
     specifier: ^4.2.3
-    version: 4.2.3(@types/node@22.13.17)(@types/react-dom@19.0.4)(@types/react@19.0.12)(react-dom@19.1.0)(react@19.1.0)(sass@1.86.1)
+    version: 4.2.3(@types/node@22.14.0)(@types/react-dom@19.0.4)(@types/react@19.0.12)(react-dom@19.1.0)(react@19.1.0)(sass@1.86.1)
   '@tailwindcss/vite':
     specifier: ^4.1.0
     version: 4.1.0(vite@6.2.4)
@@ -16,10 +16,10 @@ dependencies:
     version: 4.17.16
   astro:
     specifier: ^5.5.6
-    version: 5.5.6(@types/node@22.13.17)(sass@1.86.1)(typescript@5.8.2)
+    version: 5.5.6(@types/node@22.14.0)(sass@1.86.1)(typescript@5.8.2)
   decap-cms-app:
     specifier: ^3.6.2
-    version: 3.6.2(@types/node@22.13.17)(@types/react@19.0.12)(graphql@15.10.1)(react-dom@19.1.0)(react@19.1.0)
+    version: 3.6.2(@types/node@22.14.0)(@types/react@19.0.12)(graphql@15.10.1)(react-dom@19.1.0)(react@19.1.0)
   lodash:
     specifier: ^4.17.21
     version: 4.17.21
@@ -54,7 +54,7 @@ devDependencies:
     version: 0.5.16(tailwindcss@4.1.0)
   '@types/node':
     specifier: ^22.13.17
-    version: 22.13.17
+    version: 22.14.0
   '@types/react':
     specifier: ^19.0.12
     version: 19.0.12
@@ -69,7 +69,7 @@ devDependencies:
     version: 3.0.1
   slate-hyperscript:
     specifier: ^0.100.0
-    version: 0.100.0(slate@0.91.4)
+    version: 0.100.0(slate@0.112.0)
 
 packages:
 
@@ -124,7 +124,7 @@ packages:
       prismjs: 1.30.0
     dev: false
 
-  /@astrojs/react@4.2.3(@types/node@22.13.17)(@types/react-dom@19.0.4)(@types/react@19.0.12)(react-dom@19.1.0)(react@19.1.0)(sass@1.86.1):
+  /@astrojs/react@4.2.3(@types/node@22.14.0)(@types/react-dom@19.0.4)(@types/react@19.0.12)(react-dom@19.1.0)(react@19.1.0)(sass@1.86.1):
     resolution: {integrity: sha512-icL1hCnW1v+w+NCAz8REfsh9R1aGMW75fYBoeLjyhrVDxXQHiFbTfyBIHkgH79qqID7SM81+hPxHlqcgCuBP8w==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0}
     peerDependencies:
@@ -139,7 +139,7 @@ packages:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
       ultrahtml: 1.5.3
-      vite: 6.2.4(@types/node@22.13.17)(sass@1.86.1)
+      vite: 6.2.4(@types/node@22.14.0)(sass@1.86.1)
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -1691,7 +1691,7 @@ packages:
       '@tailwindcss/node': 4.1.0
       '@tailwindcss/oxide': 4.1.0
       tailwindcss: 4.1.0
-      vite: 6.2.4(@types/node@22.13.17)(sass@1.86.1)
+      vite: 6.2.4(@types/node@22.14.0)(sass@1.86.1)
     dev: false
 
   /@types/babel__core@7.20.5:
@@ -1786,10 +1786,10 @@ packages:
       '@types/unist': 3.0.3
     dev: false
 
-  /@types/node@22.13.17:
-    resolution: {integrity: sha512-nAJuQXoyPj04uLgu+obZcSmsfOenUg6DxPKogeUy6yNCFwWaj5sBF8/G/pNo8EtBJjAfSVgfIlugR/BCOleO+g==}
+  /@types/node@22.14.0:
+    resolution: {integrity: sha512-Kmpl+z84ILoG+3T/zQFyAJsU6EPTmOCj8/2+83fSN6djd6I4o7uOuGIH6vq3PrjY5BGitSbFuMN18j3iknubbA==}
     dependencies:
-      undici-types: 6.20.0
+      undici-types: 6.21.0
 
   /@types/parse-json@4.0.2:
     resolution: {integrity: sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==}
@@ -1847,7 +1847,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.25.9(@babel/core@7.26.10)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 6.2.4(@types/node@22.13.17)(sass@1.86.1)
+      vite: 6.2.4(@types/node@22.14.0)(sass@1.86.1)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -1855,7 +1855,7 @@ packages:
   /@wry/context@0.4.4:
     resolution: {integrity: sha512-LrKVLove/zw6h2Md/KZyWxIkFM6AoyKp71OqpH9Hiip1csjPVoD3tPxlbQUNxEnHENks3UGgNpSBCAfq9KWuag==}
     dependencies:
-      '@types/node': 22.13.17
+      '@types/node': 22.14.0
       tslib: 1.14.1
     dev: false
 
@@ -2044,7 +2044,7 @@ packages:
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dev: false
 
-  /astro@5.5.6(@types/node@22.13.17)(sass@1.86.1)(typescript@5.8.2):
+  /astro@5.5.6(@types/node@22.14.0)(sass@1.86.1)(typescript@5.8.2):
     resolution: {integrity: sha512-SjU6zAlRe/gQrZ558Qhm211Yl8XOZBfjMpZig3XtQpG6zlyHJkElbWQIWXAVPzMg17cFVdv/qZPVHfcP2YOGGw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
@@ -2098,7 +2098,7 @@ packages:
       unist-util-visit: 5.0.0
       unstorage: 1.15.0
       vfile: 6.0.3
-      vite: 6.2.4(@types/node@22.13.17)(sass@1.86.1)
+      vite: 6.2.4(@types/node@22.14.0)(sass@1.86.1)
       vitefu: 1.0.6(vite@6.2.4)
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
@@ -2473,7 +2473,7 @@ packages:
       ms: 2.1.3
     dev: false
 
-  /decap-cms-app@3.6.2(@types/node@22.13.17)(@types/react@19.0.12)(graphql@15.10.1)(react-dom@19.1.0)(react@19.1.0):
+  /decap-cms-app@3.6.2(@types/node@22.14.0)(@types/react@19.0.12)(graphql@15.10.1)(react-dom@19.1.0)(react@19.1.0):
     resolution: {integrity: sha512-VuOXhU2zpwVy7ZZJSjagEElmZUnKT0BGHXk4dC+wEgIGT7Mvf0P4r9kQ0nus/3AAWDfRPfJ9EHZdNZlTBspjOw==}
     peerDependencies:
       react: ^18.2.0
@@ -2492,7 +2492,7 @@ packages:
       decap-cms-backend-gitlab: 3.2.2(@emotion/react@11.14.0)(@emotion/styled@11.14.0)(decap-cms-lib-auth@3.0.5)(decap-cms-lib-util@3.2.0)(decap-cms-ui-default@3.1.4)(graphql@15.10.1)(immutable@3.8.2)(lodash@4.17.21)(prop-types@15.8.1)(react@19.1.0)
       decap-cms-backend-proxy: 3.1.4(@emotion/react@11.14.0)(@emotion/styled@11.14.0)(decap-cms-lib-util@3.2.0)(decap-cms-ui-default@3.1.4)(prop-types@15.8.1)(react@19.1.0)
       decap-cms-backend-test: 3.1.3(@emotion/react@11.14.0)(@emotion/styled@11.14.0)(decap-cms-lib-util@3.2.0)(decap-cms-ui-default@3.1.4)(lodash@4.17.21)(prop-types@15.8.1)(react@19.1.0)(uuid@8.3.2)
-      decap-cms-core: 3.6.1(@emotion/react@11.14.0)(@emotion/styled@11.14.0)(@types/node@22.13.17)(@types/react@19.0.12)(decap-cms-editor-component-image@3.1.3)(decap-cms-lib-auth@3.0.5)(decap-cms-lib-util@3.2.0)(decap-cms-lib-widgets@3.1.0)(decap-cms-ui-default@3.1.4)(immutable@3.8.2)(lodash@4.17.21)(prop-types@15.8.1)(react-dom@19.1.0)(react-immutable-proptypes@2.2.0)(react@19.1.0)
+      decap-cms-core: 3.6.1(@emotion/react@11.14.0)(@emotion/styled@11.14.0)(@types/node@22.14.0)(@types/react@19.0.12)(decap-cms-editor-component-image@3.1.3)(decap-cms-lib-auth@3.0.5)(decap-cms-lib-util@3.2.0)(decap-cms-lib-widgets@3.1.0)(decap-cms-ui-default@3.1.4)(immutable@3.8.2)(lodash@4.17.21)(prop-types@15.8.1)(react-dom@19.1.0)(react-immutable-proptypes@2.2.0)(react@19.1.0)
       decap-cms-editor-component-image: 3.1.3(react@19.1.0)
       decap-cms-lib-auth: 3.0.5(immutable@3.8.2)(lodash@4.17.21)(uuid@8.3.2)
       decap-cms-lib-util: 3.2.0(immutable@3.8.2)(lodash@4.17.21)
@@ -2778,7 +2778,7 @@ packages:
       uuid: 8.3.2
     dev: false
 
-  /decap-cms-core@3.6.1(@emotion/react@11.14.0)(@emotion/styled@11.14.0)(@types/node@22.13.17)(@types/react@19.0.12)(decap-cms-editor-component-image@3.1.3)(decap-cms-lib-auth@3.0.5)(decap-cms-lib-util@3.2.0)(decap-cms-lib-widgets@3.1.0)(decap-cms-ui-default@3.1.4)(immutable@3.8.2)(lodash@4.17.21)(prop-types@15.8.1)(react-dom@19.1.0)(react-immutable-proptypes@2.2.0)(react@19.1.0):
+  /decap-cms-core@3.6.1(@emotion/react@11.14.0)(@emotion/styled@11.14.0)(@types/node@22.14.0)(@types/react@19.0.12)(decap-cms-editor-component-image@3.1.3)(decap-cms-lib-auth@3.0.5)(decap-cms-lib-util@3.2.0)(decap-cms-lib-widgets@3.1.0)(decap-cms-ui-default@3.1.4)(immutable@3.8.2)(lodash@4.17.21)(prop-types@15.8.1)(react-dom@19.1.0)(react-immutable-proptypes@2.2.0)(react@19.1.0):
     resolution: {integrity: sha512-qIvkdHfDR2VTOpIEOxdtY43Ac2MqfgMSkHpRYq+x+LQ/HBS9p5j24S075FROKGJj9j/BfCJ2/Nd7ETmMmnvVRw==}
     peerDependencies:
       '@emotion/react': ^11.11.1
@@ -2825,7 +2825,7 @@ packages:
       node-polyglot: 2.6.0
       prop-types: 15.8.1
       react: 19.1.0
-      react-dnd: 14.0.5(@types/node@22.13.17)(@types/react@19.0.12)(react@19.1.0)
+      react-dnd: 14.0.5(@types/node@22.14.0)(@types/react@19.0.12)(react@19.1.0)
       react-dnd-html5-backend: 14.1.0
       react-dom: 19.1.0(react@19.1.0)
       react-frame-component: 5.2.7(prop-types@15.8.1)(react-dom@19.1.0)(react@19.1.0)
@@ -3138,7 +3138,7 @@ packages:
       slate-base64-serializer: 0.2.115(slate@0.91.4)
       slate-history: 0.93.0(slate@0.91.4)
       slate-plain-serializer: 0.7.13(immutable@3.8.2)(slate@0.91.4)
-      slate-react: 0.91.11(react-dom@19.1.0)(react@19.1.0)(slate@0.91.4)
+      slate-react: 0.91.11(react-dom@19.1.0)(react@19.1.0)(slate@0.112.0)
       slate-soft-break: 0.9.0(slate-react@0.91.11)(slate@0.91.4)
       unified: 9.2.2
       unist-builder: 1.0.4
@@ -3953,8 +3953,12 @@ packages:
     resolution: {integrity: sha512-XXOFtyqDjNDAQxVfYxuF7g9Il/IbWmmlQg2MYKOH8ExIT1qg6xc4zyS3HaEEATgs1btfzxq15ciUiY7gjSXRGQ==}
     dev: false
 
+  /immer@10.1.1:
+    resolution: {integrity: sha512-s2MPrmjovJcoMaHtx6K11Ra7oD05NT97w1IC5zpMkT6Atjr7H8LjaDd81iIxUYpMKSRRNMJE703M1Fhr/TctHw==}
+
   /immer@9.0.21:
     resolution: {integrity: sha512-bc4NBHqOqSfRW7POMkHd51LvClaeMXpm8dx0e8oE2GORbq5aRK7Bxl4FyzVLdGtLmvLKL7BTDBG5ACQm4HWjTA==}
+    dev: false
 
   /immutable@3.8.2:
     resolution: {integrity: sha512-15gZoQ38eYjEjxkorfbcgBKBL6R7T459OuK+CpcWt7O3KF4uPCx2tD0uFETlUDIyo+1789crbMhTvQBSR5yBMg==}
@@ -5508,7 +5512,7 @@ packages:
       dnd-core: 14.0.1
     dev: false
 
-  /react-dnd@14.0.5(@types/node@22.13.17)(@types/react@19.0.12)(react@19.1.0):
+  /react-dnd@14.0.5(@types/node@22.14.0)(@types/react@19.0.12)(react@19.1.0):
     resolution: {integrity: sha512-9i1jSgbyVw0ELlEVt/NkCUkxy1hmhJOkePoCH713u75vzHGyXhPDm28oLfc2NMSBjZRM1Y+wRjHXJT3sPrTy+A==}
     peerDependencies:
       '@types/hoist-non-react-statics': '>= 3.3.1'
@@ -5525,7 +5529,7 @@ packages:
     dependencies:
       '@react-dnd/invariant': 2.0.0
       '@react-dnd/shallowequal': 2.0.0
-      '@types/node': 22.13.17
+      '@types/node': 22.14.0
       '@types/react': 19.0.12
       dnd-core: 14.0.1
       fast-deep-equal: 3.1.3
@@ -6430,13 +6434,13 @@ packages:
       slate: 0.91.4
     dev: false
 
-  /slate-hyperscript@0.100.0(slate@0.91.4):
+  /slate-hyperscript@0.100.0(slate@0.112.0):
     resolution: {integrity: sha512-fb2KdAYg6RkrQGlqaIi4wdqz3oa0S4zKNBJlbnJbNOwa23+9FLD6oPVx9zUGqCSIpy+HIpOeqXrg0Kzwh/Ii4A==}
     peerDependencies:
       slate: '>=0.65.3'
     dependencies:
       is-plain-object: 5.0.0
-      slate: 0.91.4
+      slate: 0.112.0
     dev: true
 
   /slate-plain-serializer@0.7.13(immutable@3.8.2)(slate@0.91.4):
@@ -6449,7 +6453,7 @@ packages:
       slate: 0.91.4
     dev: false
 
-  /slate-react@0.91.11(react-dom@19.1.0)(react@19.1.0)(slate@0.91.4):
+  /slate-react@0.91.11(react-dom@19.1.0)(react@19.1.0)(slate@0.112.0):
     resolution: {integrity: sha512-2nS29rc2kuTTJrEUOXGyTkFATmTEw/R9KuUXadUYiz+UVwuFOUMnBKuwJWyuIBOsFipS+06SkIayEf5CKdARRQ==}
     peerDependencies:
       react: '>=16.8.0'
@@ -6466,7 +6470,7 @@ packages:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
       scroll-into-view-if-needed: 2.2.31
-      slate: 0.91.4
+      slate: 0.112.0
       tiny-invariant: 1.0.6
     dev: false
 
@@ -6477,8 +6481,15 @@ packages:
       slate-react: '>=0.19.3'
     dependencies:
       slate: 0.91.4
-      slate-react: 0.91.11(react-dom@19.1.0)(react@19.1.0)(slate@0.91.4)
+      slate-react: 0.91.11(react-dom@19.1.0)(react@19.1.0)(slate@0.112.0)
     dev: false
+
+  /slate@0.112.0:
+    resolution: {integrity: sha512-PRnfFgDA3tSop4OH47zu4M1R4Uuhm/AmASu29Qp7sGghVFb713kPBKEnSf1op7Lx/nCHkRlCa3ThfHtCBy+5Yw==}
+    dependencies:
+      immer: 10.1.1
+      is-plain-object: 5.0.0
+      tiny-warning: 1.0.3
 
   /slate@0.91.4:
     resolution: {integrity: sha512-aUJ3rpjrdi5SbJ5G1Qjr3arytfRkEStTmHjBfWq2A2Q8MybacIzkScSvGJjQkdTk3djCK9C9SEOt39sSeZFwTw==}
@@ -6486,6 +6497,7 @@ packages:
       immer: 9.0.21
       is-plain-object: 5.0.0
       tiny-warning: 1.0.3
+    dev: false
 
   /smol-toml@1.3.1:
     resolution: {integrity: sha512-tEYNll18pPKHroYSmLLrksq233j021G0giwW7P3D24jC54pQ5W5BXMsQ/Mvw1OJCmEYDgY+lrzT+3nNUtoNfXQ==}
@@ -6759,8 +6771,8 @@ packages:
     resolution: {integrity: sha512-Ql87qFHB3s/De2ClA9e0gsnS6zXG27SkTiSJwjCc9MebbfapQfuPzumMIUMi38ezPZVNFcHI9sUIepeQfw8J8Q==}
     dev: false
 
-  /undici-types@6.20.0:
-    resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
+  /undici-types@6.21.0:
+    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
   /unherit@1.1.3:
     resolution: {integrity: sha512-Ft16BJcnapDKp0+J/rqFC3Rrk6Y/Ng4nzsC028k2jdDII/rdZ7Wd3pPT/6+vIIxRagwRc9K0IUX0Ra4fKvw+WQ==}
@@ -7141,7 +7153,7 @@ packages:
       vfile-message: 4.0.2
     dev: false
 
-  /vite@6.2.4(@types/node@22.13.17)(sass@1.86.1):
+  /vite@6.2.4(@types/node@22.14.0)(sass@1.86.1):
     resolution: {integrity: sha512-veHMSew8CcRzhL5o8ONjy8gkfmFJAd5Ac16oxBUjlwgX3Gq2Wqr+qNC3TjPIpy7TPV/KporLga5GT9HqdrCizw==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
@@ -7181,7 +7193,7 @@ packages:
       yaml:
         optional: true
     dependencies:
-      '@types/node': 22.13.17
+      '@types/node': 22.14.0
       esbuild: 0.25.2
       postcss: 8.5.3
       rollup: 4.38.0
@@ -7198,7 +7210,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 6.2.4(@types/node@22.13.17)(sass@1.86.1)
+      vite: 6.2.4(@types/node@22.14.0)(sass@1.86.1)
     dev: false
 
   /warning@3.0.0:
