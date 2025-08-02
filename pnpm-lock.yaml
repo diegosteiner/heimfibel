@@ -19,7 +19,7 @@ importers:
         version: 4.17.20
       astro:
         specifier: ^5.5.6
-        version: 5.12.3(@types/node@22.16.5)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.45.1)(sass@1.89.2)(typescript@5.8.3)
+        version: 5.12.3(@types/node@22.16.5)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.45.1)(sass@1.89.2)(typescript@5.9.2)
       decap-cms-app:
         specifier: ^3.6.2
         version: 3.8.2(@types/hoist-non-react-statics@3.3.7(@types/react@19.1.8))(@types/node@22.16.5)(@types/react@19.1.8)(graphql@15.10.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -46,7 +46,7 @@ importers:
         version: 4.1.11
       typescript:
         specifier: ^5.8.2
-        version: 5.8.3
+        version: 5.9.2
     devDependencies:
       '@biomejs/biome':
         specifier: ^1.9.4
@@ -3689,8 +3689,8 @@ packages:
     resolution: {integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==}
     engines: {node: '>=16'}
 
-  typescript@5.8.3:
-    resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
+  typescript@5.9.2:
+    resolution: {integrity: sha512-CWBzXQrc/qOkhidw1OzBTQuYRbfyxDXJMVJ1XNwUHGROVmuaeiEm3OslpZ1RV96d7SKKjZKrSJu3+t/xlw3R9A==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -5269,7 +5269,7 @@ snapshots:
 
   array-move@4.0.0: {}
 
-  astro@5.12.3(@types/node@22.16.5)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.45.1)(sass@1.89.2)(typescript@5.8.3):
+  astro@5.12.3(@types/node@22.16.5)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.45.1)(sass@1.89.2)(typescript@5.9.2):
     dependencies:
       '@astrojs/compiler': 2.12.2
       '@astrojs/internal-helpers': 0.6.1
@@ -5319,7 +5319,7 @@ snapshots:
       smol-toml: 1.4.1
       tinyexec: 0.3.2
       tinyglobby: 0.2.14
-      tsconfck: 3.1.6(typescript@5.8.3)
+      tsconfck: 3.1.6(typescript@5.9.2)
       ultrahtml: 1.6.0
       unifont: 0.5.2
       unist-util-visit: 5.0.0
@@ -5332,7 +5332,7 @@ snapshots:
       yocto-spinner: 0.2.3
       zod: 3.25.76
       zod-to-json-schema: 3.24.6(zod@3.25.76)
-      zod-to-ts: 1.2.0(typescript@5.8.3)(zod@3.25.76)
+      zod-to-ts: 1.2.0(typescript@5.9.2)(zod@3.25.76)
     optionalDependencies:
       sharp: 0.33.5
     transitivePeerDependencies:
@@ -8387,9 +8387,9 @@ snapshots:
     dependencies:
       tslib: 1.14.1
 
-  tsconfck@3.1.6(typescript@5.8.3):
+  tsconfck@3.1.6(typescript@5.9.2):
     optionalDependencies:
-      typescript: 5.8.3
+      typescript: 5.9.2
 
   tslib@1.14.1: {}
 
@@ -8397,7 +8397,7 @@ snapshots:
 
   type-fest@4.41.0: {}
 
-  typescript@5.8.3: {}
+  typescript@5.9.2: {}
 
   ufo@1.6.1: {}
 
@@ -8721,9 +8721,9 @@ snapshots:
     dependencies:
       zod: 3.25.76
 
-  zod-to-ts@1.2.0(typescript@5.8.3)(zod@3.25.76):
+  zod-to-ts@1.2.0(typescript@5.9.2)(zod@3.25.76):
     dependencies:
-      typescript: 5.8.3
+      typescript: 5.9.2
       zod: 3.25.76
 
   zod@3.25.76: {}
