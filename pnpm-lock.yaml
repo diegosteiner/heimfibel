@@ -16,7 +16,7 @@ importers:
         version: 4.1.17(vite@6.4.1(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass@1.93.3))
       '@types/lodash':
         specifier: ^4.17.16
-        version: 4.17.20
+        version: 4.17.21
       astro:
         specifier: ^5.5.6
         version: 5.16.0(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.53.1)(sass@1.93.3)(typescript@5.9.3)
@@ -1093,8 +1093,8 @@ packages:
   '@types/is-hotkey@0.1.10':
     resolution: {integrity: sha512-RvC8KMw5BCac1NvRRyaHgMMEtBaZ6wh0pyPTBu7izn4Sj/AX9Y4aXU5c7rX8PnM/knsuUpC1IeoBkANtxBypsQ==}
 
-  '@types/lodash@4.17.20':
-    resolution: {integrity: sha512-H3MHACvFUEiujabxhaI/ImO6gUrd8oOurg7LQtS7mbwIXA/cUqWrvBsaeJ23aZEPk1TAYkurjfMbSELfoCXlGA==}
+  '@types/lodash@4.17.21':
+    resolution: {integrity: sha512-FOvQ0YPD5NOfPgMzJihoT+Za5pdkDJWcbpuj1DjaKZIr/gxodQjY/uWEFlTNqW2ugXHUiL8lRQgw63dzKHZdeQ==}
 
   '@types/mdast@3.0.15':
     resolution: {integrity: sha512-LnwD+mUEfxWMa1QpDraczIn6k0Ee3SMicuYSSzS6ZYl2gKS09EClnJYGd8Du6rfc5r/GZEk5o1mRb8TaTj03sQ==}
@@ -4894,7 +4894,7 @@ snapshots:
 
   '@types/is-hotkey@0.1.10': {}
 
-  '@types/lodash@4.17.20': {}
+  '@types/lodash@4.17.21': {}
 
   '@types/mdast@3.0.15':
     dependencies:
@@ -8035,7 +8035,7 @@ snapshots:
     dependencies:
       '@juggle/resize-observer': 3.4.0
       '@types/is-hotkey': 0.1.10
-      '@types/lodash': 4.17.20
+      '@types/lodash': 4.17.21
       direction: 1.0.4
       is-hotkey: 0.1.8
       is-plain-object: 5.0.0
