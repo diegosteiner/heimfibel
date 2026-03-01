@@ -16,7 +16,7 @@ importers:
         version: 4.1.18(vite@6.4.1(@types/node@24.10.13)(jiti@2.6.1)(lightningcss@1.30.2)(sass@1.97.3))
       '@types/lodash':
         specifier: ^4.17.16
-        version: 4.17.23
+        version: 4.17.24
       astro:
         specifier: ^5.5.6
         version: 5.17.3(@types/node@24.10.13)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.58.0)(sass@1.97.3)(typescript@5.9.3)
@@ -1314,8 +1314,8 @@ packages:
     peerDependencies:
       '@types/react': '*'
 
-  '@types/lodash@4.17.23':
-    resolution: {integrity: sha512-RDvF6wTulMPjrNdCoYRC8gNR880JNGT8uB+REUpC2Ns4pRqQJhGz90wh7rgdXDPpCczF3VGktDuFGVnz8zP7HA==}
+  '@types/lodash@4.17.24':
+    resolution: {integrity: sha512-gIW7lQLZbue7lRSWEFql49QJJWThrTFFeIMJdp3eH4tKoxm1OvEPg02rm4wCCSHS0cL3/Fizimb35b7k8atwsQ==}
 
   '@types/mdast@3.0.15':
     resolution: {integrity: sha512-LnwD+mUEfxWMa1QpDraczIn6k0Ee3SMicuYSSzS6ZYl2gKS09EClnJYGd8Du6rfc5r/GZEk5o1mRb8TaTj03sQ==}
@@ -5196,7 +5196,7 @@ snapshots:
       '@types/react': 19.2.14
       hoist-non-react-statics: 3.3.2
 
-  '@types/lodash@4.17.23': {}
+  '@types/lodash@4.17.24': {}
 
   '@types/mdast@3.0.15':
     dependencies:
