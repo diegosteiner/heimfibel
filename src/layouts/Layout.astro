@@ -25,15 +25,15 @@ const locale = getLangFromUrl(Astro.url);
     <header class="lg:hidden">
       <details>
         <summary class="flex justify-end p-2 h-20">
-          <img src={logo.src} class="block h-full cursor-pointer" />
+          <img src={logo.src} alt="Heimfibel" class="block h-full cursor-pointer" />
         </summary>
         <div id="menu-wrapper" class="h-screen w-screen fixed bg-stiftung-800/50 backdrop-blur z-40">
           <MainNav locale={locale} />
         </div>
       </details>
     </header>
-    <div class="flex flex-grow gap-4 max-w-screen-2xl mx-auto">
-      <main data-pagefind-body class="p-5 flex-grow w-full">
+    <div class="flex grow gap-4 max-w-screen-2xl mx-auto">
+      <main data-pagefind-body class="p-5 grow w-full">
         <slot />
       </main>
       <aside class="w-96 hidden lg:block"><MainNav locale={locale} /></aside>

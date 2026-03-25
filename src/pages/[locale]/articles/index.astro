@@ -29,7 +29,7 @@ const { locale } = Astro.props;
 
 <Layout title="Übersicht">
   <main>
-    <img src={logo.src} class="h-48 w-48 float-right m-5 hidden lg:inline" />
+    <img src={logo.src} alt="Heimfibel" class="h-48 w-48 float-right m-5 hidden lg:inline" />
     <h1 class="text-4xl font-bold mt-3">
       <span class="font-normal text-stiftung-200">Pfadiheim-</span>Fibel
     </h1>
@@ -58,7 +58,7 @@ const { locale } = Astro.props;
 
     {
       Object.entries(phases).map(([phase, articleGroup]) => (
-        <>
+        <section>
           <h3 class="text-3xl font-bold mt-20 mb-10 text-center">{phase}</h3>
           <ul class="article-list bg-stiftung-700 shadow-xl rounded-handdrawn border-4 border-amber-200 text-stiftung-50 place-content-around p-8 flex flex-wrap">
             {Array.from(articleGroup).map((article) => (
@@ -72,7 +72,7 @@ const { locale } = Astro.props;
               </li>
             ))}
           </ul>
-        </>
+        </section>
       ))
     }
   </main>
@@ -81,8 +81,7 @@ const { locale } = Astro.props;
 <style>
   ul.article-list {
     a {
-      transition-property: opacity, transform;
-      transition: 100ms linear;
+      transition: opacity 100ms linear, transform 100ms linear;
       display: block;
     }
 

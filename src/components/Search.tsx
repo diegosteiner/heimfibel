@@ -1,4 +1,3 @@
-import * as React from "react";
 import { useEffect, useState } from "react";
 
 type Props = {
@@ -9,7 +8,7 @@ type Props = {
 export default function Search({ path, placeholder }: Props) {
   const [query, setQuery] = useState<string>();
   const [results, setResults] = useState<PagefindSearchFragment[]>([]);
-  const [loading, setLoading] = useState(false);
+  const [, setLoading] = useState(false);
 
   async function initialize() {
     if (globalThis.pagefind) return;
@@ -53,7 +52,7 @@ export default function Search({ path, placeholder }: Props) {
             <hr className="my-5 mx-1 border-rust-600" />
             <a href={r.url}>
               <strong>{r.meta.title}</strong>
-              {/* biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation> */}
+              {/* biome-ignore lint/security/noDangerouslySetInnerHtml: excerpt is sanitized by Pagefind */}
               <p dangerouslySetInnerHTML={{ __html: r.excerpt }} />
             </a>
           </li>

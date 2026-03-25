@@ -1,9 +1,8 @@
-import * as React from "react";
 import logo from "../../public/images/logo.svg";
 import { type Locale, useTranslations } from "../utils/i18n";
 
 export function Brand({ locale }: { locale: Locale }) {
-  const t = useTranslations(locale);
+  const _t = useTranslations(locale);
 
   return (
     <div className="flex mb-5 gap-5">

@@ -1,4 +1,4 @@
-import { type CollectionEntry, getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
 import type { Locale } from "./i18n";
 
 export type Article = CollectionEntry<"articles">;

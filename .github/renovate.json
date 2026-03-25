@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
-  "schedule": ["every weekend"],
+  "schedule": ["monthly"],
   "automerge": true,
   "automergeType": "pr",
   "prCreation": "not-pending"

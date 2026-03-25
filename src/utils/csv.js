@@ -15,14 +15,14 @@ for (const record of records) {
   console.log(Object.keys(record));
   const title = record["Unterschritt = Titel"];
   const fileContent = `---
-id: ${Number.parseInt(record.ID)}
+id: ${Number.parseInt(record.ID, 10)}
 title: "${title}"
 phase: "${record.Phase}"
 step: "${record.Schritt}"
 pubDate: 2023-11-24
 locale: de
 tags: ${JSON.stringify(record["Tags "].split(",").map((tag) => tag.trim()))}
-links: ${JSON.stringify(record["Verlinkung zu anderen Texten (Listen Titel)"].split(",").map((links) => Number.parseInt(links.trim())))}
+links: ${JSON.stringify(record["Verlinkung zu anderen Texten (Listen Titel)"].split(",").map((links) => Number.parseInt(links.trim(), 10)))}
 
 ---
 
