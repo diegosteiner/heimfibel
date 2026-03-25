@@ -1,8 +1,6 @@
 ---
-import type { CollectionEntry } from "astro:content";
-import { getCollection, getEntries, render } from "astro:content";
+import { getCollection, render } from "astro:content";
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
-import { Fragment } from "react";
 import Layout from "../../../layouts/Layout.astro";
 import { getArticleFilter } from "../../../utils/articleFilter";
 import { type Locale, locales } from "../../../utils/i18n";
@@ -22,7 +20,7 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 const { article } = Astro.props as InferGetStaticPropsType<typeof getStaticPaths>;
-const { Content, headings } = await render(article);
+const { Content } = await render(article);
 const { title, locale, links, tags } = article.data;
 const linkedArticles = await getCollection("articles", (article) => links?.includes(article.data.nr));
 ---
@@ -33,7 +31,7 @@ const linkedArticles = await getCollection("articles", (article) => links?.inclu
   >
     <h1 class="text-4xl font-bold mb-5 text-stiftung-900">{title}</h1>
     <div class="hidden">
-      {tags?.map((tag) => <h2>{tag}</h2>)}
+      {tags?.map((tag: string) => <h2>{tag}</h2>)}
     </div>
     <div
       class="prose-p:mb-4 prose-p:leading-relaxed

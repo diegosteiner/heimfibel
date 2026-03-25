@@ -5,10 +5,25 @@ import sirv from "sirv";
 
 export default function search(): AstroIntegration {
   let outDir: string;
+  let basePath = "/";
+
+  const trimSlashes = (value: string) => value.replace(/^\/+|\/+$/g, "");
+  const buildPagefindRequestPrefix = (base: string) => {
+    const normalized = trimSlashes(base);
+    return normalized ? `/${normalized}/pagefind/` : "/pagefind/";
+  };
+
+  const buildPagefindOutputSubdir = (base: string) => {
+    const normalized = trimSlashes(base);
+    return normalized ? `${normalized}/pagefind` : "pagefind";
+  };
+
   return {
     name: "search",
     hooks: {
       "astro:config:setup": ({ config, logger }) => {
+        basePath = config.base ?? "/";
+
         if (config.output === "server") {
           logger.warn(
             "Output type `server` does not produce static *.html pages in its output and thus will not work with astro-pagefind integration.",
@@ -32,12 +47,14 @@ export default function search(): AstroIntegration {
           return;
         }
 
+        const pagefindRequestPrefix = buildPagefindRequestPrefix(basePath);
+
         const serve = sirv(outDir, {
           dev: true,
           etag: true,
         });
         server.middlewares.use((req, res, next) => {
-          if (req.url?.startsWith("/pagefind/")) {
+          if (req.url?.startsWith(pagefindRequestPrefix)) {
             serve(req, res, next);
           } else {
             next();
@@ -52,7 +69,9 @@ export default function search(): AstroIntegration {
           return;
         }
 
-        const cmd = `npx pagefind --site "${outDir}"`;
+        const outputSubdir = buildPagefindOutputSubdir(basePath);
+
+        const cmd = `npx pagefind --site "${outDir}" --output-subdir "${outputSubdir}"`;
         execSync(cmd, {
           stdio: [process.stdin, process.stdout, process.stderr],
         });

@@ -8,8 +8,8 @@ import { type Locale, locales } from "../../../utils/i18n";
 const articles = ((await getCollection("articles")) as CollectionEntry<"articles">[]).sort(
   (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
 );
-const pagefindPath = "/pagefind/pagefind.js";
-const phases: Record<CollectionEntry<"articles">["data"]["phases"][number], CollectionEntry<"articles">[]> = {};
+const pagefindPath = `${import.meta.env.BASE_URL}pagefind/pagefind.js`;
+const phases = {} as Record<CollectionEntry<"articles">["data"]["phases"][number], CollectionEntry<"articles">[]>;
 for (const article of articles) {
   for (const phase of article.data.phases) {
     const articles = phases[phase] || [];
@@ -24,7 +24,6 @@ export async function getStaticPaths() {
   }));
 }
 
-const { locale } = Astro.props;
 ---
 
 <Layout title="Übersicht">
