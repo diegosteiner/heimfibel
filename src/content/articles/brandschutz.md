@@ -1,6 +1,6 @@
 ---
 nr: 35
-title: "Anforderungen Brandschutz"
+title: "Brandschutz"
 phases:
   - Planungsphase
 step: "Art und Weise des Projekts"
