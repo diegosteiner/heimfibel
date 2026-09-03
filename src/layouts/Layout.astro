@@ -40,7 +40,6 @@ const matomoUrl = (import.meta as { env?: { PUBLIC_MATOMO_URL?: string } }).env?
       </main>
       <aside class="w-96 hidden lg:block"><MainNav locale={locale} /></aside>
     </div>
-    {matomoUrl && <script src={`${matomoUrl}/matomo.js`} is:inline></script>}
     {matomoUrl && <script define:vars={{ matomoUrl }} is:inline>
       if (!window._paq) window._paq = [];
       var _paq = window._paq;
@@ -49,5 +48,6 @@ const matomoUrl = (import.meta as { env?: { PUBLIC_MATOMO_URL?: string } }).env?
       _paq.push(["setTrackerUrl", `${matomoUrl}/matomo.php`]);
       _paq.push(["setSiteId", "1"]);
     </script>}
+    {matomoUrl && <script src={`${matomoUrl}/matomo.js`} is:inline></script>}
   </body>
 </html>
