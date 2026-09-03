@@ -1,8 +1,8 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.4.9/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.5.12/schema.json",
   "files": {
     "ignoreUnknown": false,
-    "includes": ["**", "!**/.pnpm-store/", "!**/dist/", "!**/.astro/", "!**/src/env.d.ts"]
+    "includes": ["**", "!**/.pnpm-store", "!**/dist", "!**/.astro", "!**/src/env.d.ts", "!**/*.svg"]
   },
   "formatter": {
     "enabled": true,
@@ -13,9 +13,9 @@
   "assist": { "actions": { "source": { "organizeImports": "on" } } },
   "linter": {
     "enabled": true,
-    "includes": ["**", "!**/.astro/**"],
+    "includes": ["**", "!**/.astro/**", "!dist/**"],
     "rules": {
-      "recommended": true
+      "preset": "recommended"
     }
   },
   "javascript": {

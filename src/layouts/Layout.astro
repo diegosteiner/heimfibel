@@ -3,12 +3,14 @@ import { MainNav } from "../components/MainNav";
 import { getLangFromUrl } from "../utils/i18n";
 import "../styles.css";
 import logo from "../../public/images/logo.svg";
+
 export interface Props {
   title: string;
 }
 
 const { title } = Astro.props;
 const locale = getLangFromUrl(Astro.url);
+const matomoUrl = (import.meta as { env?: { PUBLIC_MATOMO_URL?: string } }).env?.PUBLIC_MATOMO_URL;
 ---
 
 <!doctype html>
@@ -38,5 +40,10 @@ const locale = getLangFromUrl(Astro.url);
       </main>
       <aside class="w-96 hidden lg:block"><MainNav locale={locale} /></aside>
     </div>
+    <script define:vars={{ matomoUrl }} is:inline>
+      import { initializeAnalytics } from '../utils/analytics';
+
+      initializeAnalytics(matomoUrl);
+    </script>
   </body>
 </html>
