@@ -35,6 +35,6 @@
     "csv-parse": "^7.0.2",
     "sirv": "^3.0.2",
     "slate-hyperscript": "^0.125.0",
-    "typescript": "^6.0.0"
+    "typescript": "^7.0.0"
   }
 }
