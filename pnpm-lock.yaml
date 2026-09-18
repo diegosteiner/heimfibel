@@ -70,8 +70,8 @@ importers:
         specifier: ^3.0.2
         version: 3.0.2
       slate-hyperscript:
-        specifier: ^0.125.0
-        version: 0.125.0(slate@0.118.1)
+        specifier: ^0.127.0
+        version: 0.127.0(slate@0.118.1)
       typescript:
         specifier: ^6.0.0
         version: 6.0.3
@@ -1996,8 +1996,8 @@ packages:
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
 
-  slate-hyperscript@0.125.0:
-    resolution: {integrity: sha512-tH6AYvTrTnSdUo+L5cUvqcHRzQ3muEkcSEN7APM9NtEdWk9L7lqEbmpyeKfv7oyzCUW2WbR/lPhlnOSu8/jUcA==}
+  slate-hyperscript@0.127.0:
+    resolution: {integrity: sha512-siQu4q4irgKKIpPcFz4xuzLTxzfdQ00MfPAg+NFOEBwUcz2ybvlRgozd+J3CqonZgpzPR2VID3LsQyqJ0GgQpQ==}
     peerDependencies:
       slate: '>=0.114.3'
 
@@ -4197,7 +4197,7 @@ snapshots:
 
   sisteransi@1.0.5: {}
 
-  slate-hyperscript@0.125.0(slate@0.118.1):
+  slate-hyperscript@0.127.0(slate@0.118.1):
     dependencies:
       slate: 0.118.1
 
