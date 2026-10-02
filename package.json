@@ -12,7 +12,7 @@
     "check": "astro check"
   },
   "dependencies": {
-    "@astrojs/react": "^6.0.5",
+    "@astrojs/react": "^7.0.0",
     "@tailwindcss/vite": "^4.3.3",
     "@types/lodash": "^4.17.25",
     "astro": "^7.2.10",
