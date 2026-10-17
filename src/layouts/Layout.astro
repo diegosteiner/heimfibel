@@ -1,15 +1,22 @@
 ---
 import { MainNav } from "../components/MainNav";
-import { getLangFromUrl } from "../utils/i18n";
+import { defaultLocale, getLangFromUrl, type Locale, locales, swapLocale } from "../utils/i18n";
 import "../styles.css";
 import logo from "../../public/images/logo.svg";
 
 export interface Props {
   title: string;
+  /** Paths of this page in other languages. Defaults to the same path with the locale swapped. */
+  alternates?: Partial<Record<Locale, string>>;
 }
 
 const { title } = Astro.props;
 const locale = getLangFromUrl(Astro.url);
+const alternates: Partial<Record<Locale, string>> =
+  Astro.props.alternates ??
+  Object.fromEntries((Object.keys(locales) as Locale[]).map((l) => [l, swapLocale(Astro.url.pathname, l)]));
+// hreflang links should be absolute; fall back to relative paths when `site` is not configured.
+const toHref = (path: string) => (Astro.site ? new URL(path, Astro.site).href : path);
 const matomoUrl = (import.meta as { env?: { PUBLIC_MATOMO_URL?: string } }).env?.PUBLIC_MATOMO_URL;
 ---
 
@@ -22,6 +29,8 @@ const matomoUrl = (import.meta as { env?: { PUBLIC_MATOMO_URL?: string } }).env?
     <meta name="theme-color" content="#1C4A2B" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    {Object.entries(alternates).map(([lang, path]) => <link rel="alternate" hreflang={lang} href={toHref(path)} />)}
+    {alternates[defaultLocale] && <link rel="alternate" hreflang="x-default" href={toHref(alternates[defaultLocale])} />}
   </head>
   <body class="bg-stiftung-800 text-amber-200 min-h-screen gap-5 flex flex-col">
     <header class="lg:hidden">
@@ -30,7 +39,7 @@ const matomoUrl = (import.meta as { env?: { PUBLIC_MATOMO_URL?: string } }).env?
           <img src={logo.src} alt="Heimfibel" class="block h-full cursor-pointer" />
         </summary>
         <div id="menu-wrapper" class="h-screen w-screen fixed bg-stiftung-800/50 backdrop-blur z-40">
-          <MainNav locale={locale} />
+          <MainNav locale={locale} alternates={alternates} />
         </div>
       </details>
     </header>
@@ -38,7 +47,7 @@ const matomoUrl = (import.meta as { env?: { PUBLIC_MATOMO_URL?: string } }).env?
       <main data-pagefind-body class="p-5 grow w-full">
         <slot />
       </main>
-      <aside class="w-96 hidden lg:block"><MainNav locale={locale} /></aside>
+      <aside class="w-96 hidden lg:block"><MainNav locale={locale} alternates={alternates} /></aside>
     </div>
     {matomoUrl && <script define:vars={{ matomoUrl }} is:inline>
       if (!window._paq) window._paq = [];
