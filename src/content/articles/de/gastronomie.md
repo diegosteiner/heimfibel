@@ -15,4 +15,4 @@ Die Erstellung eines Gastronomiekonzepts für die Erarbeitung der benötigten K�
 
 Auch die Küchengerätesollten den Bedürfnissen eines Pfadibetriebens entsprechen: komplexe Apparate wie Steamer, Kippbratkesseln u.ä. sind teuer in Anschaffung und Unterhalt und sind eher auf die Bedienung durch Profis ausgerichtet als auf eine Bedienung durch Laien.
 
-Viele Gastrogeräte und Chromstahlelemente gibt es im Occasions-Handel oder bei Baubörsen. Informiert euch dazu bei Bauteilbörse (Raum Basel), Bauteilladen Winterthur oder Plattform [https://useagain.ch](useagain.ch)
+Viele Gastrogeräte und Chromstahlelemente gibt es im Occasions-Handel oder bei Baubörsen. Informiert euch dazu bei Bauteilbörse (Raum Basel), Bauteilladen Winterthur oder Plattform [useagain.ch](https://useagain.ch)

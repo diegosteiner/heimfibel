@@ -2,30 +2,46 @@
 import { getCollection, render } from "astro:content";
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
 import Layout from "../../../layouts/Layout.astro";
-import { getArticleFilter } from "../../../utils/articleFilter";
-import { type Locale, locales } from "../../../utils/i18n";
+import {
+  getArticleAlternates,
+  getArticleFilter,
+  getArticleLocale,
+  getArticlePath,
+  getArticleSlug,
+} from "../../../utils/articles";
 
 export const getStaticPaths = (async () => {
   const allArticles = await getCollection("articles", getArticleFilter({ published: true }));
-  return (Object.keys(locales) as Locale[]).flatMap((locale) =>
-    allArticles
-      .filter((article) => article.data.locale === locale)
-      .map((article) => {
-        return {
-          params: { locale, id: article.id },
-          props: { locale, article },
-        };
-      }),
-  );
+  const seen = new Set<string>();
+
+  return allArticles.map((article) => {
+    const locale = getArticleLocale(article);
+    const slug = getArticleSlug(article);
+    const path = getArticlePath(article);
+
+    if (article.data.locale !== locale) {
+      throw new Error(`${article.id}: frontmatter locale "${article.data.locale}" does not match folder "${locale}"`);
+    }
+    if (seen.has(path)) throw new Error(`${article.id}: duplicate URL ${path}`);
+    seen.add(path);
+
+    const linkedArticles = allArticles.filter(
+      (other) => getArticleLocale(other) === locale && article.data.links?.includes(other.data.nr),
+    );
+
+    return {
+      params: { locale, slug },
+      props: { article, linkedArticles, alternates: getArticleAlternates(article, allArticles) },
+    };
+  });
 }) satisfies GetStaticPaths;
 
-const { article } = Astro.props as InferGetStaticPropsType<typeof getStaticPaths>;
+const { article, linkedArticles, alternates } = Astro.props as InferGetStaticPropsType<typeof getStaticPaths>;
 const { Content } = await render(article);
-const { title, locale, links, tags } = article.data;
-const linkedArticles = await getCollection("articles", (article) => links?.includes(article.data.nr));
+const { title, tags } = article.data;
 ---
 
-<Layout title={title}>
+<Layout title={title} alternates={alternates}>
   <article
     class="bg-amber-200 p-5 lg:p-10 rounded-xl text-stiftung-900 shadow-xl"
   >
@@ -47,11 +63,7 @@ const linkedArticles = await getCollection("articles", (article) => links?.inclu
       {
         linkedArticles.map((linkedArticle) => (
           <li class="text-base inline-block m-1 bg-rust-200 p-1 rounded-handdrawn border-2 border-rust-600">
-            <a
-              href={`/${locale}/articles/${linkedArticle.id?.toLowerCase()}`}
-            >
-              {linkedArticle.data?.title}
-            </a>
+            <a href={getArticlePath(linkedArticle)}>{linkedArticle.data.title}</a>
           </li>
         ))
       }
