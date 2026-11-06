@@ -1,71 +1,55 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
+import { getCollection } from "astro:content";
 import logo from "../../../../public/images/logo.svg";
 import Search from "../../../components/Search";
 import Layout from "../../../layouts/Layout.astro";
-import { type Locale, locales } from "../../../utils/i18n";
-
-const articles = ((await getCollection("articles")) as CollectionEntry<"articles">[]).sort(
-  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
-);
-const pagefindPath = `${import.meta.env.BASE_URL}pagefind/pagefind.js`;
-const phases = {} as Record<CollectionEntry<"articles">["data"]["phases"][number], CollectionEntry<"articles">[]>;
-for (const article of articles) {
-  for (const phase of article.data.phases) {
-    const articles = phases[phase] || [];
-    phases[phase] = [...articles, article];
-  }
-}
+import { type Article, getArticleFilter, getArticlePath, type Phase, phases } from "../../../utils/articles";
+import { getTranslations, type Locale, locales } from "../../../utils/i18n";
 
 export async function getStaticPaths() {
-  return (Object.keys(locales) as Locale[]).flatMap((locale) => ({
+  return (Object.keys(locales) as Locale[]).map((locale) => ({
     params: { locale },
     props: { locale },
   }));
 }
 
+const { locale } = Astro.props as { locale: Locale };
+const t = getTranslations(locale);
+
+const articles = (await getCollection("articles", getArticleFilter({ locale, published: true }))).sort(
+  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
+);
+const pagefindPath = `${import.meta.env.BASE_URL}pagefind/pagefind.js`;
+const articlesByPhase = phases
+  .map((phase) => [phase, articles.filter((article) => article.data.phases.includes(phase))] as [Phase, Article[]])
+  .filter(([, group]) => group.length > 0);
 ---
 
-<Layout title="Übersicht">
+<Layout title={t("home.title")}>
   <main>
     <img src={logo.src} alt="Heimfibel" class="h-48 w-48 float-right m-5 hidden lg:inline" />
     <h1 class="text-4xl font-bold mt-3">
-      <span class="font-normal text-stiftung-200">Pfadiheim-</span>Fibel
+      {t("home.brand_prefix") && <span class="font-normal text-stiftung-200">{t("home.brand_prefix")}</span>}{
+        t("home.brand")
+      }{t("home.brand_suffix") && <span class="font-normal text-stiftung-200">{t("home.brand_suffix")}</span>}
     </h1>
     <p class="italic">
-      Ein Tool der <a
-        class="underline"
-        href="https://www.stiftung-pfadiheime.ch/de"
-        >Stiftung Pfadiheime Schweiz</a
-      >
+      {t("home.tool_by")} <a class="underline" href={t("home.foundation_url")}>{t("home.foundation")}</a>
     </p>
-    <h2 class="text-2xl font-bold mt-10 mb-5">
-      Der Wissensspeicher für den Bau und den Betrieb von Pfadiheimen
-    </h2>
-    <p class="mb-4 leading-relaxed">
-      Die Fibel ist ein Wissensspeicher rund um die Fragen zum Pfadiheimumbau
-      oder Pfadiheimneubau! Es kann auch für eine Reflektion oder Neuausrichtung
-      bei einem bestehenden Haus verwendet und als Input für neue Themen
-      verwendet werden. Die Artikel hier sind nicht als «fixfertiges Rezept» zu
-      betrachten, sondern als Sammlung von Erfahrungen, Tipps und Tricks. Zu den
-      unterschiedlichsten Themen, welche bei einem Bauprojekt, in der Planung,
-      Umsetzung oder im laufenden Betrieb wichtig sind gibt es Artikel.
-    </p>
+    <h2 class="text-2xl font-bold mt-10 mb-5">{t("home.subtitle")}</h2>
+    <p class="mb-4 leading-relaxed">{t("home.intro")}</p>
     <div class="mb-5 mt-10">
-      <Search path={pagefindPath} placeholder={"Suche"} client:load />
+      <Search path={pagefindPath} placeholder={t("search.placeholder")} client:load />
     </div>
 
     {
-      Object.entries(phases).map(([phase, articleGroup]) => (
+      articlesByPhase.map(([phase, articleGroup]) => (
         <section>
-          <h3 class="text-3xl font-bold mt-20 mb-10 text-center">{phase}</h3>
+          <h3 class="text-3xl font-bold mt-20 mb-10 text-center">{t(`phase.${phase}`)}</h3>
           <ul class="article-list bg-stiftung-700 shadow-xl rounded-handdrawn border-4 border-amber-200 text-stiftung-50 place-content-around p-8 flex flex-wrap">
-            {Array.from(articleGroup).map((article) => (
+            {articleGroup.map((article) => (
               <li>
-                <a
-                  class="m-4 underline text-xl"
-                  href={`/${article.data.locale}/articles/${article.id}`}
-                >
+                <a class="m-4 underline text-xl" href={getArticlePath(article)}>
                   {article.data.title}
                 </a>
               </li>

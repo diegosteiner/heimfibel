@@ -15,6 +15,6 @@ Die Wahl des Systems für die Warmwassererzeugung ist eine wichtige Frage. Sie s
 
 #### Links
 
-- [Energie Zentralschweiz](energie-zentralschweiz.ch/fachinformationen/muken.html)
-- [Fachstelle der Mobiliarachstelle der Mobiliar](buildigo.ch/de/article/energieberater)
+- [Energie Zentralschweiz](https://energie-zentralschweiz.ch/fachinformationen/muken.html)
+- [Fachstelle der Mobiliar](https://buildigo.ch/de/article/energieberater)
 - kantonale Förderprogramme

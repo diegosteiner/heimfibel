@@ -8,44 +8,72 @@ backend:
 media_folder: "static/uploads"  # Where images/files are stored in the repo
 public_folder: "/uploads"  # Public path for media
 
+# Articles live in src/content/articles/<locale>/<file>.md. Translations share the file name;
+# the German file name is the German URL, other locales set `slug` for a localized URL.
+i18n:
+  structure: multiple_folders
+  locales: [de, fr, it]
+  default_locale: de
+
 collections:
   - name: "articles"
     label: "articles"
     folder: "src/content/articles"  # Where Markdown files are stored
-    create: true 
+    create: true
     slug: "{{slug}}"
-    widget: "markdown"
+    i18n: true
     fields:
       - label: "Nr"
         name: "nr"
         widget: "number"
+        i18n: duplicate
       - label: "Title"
         name: "title"
         widget: "string"
+        i18n: true
+      - label: "URL-Slug (nur Übersetzungen, Kleinbuchstaben und Bindestriche)"
+        name: "slug"
+        widget: "string"
+        required: false
+        pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Nur Kleinbuchstaben, Ziffern und Bindestriche"]
+        i18n: true
       - label: "Phases"
         name: "phases"
         widget: "select"
         multiple: true
-        options: ["Betriebsphase", "Planungsphase", "Konzeptionsphase"]
+        options: ["Konzeptionsphase", "Planungsphase", "Betriebsphase"]
+        i18n: duplicate
+      - label: "Schritt"
+        name: "step"
+        widget: "string"
+        required: false
+        default: ""
+        i18n: duplicate
       - label: "Publiziert"
         name: "pubDate"
         widget: "datetime"
+        i18n: duplicate
       - label: "Aktualisiert"
         name: "updatedDate"
         widget: "datetime"
         required: false
+        i18n: duplicate
       - label: "Sprache"
         name: "locale"
         widget: "select"
-        options: ["de", "fr"]
+        options: ["de", "fr", "it"]
+        i18n: true
       - label: "Tags"
         name: "tags"
         widget: "list"
         required: false
+        i18n: true
       - label: "Links"
         name: "links"
         widget: "list"
         required: false
+        i18n: duplicate
       - label: "Body"
         name: "body"
         widget: "markdown"
+        i18n: true
