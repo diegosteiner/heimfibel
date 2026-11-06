@@ -30,6 +30,7 @@ export const translations = {
     "phase.Konzeptionsphase": "Konzeptionsphase",
     "phase.Planungsphase": "Planungsphase",
     "phase.Betriebsphase": "Betriebsphase",
+    "article.translations_provisional": "",
   },
   fr: {
     "nav.about": "À propos de la Fondation",
@@ -52,6 +53,7 @@ export const translations = {
     "phase.Konzeptionsphase": "Phase de conception",
     "phase.Planungsphase": "Phase de planification",
     "phase.Betriebsphase": "Phase d'exploitation",
+    "article.translations_provisional": "Cette traduction est en révision et n'est que provisoire.",
   },
   it: {
     "nav.about": "La Fondazione",
@@ -74,6 +76,7 @@ export const translations = {
     "phase.Konzeptionsphase": "Fase di concezione",
     "phase.Planungsphase": "Fase di pianificazione",
     "phase.Betriebsphase": "Fase di esercizio",
+    "article.translations_provisional": "Questa traduzione è in revisione ed è solo provvisoria.",
   },
 } as const satisfies Record<Locale, Record<string, string>>;
 

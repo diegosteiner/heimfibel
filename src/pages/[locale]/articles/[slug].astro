@@ -2,6 +2,7 @@
 import { getCollection, render } from "astro:content";
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
 import Layout from "../../../layouts/Layout.astro";
+import { getTranslations } from "../../../utils/i18n";
 import {
   getArticleAlternates,
   getArticleFilter,
@@ -39,9 +40,18 @@ export const getStaticPaths = (async () => {
 const { article, linkedArticles, alternates } = Astro.props as InferGetStaticPropsType<typeof getStaticPaths>;
 const { Content } = await render(article);
 const { title, tags } = article.data;
+const locale = getArticleLocale(article);
+const t = getTranslations(locale);
 ---
 
 <Layout title={title} alternates={alternates}>
+
+  {locale !== 'de' && (
+    <div class="mb-6 p-4 bg-blue-100 text-blue-700 lg:px-10 rounded-handdrawn ">
+      <p class="font-">{t('article.translations_provisional')}</p>
+    </div>
+  )}
+
   <article
     class="bg-amber-200 p-5 lg:p-10 rounded-xl text-stiftung-900 shadow-xl"
   >
